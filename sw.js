@@ -1,0 +1,46 @@
+const CACHE='routinefit-v1.0.1-cache';
+const images=[
+ "./assets/exercises/assisted-pull-up.svg",
+ "./assets/exercises/barbell-bench.svg",
+ "./assets/exercises/barbell-curl.svg",
+ "./assets/exercises/barbell-row.svg",
+ "./assets/exercises/barbell-squat.svg",
+ "./assets/exercises/bicycle-crunch.svg",
+ "./assets/exercises/bodyweight-squat.svg",
+ "./assets/exercises/burpee.svg",
+ "./assets/exercises/cable-crossover.svg",
+ "./assets/exercises/calf-raise.svg",
+ "./assets/exercises/chest-press.svg",
+ "./assets/exercises/dead-bug.svg",
+ "./assets/exercises/dips.svg",
+ "./assets/exercises/dumbbell-lunge.svg",
+ "./assets/exercises/dumbbell-row.svg",
+ "./assets/exercises/goblet-squat.svg",
+ "./assets/exercises/hammer-curl.svg",
+ "./assets/exercises/incline-dumbbell-press.svg",
+ "./assets/exercises/jumping-jack.svg",
+ "./assets/exercises/lat-pulldown.svg",
+ "./assets/exercises/lateral-raise.svg",
+ "./assets/exercises/leg-curl.svg",
+ "./assets/exercises/leg-extension.svg",
+ "./assets/exercises/leg-press.svg",
+ "./assets/exercises/leg-raise.svg",
+ "./assets/exercises/pec-deck.svg",
+ "./assets/exercises/pike-push-up.svg",
+ "./assets/exercises/plank.svg",
+ "./assets/exercises/pull-up.svg",
+ "./assets/exercises/push-up.svg",
+ "./assets/exercises/rear-delt-fly.svg",
+ "./assets/exercises/russian-twist.svg",
+ "./assets/exercises/seated-row.svg",
+ "./assets/exercises/shoulder-press.svg",
+ "./assets/exercises/sit-up.svg",
+ "./assets/exercises/skullcrusher.svg",
+ "./assets/exercises/stationary-bike.svg",
+ "./assets/exercises/treadmill.svg",
+ "./assets/exercises/triceps-pushdown.svg"
+];
+const core=['./','./index.html','./style.css','./app.js','./manifest.webmanifest','./assets/icons/icon-192.png','./assets/icons/icon-512.png','./assets/icons/icon-maskable-192.png','./assets/icons/icon-maskable-512.png'];
+self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll([...core,...images])).then(()=>self.skipWaiting()))});
+self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('routinefit-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
+self.addEventListener('fetch',event=>{if(event.request.method!=='GET'||new URL(event.request.url).origin!==self.location.origin)return;event.respondWith(caches.match(event.request).then(cached=>cached||fetch(event.request).then(r=>{if(r.ok){const copy=r.clone();caches.open(CACHE).then(c=>c.put(event.request,copy))}return r}).catch(()=>cached||new Response('오프라인 파일이 없습니다.',{status:503}))))});
