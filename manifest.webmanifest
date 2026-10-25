@@ -1,7 +1,7 @@
 {
   "name": "루틴핏 | 체중·운동 기록",
   "short_name": "루틴핏",
-  "description": "근력 운동·맨몸운동 세트 기록, 이전 기록 비교, 종목별 휴식 타이머, 1RM과 체중 관리",
+  "description": "기구 및 맨몸 운동 278종, 커스텀 종목, 유튜브 자세 검색, 세트 기록·1RM·체중 관리",
   "id": "./",
   "start_url": "./index.html",
   "scope": "./",
@@ -12,28 +12,16 @@
   "lang": "ko",
   "icons": [
     {
-      "src": "assets/icons/icon-192.png",
+      "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "assets/icons/icon-512.png",
+      "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
-    },
-    {
-      "src": "assets/icons/icon-maskable-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "assets/icons/icon-maskable-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
     }
   ]
 }
