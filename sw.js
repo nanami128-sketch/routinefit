@@ -1,30 +1,6 @@
-/* RoutineFit v1.2.0 – network-first navigation, offline fallback, no data deletion. */
-const CACHE = 'routinefit-v1.2.0-core';
-const CORE = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
-self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
-});
-self.addEventListener('activate', event => {
-  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith('routinefit-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim()));
-});
-self.addEventListener('fetch', event => {
-  const request=event.request;
-  const url=new URL(request.url);
-  if(request.method!=='GET'||url.origin!==self.location.origin) return;
-  if(request.mode==='navigate'||request.destination==='document'){
-    event.respondWith((async()=>{
-      try {
-        const response=await fetch(request,{cache:'no-store'});
-        if(response.ok){const cache=await caches.open(CACHE);await cache.put('./index.html',response.clone());}
-        return response;
-      }catch(err){const cache=await caches.open(CACHE);return await cache.match('./index.html')||Response.error();}
-    })());
-  }else{
-    event.respondWith((async()=>{
-      const cached=await caches.match(request);
-      if(cached) return cached;
-      try {const response=await fetch(request); if(response.ok){const cache=await caches.open(CACHE);await cache.put(request,response.clone());} return response;}
-      catch(err){return Response.error();}
-    })());
-  }
-});
+/* v1.3.1 – network-first HTML, offline fallback; caches are not user data. */
+const CACHE='routinefit-v1.3.1-core';
+const CORE=['./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()))});
+self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('routinefit-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
+self.addEventListener('fetch',e=>{const r=e.request,u=new URL(r.url);if(r.method!=='GET'||u.origin!==self.location.origin)return;if(r.mode==='navigate'||r.destination==='document')e.respondWith((async()=>{try{const response=await fetch(r,{cache:'no-store'});if(response.ok){const c=await caches.open(CACHE);await c.put('./index.html',response.clone())}return response}catch(err){return(await caches.open(CACHE)).match('./index.html')||Response.error()}})());else e.respondWith((async()=>{try{const response=await fetch(r);if(response.ok&&CORE.some(p=>u.pathname.endsWith(p.replace('./','')))){const c=await caches.open(CACHE);await c.put(r,response.clone())}return response}catch(err){return caches.match(r)||Response.error()}})())});
