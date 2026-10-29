@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Pick up web files from the existing GitHub Pages repository root.
+// The web app is not altered, and no user data is baked into the APK.
+def webRoot = rootProject.projectDir.parentFile
+def webAssetsDirectory = layout.buildDirectory.dir('generated/routinefit-web')
+def syncRoutineFitWeb = tasks.register('syncRoutineFitWeb', Sync) {
+    from(webRoot) {
+        include '*.html', '*.js', '*.css', '*.webmanifest', '*.svg', '*.png'
+    }
+    into(webAssetsDirectory)
+}
+
+def keyPath = System.getenv('ROUTINEFIT_KEYSTORE_PATH')
+def storePass = System.getenv('ROUTINEFIT_KEYSTORE_PASSWORD')
+def keyPass = System.getenv('ROUTINEFIT_KEY_PASSWORD')
+def signingAlias = System.getenv('ROUTINEFIT_KEY_ALIAS')
+def hasSigning = keyPath && storePass && keyPass && signingAlias
+
+android {
+    namespace 'com.nanami128sketch.routinefit'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.nanami128sketch.routinefit'
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName '1.4.0'
+    }
+
+    sourceSets {
+        main {
+            assets.srcDir(webAssetsDirectory)
+        }
+    }
+
+    signingConfigs {
+        release {
+            if (hasSigning) {
+                storeFile file(keyPath)
+                storePassword storePass
+                keyAlias signingAlias
+                keyPassword keyPass
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ''
+        }
+        release {
+            minifyEnabled false
+            if (hasSigning) signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+// Gradle must copy the web assets before Android merges any assets.
+tasks.configureEach {
+    if (name == 'mergeDebugAssets' || name == 'mergeReleaseAssets') {
+        dependsOn(syncRoutineFitWeb)
+    }
+}
+
+dependencies {
+    implementation 'androidx.webkit:webkit:1.14.0'
+}
