@@ -33,7 +33,7 @@ android {
 
     sourceSets {
         main {
-            assets.srcDir(webAssetsDirectory)
+            assets.srcDir(syncRoutineFitWeb)
         }
     }
 
@@ -66,7 +66,7 @@ android {
 
 // Gradle must copy the web assets before Android merges any assets.
 tasks.configureEach {
-    if (name == 'mergeDebugAssets' || name == 'mergeReleaseAssets') {
+    if (name == 'mergeDebugAssets' || name == 'mergeReleaseAssets' || name == 'generateReleaseLintVitalReportModel') {
         dependsOn(syncRoutineFitWeb)
     }
 }
