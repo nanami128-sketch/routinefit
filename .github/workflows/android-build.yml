@@ -41,7 +41,7 @@ jobs:
         with:
           gradle-version: '8.11.1'
       - name: Install Android SDK 35
-        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+        run: $(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager -print -quit) 'platforms;android-35' 'build-tools;35.0.0'
       - name: Build debug and unsigned release APK
         run: gradle -p android --no-daemon :app:assembleDebug :app:assembleRelease
       - name: Upload debug APK
@@ -71,7 +71,7 @@ jobs:
         with:
           gradle-version: '8.11.1'
       - name: Install Android SDK 35
-        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+        run: $(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager -print -quit) 'platforms;android-35' 'build-tools;35.0.0'
       - name: Restore signing key from GitHub Actions secrets
         env:
           KEYSTORE_B64: ${{ secrets.ROUTINEFIT_KEYSTORE_BASE64 }}
