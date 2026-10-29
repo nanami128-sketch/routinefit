@@ -23,6 +23,12 @@ on:
       - '*.png'
       - '*.webmanifest'
   workflow_dispatch:
+    inputs:
+      build_signed:
+        description: 'Build a signed release APK using configured GitHub Actions secrets'
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: read
@@ -42,6 +48,10 @@ jobs:
           gradle-version: '8.11.1'
       - name: Install Android SDK 35
         run: $(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager -print -quit) 'platforms;android-35' 'build-tools;35.0.0'
+      - name: Validate inline JavaScript before APK build
+        run: |
+          python3 -c 'import pathlib,re; h=pathlib.Path("index.html").read_text(encoding="utf-8"); s=re.findall(r"<script[^>]*>(.*?)</script>",h,re.S|re.I); assert len(s)>=2, "Missing embedded RoutineFit JS"; [pathlib.Path(f"/tmp/routinefit-inline-{i}.js").write_text(c,encoding="utf-8") for i,c in enumerate(s)]'
+          for file in /tmp/routinefit-inline-*.js; do node --check "$file"; done
       - name: Build debug and unsigned release APK
         run: gradle -p android --no-daemon :app:assembleDebug :app:assembleRelease
       - name: Upload debug APK
@@ -59,7 +69,7 @@ jobs:
 
   signed-release:
     name: Build signed release APK (manual, protected secrets)
-    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'workflow_dispatch' && inputs.build_signed == true && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

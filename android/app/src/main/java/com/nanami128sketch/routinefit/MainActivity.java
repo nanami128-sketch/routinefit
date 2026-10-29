@@ -43,6 +43,20 @@ public final class MainActivity extends Activity {
                 .build();
 
         webView = new WebView(this);
+        // Android 15+ enforces edge-to-edge; keep the web content clear of
+        // the status bar and navigation bar on Samsung/other devices.
+        webView.setOnApplyWindowInsetsListener((view, insets) -> {
+            if (android.os.Build.VERSION.SDK_INT >= 30) {
+                android.graphics.Insets safe = insets.getInsets(
+                        android.view.WindowInsets.Type.systemBars() |
+                        android.view.WindowInsets.Type.displayCutout());
+                view.setPadding(safe.left, safe.top, safe.right, safe.bottom);
+            } else {
+                view.setPadding(insets.getSystemWindowInsetLeft(), insets.getSystemWindowInsetTop(),
+                        insets.getSystemWindowInsetRight(), insets.getSystemWindowInsetBottom());
+            }
+            return insets;
+        });
         webView.setBackgroundColor(0xff09131b);
         setContentView(webView);
         WebSettings settings = webView.getSettings();
