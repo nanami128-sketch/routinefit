@@ -289,6 +289,11 @@ img.exercise-anatomy{object-fit:cover!important;object-position:center!important
 @media(max-width:340px){.hero{padding:16px!important;min-height:180px!important}.hero h1{font-size:22px!important}.rf-ad-slide{height:78px;padding-left:35px;padding-right:35px}.rf-ad-copy strong{font-size:12px}.rf-ad-copy small{font-size:9px}.rf-ad-symbol{flex-basis:32px;height:32px}}
 @media(prefers-reduced-motion:reduce){.rf-ad-track,.rf-ad-dot::before{transition:none!important}}
 </style>
+<style id="routinefit-v168-pose-styles">
+img.exercise-anatomy.rf-pose-168{object-fit:contain!important;object-position:center!important;background:#07121b!important;padding:0!important}
+.catalog-art.rf-pose-168,.routine-art.rf-pose-168,.logger-art.rf-pose-168,.detail-art.rf-pose-168{object-fit:contain!important;background:#07121b!important}
+img.exercise-anatomy.rf-pose-placeholder{object-fit:contain!important;background:#10232b!important}
+</style>
 </head>
 <body>
 <div id="app"><div style="padding:32px;color:#b8f36b">루틴핏을 시작하는 중입니다.</div></div>
@@ -299,7 +304,7 @@ window.ROUTINEFIT_ASSETS={"assisted-pull-up":"data:image/svg+xml;base64,PHN2ZyB4
 /* RoutineFit v1.5.1 - offline-first exercise journal, exercise catalog expanded from independently authored sources. */
 (() => {
 'use strict';
-const VERSION='1.6.7', STORE_KEY='routinefit_v1_store', SNAP_KEY='routinefit_v13_snapshot', HISTORY_KEY='routinefit_v13_history';
+const VERSION='1.6.8', STORE_KEY='routinefit_v1_store', SNAP_KEY='routinefit_v13_snapshot', HISTORY_KEY='routinefit_v13_history';
 const FOOD_LIBRARY=[{"id":"rice","name":"흰쌀밥","kcal100":130,"cat":"곡류"},{"id":"brown","name":"현미밥","kcal100":140,"cat":"곡류"},{"id":"oat","name":"오트밀 건조","kcal100":380,"cat":"곡류"},{"id":"bread","name":"식빵","kcal100":260,"cat":"곡류"},{"id":"sweetpotato","name":"고구마 찐 것","kcal100":130,"cat":"곡류"},{"id":"potato","name":"감자 찐 것","kcal100":80,"cat":"곡류"},{"id":"egg","name":"달걀 삶은 것","kcal100":150,"cat":"단백질"},{"id":"chicken","name":"닭가슴살 조리","kcal100":165,"cat":"단백질"},{"id":"beef","name":"소고기 살코기 조리","kcal100":215,"cat":"단백질"},{"id":"pork","name":"돼지고기 등심 조리","kcal100":210,"cat":"단백질"},{"id":"tofu","name":"두부","kcal100":85,"cat":"단백질"},{"id":"salmon","name":"연어","kcal100":205,"cat":"단백질"},{"id":"tuna","name":"참치 수분","kcal100":120,"cat":"단백질"},{"id":"shrimp","name":"새우","kcal100":100,"cat":"단백질"},{"id":"milk","name":"우유 일반","kcal100":60,"cat":"유제품"},{"id":"soy","name":"무가당 두유","kcal100":45,"cat":"음료"},{"id":"yogurt","name":"플레인 요거트","kcal100":75,"cat":"유제품"},{"id":"cheese","name":"슬라이스 치즈","kcal100":320,"cat":"유제품"},{"id":"banana","name":"바나나","kcal100":89,"cat":"과일"},{"id":"apple","name":"사과","kcal100":52,"cat":"과일"},{"id":"orange","name":"오렌지","kcal100":47,"cat":"과일"},{"id":"strawberry","name":"딸기","kcal100":33,"cat":"과일"},{"id":"avocado","name":"아보카도","kcal100":160,"cat":"과일"},{"id":"tomato","name":"토마토","kcal100":18,"cat":"채소"},{"id":"broccoli","name":"브로콜리","kcal100":35,"cat":"채소"},{"id":"cucumber","name":"오이","kcal100":15,"cat":"채소"},{"id":"almond","name":"아몬드","kcal100":580,"cat":"견과"},{"id":"walnut","name":"호두","kcal100":650,"cat":"견과"},{"id":"peanutbutter","name":"땅콩버터","kcal100":590,"cat":"견과"},{"id":"oliveoil","name":"올리브유","kcal100":884,"cat":"기타"},{"id":"kimchi","name":"배추김치","kcal100":25,"cat":"반찬"},{"id":"kimchirice","name":"김치볶음밥","kcal100":170,"cat":"한식"},{"id":"bibimbap","name":"비빔밥","kcal100":150,"cat":"한식"},{"id":"bulgogi","name":"불고기","kcal100":190,"cat":"한식"},{"id":"doenjang","name":"된장찌개","kcal100":65,"cat":"한식"},{"id":"kimchistew","name":"김치찌개","kcal100":80,"cat":"한식"},{"id":"seolleongtang","name":"설렁탕","kcal100":75,"cat":"한식"},{"id":"samgyetang","name":"삼계탕","kcal100":95,"cat":"한식"},{"id":"gimbap","name":"김밥","kcal100":175,"cat":"한식"},{"id":"tteokbokki","name":"떡볶이","kcal100":180,"cat":"간식"},{"id":"ramyeon","name":"라면 조리 후 100g (국물 포함 추정)","kcal100":110,"cat":"면류"},{"id":"udon","name":"우동 조리","kcal100":85,"cat":"면류"},{"id":"spaghetti","name":"파스타 조리","kcal100":155,"cat":"면류"},{"id":"pizza","name":"피자","kcal100":260,"cat":"패스트푸드"},{"id":"hamburger","name":"햄버거","kcal100":250,"cat":"패스트푸드"},{"id":"friedchicken","name":"치킨 튀김","kcal100":270,"cat":"패스트푸드"},{"id":"fries","name":"감자튀김","kcal100":300,"cat":"패스트푸드"},{"id":"icedamericano","name":"아메리카노 무가당","kcal100":2,"cat":"음료"},{"id":"latte","name":"카페라떼 무가당","kcal100":45,"cat":"음료"},{"id":"cola","name":"콜라","kcal100":42,"cat":"음료"},{"id":"juice","name":"오렌지 주스","kcal100":45,"cat":"음료"},{"id":"protein","name":"프로틴 파우더","kcal100":390,"cat":"보충식"},{"id":"granola","name":"그래놀라","kcal100":460,"cat":"간식"},{"id":"ricecake","name":"백설기 떡","kcal100":230,"cat":"간식"},{"id":"chocolate","name":"밀크 초콜릿","kcal100":535,"cat":"간식"},{"id":"icecream","name":"아이스크림","kcal100":210,"cat":"간식"},{"id":"nongshim-shin-bag","name":"농심 신라면 봉지 1개 (120g)","kcal100":416.67,"cat":"봉지라면","portionG":120,"portionKcal":500,"portionLabel":"1봉","source":"농심 공식 제품정보"},{"id":"nongshim-shin-gold","name":"농심 신라면 골드 봉지 1개 (125g)","kcal100":432,"cat":"봉지라면","portionG":125,"portionKcal":540,"portionLabel":"1봉","source":"농심 공식 제품정보"},{"id":"ottogi-jin-spicy","name":"오뚜기 진라면 매운맛 봉지 1개 (120g)","kcal100":425,"cat":"봉지라면","portionG":120,"portionKcal":510,"portionLabel":"1봉","source":"오뚜기 공식 직영 상품 설명"},{"id":"nongshim-neoguri-spicy","name":"농심 얼큰한 너구리 봉지 1개 (120g)","kcal100":408.33,"cat":"봉지라면","portionG":120,"portionKcal":490,"portionLabel":"1봉","source":"농심 공식 제품정보"},{"id":"nongshim-shin-rose","name":"농심 신라면 로제 봉지 1개 (134g)","kcal100":421.64,"cat":"봉지라면","portionG":134,"portionKcal":565,"portionLabel":"1봉","source":"농심 공식 제품정보"}];
 /* Independently authored variations of exercise families discussed in FITFLEX clips.
    These are independent descriptions; only source-confirmed generic movements are tagged. */
@@ -665,17 +670,105 @@ function rfRegionalDiagram(e){
  RF_REGION_CACHE.set(k,result);return result;
 }
 // Main point: an unverified exercise never inherits an unrelated pose/incorrect muscle highlight.
+// RoutineFit 1.6.8 original AI exercise-art collection. Exact aliases precede approximate exercise-family examples.
+const RF_V168_EXACT={"스미스머신인클라인벤치프레스":"smith_incline_press","벽푸시업":"wall_pushup","인클라인덤벨프레스":"incline_dumbbell_press","덤벨인클라인프레스":"incline_dumbbell_press","와이드그립랫풀다운":"wide_lat_pulldown","와이드그립랫풀다운머신":"wide_lat_pulldown","덤벨벤트오버레터럴레이즈":"rear_delt_fly","덤벨리어델트레이즈":"rear_delt_fly","벤트오버리어델트플라이":"rear_delt_fly","벤치지지원암덤벨로우":"one_arm_dumbbell_row","원암덤벨로우":"one_arm_dumbbell_row","푸시업투다운독":"pushup_down_dog","밴드스퀴즈프레스":"band_squeeze_press","벤치프레스":"bench_press","바벨벤치프레스":"bench_press","바벨플랫벤치프레스":"bench_press","플랫벤치프레스":"bench_press","바벨인클라인벤치프레스":"incline_barbell_press","인클라인바벨벤치프레스":"incline_barbell_press","덤벨벤치프레스":"dumbbell_press","덤벨플랫벤치프레스":"dumbbell_press","덤벨체스트프레스":"dumbbell_press","플랫덤벨프레스":"dumbbell_press","덤벨플랫플라이":"chest_fly","플랫덤벨플라이":"chest_fly","덤벨플라이":"chest_fly","덤벨체스트플라이":"chest_fly","케이블크로스오버":"cable_crossover","케이블플라이":"cable_crossover","케이블크로스플라이":"cable_crossover","푸시업":"pushup","기본푸시업":"pushup","일반푸시업":"pushup","와이드푸시업":"pushup","니푸시업":"pushup","딥스":"dips","평행봉딥스":"dips","체스트딥스":"dips","스미스머신벤치프레스":"smith_bench","스미스벤치프레스":"smith_bench","체스트프레스머신":"machine_chest_press","머신체스트프레스":"machine_chest_press","시티드체스트프레스머신":"machine_chest_press","랫풀다운":"lat_pulldown","광배근랫풀다운":"lat_pulldown","클로즈그립랫풀다운":"close_grip_lat_pulldown","풀업":"pullup","턱걸이":"pullup","와이드그립풀업":"pullup","어시스트풀업":"pullup","바벨로우":"barbell_row","벤트오버바벨로우":"barbell_row","바벨벤트오버로우":"barbell_row","덤벨벤트오버로우":"dumbbell_row","덤벨로우":"dumbbell_row","시티드로우":"seated_row","시티드케이블로우":"seated_row","케이블시티드로우":"seated_row","케이블로우":"cable_row","로우케이블로우":"cable_row","리버스펙덱플라이":"reverse_pec_deck","리버스펙덱":"reverse_pec_deck","리어델트머신":"reverse_pec_deck","데드리프트":"deadlift","바벨데드리프트":"deadlift","컨벤셔널데드리프트":"deadlift","오버헤드프레스":"overhead_press","바벨오버헤드프레스":"overhead_press","밀리터리프레스":"overhead_press","바벨숄더프레스":"overhead_press","덤벨숄더프레스":"dumbbell_shoulder_press","시티드덤벨숄더프레스":"dumbbell_shoulder_press","아놀드프레스":"arnold_press","덤벨아놀드프레스":"arnold_press","사이드레터럴레이즈":"lateral_raise","덤벨사이드레터럴레이즈":"lateral_raise","덤벨레터럴레이즈":"lateral_raise","프론트레이즈":"front_raise","덤벨프론트레이즈":"front_raise","리어델트레이즈":"rear_delt_raise","벤트오버레터럴레이즈":"rear_delt_raise","업라이트로우":"upright_row","바벨업라이트로우":"upright_row","페이스풀":"face_pull","케이블페이스풀":"face_pull","스트레이트암풀다운":"straight_arm_pulldown","케이블스트레이트암풀다운":"straight_arm_pulldown","숄더프레스머신":"machine_shoulder_press","머신숄더프레스":"machine_shoulder_press","시티드숄더프레스머신":"machine_shoulder_press","바벨컬":"barbell_curl","스탠딩바벨컬":"barbell_curl","덤벨컬":"dumbbell_curl","스탠딩덤벨컬":"dumbbell_curl","해머컬":"hammer_curl","덤벨해머컬":"hammer_curl","프리처컬":"preacher_curl","바벨프리처컬":"preacher_curl","프리처컬머신":"preacher_curl","케이블컬":"cable_curl","케이블이두컬":"cable_curl","케이블트라이셉스푸시다운":"triceps_pushdown","트라이셉스푸시다운":"triceps_pushdown","바푸시다운":"triceps_pushdown","케이블로프푸시다운":"rope_pushdown","로프푸시다운":"rope_pushdown","케이블로프푸쉬다운":"rope_pushdown","오버헤드삼두익스텐션":"overhead_extension","덤벨오버헤드삼두익스텐션":"overhead_extension","덤벨트라이셉스익스텐션":"overhead_extension","케이블트라이셉스익스텐션":"cable_triceps_extension","케이블오버헤드삼두익스텐션":"cable_triceps_extension","벤치딥스":"triceps_dips","트라이셉스딥스":"triceps_dips","바벨스쿼트":"squat","바벨백스쿼트":"squat","백스쿼트":"squat","스쿼트":"squat","맨몸스쿼트":"squat","레그프레스":"leg_press","레그프레스머신":"leg_press","레그익스텐션":"leg_extension","레그익스텐션머신":"leg_extension","레그컬":"leg_curl","시티드레그컬":"leg_curl","라잉레그컬":"leg_curl","런지":"lunge","덤벨런지":"lunge","워킹런지":"lunge","리버스런지":"lunge","불가리안스플릿스쿼트":"bulgarian_split_squat","덤벨불가리안스플릿스쿼트":"bulgarian_split_squat","루마니안데드리프트":"romanian_deadlift","바벨루마니안데드리프트":"romanian_deadlift","덤벨루마니안데드리프트":"romanian_deadlift","힙쓰러스트":"hip_thrust","바벨힙쓰러스트":"hip_thrust","카프레이즈":"calf_raise","스탠딩카프레이즈":"calf_raise","스미스머신스쿼트":"smith_squat","스미스스쿼트":"smith_squat","크런치":"crunch","베이직크런치":"crunch","바닥크런치":"crunch","레그레이즈":"leg_raise","라잉레그레이즈":"leg_raise","행잉레그레이즈":"hanging_leg_raise","행잉니레이즈":"hanging_leg_raise","플랭크":"plank","프론트플랭크":"plank","사이드플랭크":"side_plank","러시안트위스트":"russian_twist","바이시클크런치":"bicycle_crunch","마운틴클라이머":"mountain_climber","ab롤아웃":"ab_rollout","ab롤러":"ab_rollout","복근롤아웃":"ab_rollout","복근롤러":"ab_rollout","케이블크런치":"cable_crunch","케이블복근크런치":"cable_crunch"};
+const rfV168Norm=n=>String(n||'').toLowerCase().replace(/[\s_\-()·]/g,'');
+function rfV168Family(e){
+ const n=rfV168Norm(e?.name), eq=e?.equipment||'';
+ if(!n)return null;
+ if(/(레그컬|레그curl)/.test(n))return 'leg_curl';
+ if(/(레그익스텐션|legextension)/.test(n))return 'leg_extension';
+ if(/(레그프레스|legpress)/.test(n))return 'leg_press';
+ if(/(랫풀다운|latpulldown)/.test(n))return /클로즈|뉴트럴|v바/i.test(n)?'close_grip_lat_pulldown':/와이드/.test(n)?'wide_lat_pulldown':'lat_pulldown';
+ if(/(스트레이트암풀다운|스트레이트암푸시다운)/.test(n))return 'straight_arm_pulldown';
+ if(/(페이스풀)/.test(n))return 'face_pull';
+ if(/(덤벨|dumbbell)/.test(n)&&/(벤트오버레터럴|리어델트플라이|리버스플라이)/.test(n))return 'rear_delt_fly';
+ if(/(리어델트머신|리버스펙덱)/.test(n))return 'reverse_pec_deck';
+ if(/(원암덤벨로우|덤벨원암로우|덤벨로우한팔)/.test(n))return 'one_arm_dumbbell_row';
+ if(/(시티드로우|시티드케이블로우)/.test(n))return 'seated_row';
+ if(/(케이블로우|로우케이블)/.test(n))return 'cable_row';
+ if(/(바벨로우|바벨벤트오버로우|벤트오버바벨로우)/.test(n))return 'barbell_row';
+ if(/(덤벨로우|덤벨벤트오버로우)/.test(n))return 'dumbbell_row';
+ if(/(풀업|친업|턱걸이)/.test(n))return 'pullup';
+ if(/(데드리프트)/.test(n))return /루마니안|rdl|스티프/.test(n)?'romanian_deadlift':'deadlift';
+ if(/(케이블크로스|케이블플라이|케이블체스트플라이)/.test(n))return 'cable_crossover';
+ if(/(펙덱|체스트플라이머신)/.test(n))return 'chest_fly';
+ if(/(덤벨플라이|덤벨체스트플라이)/.test(n))return 'chest_fly';
+ if(/(푸시업|팔굽혀펴기)/.test(n))return /벽/.test(n)?'wall_pushup':/다운독/.test(n)?'pushup_down_dog':'pushup';
+ if(/(딥스)/.test(n))return 'dips';
+ if(/(벤치프레스|체스트프레스)/.test(n)){
+   if(eq==='smith')return /인클라인/.test(n)?'smith_incline_press':'smith_bench';
+   if(eq==='dumbbell')return /인클라인/.test(n)?'incline_dumbbell_press':'dumbbell_press';
+   if(eq==='barbell')return /인클라인/.test(n)?'incline_barbell_press':'bench_press';
+   if(eq==='machine')return 'machine_chest_press';
+   if(eq==='band')return 'band_squeeze_press';
+ }
+ if(/(스퀴즈프레스|헥스프레스)/.test(n)&&eq==='band')return 'band_squeeze_press';
+ if(/(스쿼트)/.test(n))return eq==='smith'?'smith_squat': 'squat';
+ if(/(힙쓰러스트|힙트러스트|힙브릿지)/.test(n))return 'hip_thrust';
+ if(/(불가리안)/.test(n))return 'bulgarian_split_squat';
+ if(/(런지)/.test(n))return 'lunge';
+ if(/(카프레이즈|종아리올리기)/.test(n))return 'calf_raise';
+ if(/(오버헤드삼두익스텐션|덤벨삼두익스텐션|오버헤드트라이셉스)/.test(n))return 'overhead_extension';
+ if(/(로프푸시다운|로프푸쉬다운)/.test(n))return 'rope_pushdown';
+ if(/(삼두푸시다운|트라이셉스푸시다운|트라이셉스푸쉬다운)/.test(n))return 'triceps_pushdown';
+ if(/(케이블삼두익스텐션|케이블트라이셉스익스텐션)/.test(n))return 'cable_triceps_extension';
+ if(/(프리처컬)/.test(n))return 'preacher_curl';
+ if(/(해머컬|해머커얼)/.test(n))return 'hammer_curl';
+ if(/(케이블컬|케이블이두)/.test(n))return 'cable_curl';
+ if(/(덤벨컬|덤벨이두컬)/.test(n))return 'dumbbell_curl';
+ if(/(바벨컬|ez바컬|이지바컬)/.test(n))return 'barbell_curl';
+ if(/(아놀드프레스)/.test(n))return 'arnold_press';
+ if(/(레터럴레이즈)/.test(n))return /벤트오버|리어|후면/.test(n)?'rear_delt_raise':/프론트|전면/.test(n)?'front_raise':'lateral_raise';
+ if(/(프론트레이즈)/.test(n))return 'front_raise';
+ if(/(업라이트로우)/.test(n))return 'upright_row';
+ if(/(숄더프레스|오버헤드프레스|밀리터리프레스)/.test(n))return eq==='dumbbell'?'dumbbell_shoulder_press':eq==='machine'?'machine_shoulder_press':'overhead_press';
+ if(/(행잉레그레이즈|행잉니레이즈)/.test(n))return 'hanging_leg_raise';
+ if(/(사이드플랭크)/.test(n))return 'side_plank';
+ if(/(플랭크)/.test(n))return 'plank';
+ if(/(바이시클크런치)/.test(n))return 'bicycle_crunch';
+ if(/(케이블크런치)/.test(n))return 'cable_crunch';
+ if(/(크런치)/.test(n))return 'crunch';
+ if(/(러시안트위스트)/.test(n))return 'russian_twist';
+ if(/(마운틴클라이머)/.test(n))return 'mountain_climber';
+ if(/(롤아웃|ab롤러|복근롤러)/.test(n))return 'ab_rollout';
+ if(/(레그레이즈)/.test(n))return 'leg_raise';
+ return null;
+}
+function rfV168Pose(e){
+ if(!e)return null;
+ const norm=rfV168Norm(e.name),key=RF_V168_EXACT[norm];
+ if(key)return {path:'./media/exercise/pose_'+key+'.webp',exact:true};
+ const family=rfV168Family(e);
+ return family?{path:'./media/exercise/pose_'+family+'.webp',exact:false}:null;
+}
+const RF_V168_EMPTY_CACHE=new Map();
+function rfV168MissingPose(e){
+ const muscle=String(e?.muscle||'운동').slice(0,5);
+ if(RF_V168_EMPTY_CACHE.has(muscle))return RF_V168_EMPTY_CACHE.get(muscle);
+ const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#142c35"/><stop offset="1" stop-color="#08151e"/></linearGradient></defs><rect width="320" height="260" fill="url(#bg)"/><g stroke="#b8f36b" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".9"><path d="M82 95v80m-18-70v60m16-30h160m2-40v80m18-70v60"/></g><text x="160" y="214" fill="#c2ddd0" font-size="17" text-anchor="middle" font-family="Arial,sans-serif">운동 자세 이미지 준비 중</text><text x="160" y="239" fill="#91a9a9" font-size="12" text-anchor="middle" font-family="Arial,sans-serif">유튜브 자세 영상 확인</text></svg>`;
+ const uri='data:image/svg+xml;charset=UTF-8,'+encodeURIComponent(svg);
+ RF_V168_EMPTY_CACHE.set(muscle,uri);return uri;
+}
+
 const img=(id,cls='exercise-art')=>{
  const e=byId(id);if(!e)return '';
- const verified=rfVerifiedMotion(e);
- const drawing=verified?(RF_V162_ADDED_IMAGES[verified]||RF_V161_IMAGES[verified]):rfRegionalDiagram(e);
+ const pose=rfV168Pose(e),oldKey=rfVerifiedMotion(e);
+ const original=oldKey?(RF_V162_ADDED_IMAGES[oldKey]||RF_V161_IMAGES[oldKey]):null;
+ // For missing exact motion images never show a misleading standing person or an unrelated exercise.
+ const drawing=pose?.path||original||rfV168MissingPose(e);
  const custom=safeImg(e.imageUrl);
- return `<img class="${esc(cls)} exercise-anatomy ${verified?'motion-verified':'region-reference'}" src="${esc(custom||drawing)}" data-fallback-src="${custom?esc(drawing):''}" alt="${esc(e.name)}: ${verified?'대표 동작 예시':'근육 부위 참고도(운동 자세 사진 아님, 정확한 자세는 영상 확인)'}" loading="lazy" decoding="async"/>`;
+ const src=custom||drawing;
+ const safeFallback=custom?drawing:pose?rfV168MissingPose(e):'';
+ const verified=!!(pose||original);
+ const kind=pose?(pose.exact?'정확한 이름의 대표 동작 이미지':'운동 계열의 유사 동작 참고 이미지'):(original?'기존 대표 동작 예시':'동작 이미지 준비 중');
+ return `<img class="${esc(cls)} exercise-anatomy ${pose?'rf-pose-168':(verified?'motion-verified':'rf-pose-placeholder')}" src="${esc(src)}" data-fallback-src="${esc(safeFallback)}" alt="${esc(e.name)}: ${kind}. 자세는 영상으로 확인" loading="lazy" decoding="async"/>`;
 };
-function rfArtworkNote(e){return rfVerifiedMotion(e)?'동작 예시 · 자세는 영상으로 확인':'부위 참고도 · 실제 자세는 영상으로 확인';}
+function rfArtworkNote(e){const pose=rfV168Pose(e);return pose?(pose.exact?'대표 동작 참고 · 자세는 영상 확인':'유사 동작 참고 · 자세는 영상 확인'):(rfVerifiedMotion(e)?'대표 동작 참고 · 자세는 영상 확인':'동작 이미지 준비 중 · 영상 확인');}
 function rfVideoOverlay(e,cls=''){
  const action=safeYT(e?.videoUrl)?'open-video':'youtube-search';
- return `<div class="rf-image-video ${cls}">${img(e.id,'rf-video-art')}${!rfVerifiedMotion(e)?'<span class="rf-reference-mark" aria-hidden="true">부위 참고</span>':''}<button type="button" class="rf-video-play" data-action="${action}" data-ex="${esc(e.id)}" aria-label="${esc(e.name)} 자세 영상 열기" title="유튜브에서 자세 영상 확인"><span class="rf-video-triangle">▶</span></button></div>`;
+ const pose=rfV168Pose(e),known=!!(pose||rfVerifiedMotion(e));
+ return `<div class="rf-image-video ${cls}">${img(e.id,'rf-video-art')}${!known?'<span class="rf-reference-mark" aria-hidden="true">동작 이미지 준비 중</span>':!pose?.exact&&pose?'<span class="rf-reference-mark" aria-hidden="true">유사 동작</span>':''}<button type="button" class="rf-video-play" data-action="${action}" data-ex="${esc(e.id)}" aria-label="${esc(e.name)} 자세 영상 열기" title="유튜브에서 자세 영상 확인"><span class="rf-video-triangle">▶</span></button></div>`;
 }
 
 function notify(message){toastMessage=message;const t=el('toast');if(!t)return;t.textContent=message;t.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('visible'),3400)}
@@ -964,7 +1057,7 @@ function catalog(){
   const c=e||{name:catalogSearch||'',muscle:'가슴',equipment:'machine',type:'weight',description:'',tip:'',videoUrl:'',imageUrl:''};
   body=`<div class="catalog-inner-scroll"><p class="setting-note">${locked?'기본 종목은 과거 운동 기록 보호를 위해 이름과 설명, 영상·이미지 주소만 수정할 수 있습니다.':'종목을 추가하면 요일별 루틴과 운동 기록에서 사용할 수 있습니다.'}</p><label class="catalog-form-label">종목 이름<input id="exercise-name" value="${esc(c.name)}" maxlength="65" placeholder="예: 스미스머신 벤치프레스"/></label><div class="catalog-form-grid"><label class="catalog-form-label">운동 부위<select id="exercise-muscle" ${locked?'disabled':''}>${all.filter(x=>x!=='전체').map(x=>`<option value="${x}" ${c.muscle===x?'selected':''}>${x}</option>`).join('')}</select></label><label class="catalog-form-label">운동 기구<select id="exercise-equip" ${locked?'disabled':''}>${Object.keys(EQUIP_LABEL).map(x=>`<option value="${x}" ${c.equipment===x?'selected':''}>${EQUIP_LABEL[x]}</option>`).join('')}</select></label></div><label class="catalog-form-label">기록 방식<select id="exercise-type" ${locked?'disabled':''}><option value="weight" ${c.type==='weight'?'selected':''}>무게(kg) + 횟수</option><option value="body" ${c.type==='body'?'selected':''}>횟수</option><option value="time" ${c.type==='time'?'selected':''}>시간(초)</option></select></label><label class="catalog-form-label">운동 설명<textarea id="exercise-desc" rows="3" maxlength="600" placeholder="동작과 목표 부위 설명">${esc(c.description)}</textarea></label><label class="catalog-form-label">자세 팁 및 주의사항<textarea id="exercise-tip" rows="3" maxlength="600" placeholder="안전하게 운동하는 방법">${esc(c.tip)}</textarea></label><label class="catalog-form-label">유튜브 영상 주소 (선택)<input id="exercise-video" type="url" value="${esc(c.videoUrl||'')}" maxlength="500" placeholder="https://www.youtube.com/watch?v=..."/></label><label class="catalog-form-label">실제 운동 이미지 주소 (선택, https)<input id="exercise-image" type="url" value="${esc(c.imageUrl||'')}" maxlength="700" placeholder="https://.../image.jpg"/></label><p class="setting-note">이미지가 없으면 앱에 있는 운동 이미지 또는 그림이 표시됩니다. 외부 이미지는 인터넷이 연결되어야 보일 수 있습니다.</p></div><div class="catalog-sticky"><button class="secondary-btn" data-action="catalog-back">뒤로</button><button class="primary-btn" data-action="save-exercise">${I('check',16)} 저장</button></div>`;
  }
- return `<div class="modal-backdrop" data-action="close-catalog"><section class="modal-sheet" role="dialog" aria-modal="true" aria-label="운동 선택" data-stop-close="1"><div class="sheet-grabber"></div><div class="sheet-header"><div><span class="overline">EXERCISE LIBRARY 1.6.3</span><h2>${heading}</h2></div><button class="round-button" data-action="close-catalog" aria-label="닫기">${I('close',20)}</button></div>${body}</section></div>`;
+ return `<div class="modal-backdrop" data-action="close-catalog"><section class="modal-sheet" role="dialog" aria-modal="true" aria-label="운동 선택" data-stop-close="1"><div class="sheet-grabber"></div><div class="sheet-header"><div><span class="overline">EXERCISE LIBRARY 1.6.8</span><h2>${heading}</h2></div><button class="round-button" data-action="close-catalog" aria-label="닫기">${I('close',20)}</button></div>${body}</section></div>`;
 }
 function renderCatalogItems(filtered){return filtered.length?filtered.map(e=>`<div class="catalog-exercise"><button class="catalog-item-main" data-action="exercise-detail" data-ex="${esc(e.id)}" aria-label="${esc(e.name)} 정보">${img(e.id,'catalog-art')}<span class="catalog-info"><strong>${esc(e.name)}${state.customExercises.some(x=>x.id===e.id)?' · 내 종목':''}</strong><span>${esc(e.muscle)} · ${esc(EQUIP_LABEL[e.equipment]||'기타')}</span><small>${esc(e.description)}</small><em class="rf-catalog-note">${rfVerifiedMotion(e)?'동작 예시':'근육 부위 참고도 · 영상으로 자세 확인'}</em></span></button><div class="catalog-side"><button class="catalog-icon-btn" data-action="youtube-search" data-ex="${esc(e.id)}" aria-label="${esc(e.name)} 유튜브 검색">${I('play',15)}</button><button class="catalog-icon-btn plus" data-action="${workoutPickerMode?'choose-workout-exercise':'add-routine'}" data-ex="${esc(e.id)}" aria-label="${esc(e.name)} ${workoutPickerMode?'운동 선택':'루틴 추가'}">${I('plus',19)}</button></div></div>`).join(''):`<div class="empty-small">일치하는 운동이 없습니다.<p>검색어를 달리 입력하거나 유튜브 검색으로 동작을 찾아보고 직접 종목을 추가해 보세요.</p><button class="secondary-btn" data-action="youtube-search" data-q="${esc(catalogSearch)}">유튜브 검색</button></div>`}
 function saveExercise(){

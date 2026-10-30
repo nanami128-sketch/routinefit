@@ -1,5 +1,5 @@
-/* v1.6.7 – network-first HTML, offline fallback; caches are not user data. */
-const CACHE='routinefit-1.6.7-core';
+/* v1.6.8 – network-first HTML, offline fallback; caches are not user data. */
+const CACHE='routinefit-1.6.8-core';
 const CORE=['./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('routinefit-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
