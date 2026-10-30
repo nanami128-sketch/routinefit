@@ -8,7 +8,7 @@ def webRoot = rootProject.projectDir.parentFile
 def webAssetsDirectory = layout.buildDirectory.dir('generated/routinefit-web')
 def syncRoutineFitWeb = tasks.register('syncRoutineFitWeb', Sync) {
     from(webRoot) {
-        include '*.html', '*.js', '*.css', '*.webmanifest', '*.svg', '*.png'
+        include '*.html', '*.js', '*.css', '*.webmanifest', '*.svg', '*.png', 'media/**'
     }
     into(webAssetsDirectory)
 }
@@ -21,14 +21,14 @@ def hasSigning = keyPath && storePass && keyPass && signingAlias
 
 android {
     namespace 'com.nanami128sketch.routinefit'
-    compileSdk 35
+    compileSdk 36
 
     defaultConfig {
         applicationId 'com.nanami128sketch.routinefit'
         minSdk 24
-        targetSdk 35
-        versionCode 2
-        versionName '1.5.0'
+        targetSdk 36
+        versionCode 167
+        versionName '1.6.7'
     }
 
     sourceSets {

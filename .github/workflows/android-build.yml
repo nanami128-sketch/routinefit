@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'android/**'
+      - 'media/**'
       - '.github/workflows/android-build.yml'
       - '*.html'
       - '*.js'
@@ -15,6 +16,7 @@ on:
   pull_request:
     paths:
       - 'android/**'
+      - 'media/**'
       - '.github/workflows/android-build.yml'
       - '*.html'
       - '*.js'
@@ -45,9 +47,9 @@ jobs:
           java-version: '17'
       - uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '8.11.1'
+          gradle-version: '8.13'
       - name: Install Android SDK 35
-        run: $(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager -print -quit) 'platforms;android-35' 'build-tools;35.0.0'
+        run: $(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager -print -quit) 'platforms;android-36' 'build-tools;36.0.0'
       - name: Validate inline JavaScript before APK build
         run: |
           python3 -c 'import pathlib,re; h=pathlib.Path("index.html").read_text(encoding="utf-8"); s=re.findall(r"<script[^>]*>(.*?)</script>",h,re.S|re.I); assert len(s)>=2, "Missing embedded RoutineFit JS"; [pathlib.Path(f"/tmp/routinefit-inline-{i}.js").write_text(c,encoding="utf-8") for i,c in enumerate(s)]'
@@ -79,9 +81,9 @@ jobs:
           java-version: '17'
       - uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '8.11.1'
+          gradle-version: '8.13'
       - name: Install Android SDK 35
-        run: $(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager -print -quit) 'platforms;android-35' 'build-tools;35.0.0'
+        run: $(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager -print -quit) 'platforms;android-36' 'build-tools;36.0.0'
       - name: Restore signing key from GitHub Actions secrets
         env:
           KEYSTORE_B64: ${{ secrets.ROUTINEFIT_KEYSTORE_BASE64 }}

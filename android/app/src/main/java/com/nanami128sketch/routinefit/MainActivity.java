@@ -125,6 +125,12 @@ public final class MainActivity extends Activity {
     }
 
     private final class NativeBridge {
+        @JavascriptInterface public void setKeepScreenOn(boolean enabled) {
+            runOnUiThread(() -> {
+                if (enabled) getWindow().addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+                else getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+            });
+        }
         @JavascriptInterface public void saveBackup(String json) {
             if (json == null || json.length() > MAX_BACKUP_LENGTH) {
                 toast("백업 파일이 너무 큽니다.");
