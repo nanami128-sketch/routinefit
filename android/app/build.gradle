@@ -27,8 +27,8 @@ android {
         applicationId 'com.nanami128sketch.routinefit'
         minSdk 24
         targetSdk 36
-        versionCode 169
-        versionName '1.6.9'
+        versionCode 170
+        versionName '1.7.0'
     }
 
     sourceSets {
