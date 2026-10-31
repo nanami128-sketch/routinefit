@@ -1,0 +1,78 @@
+name: RoutineFit 1.7.4 Original Image Batch (review only)
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Audit is free; generate uses paid OpenAI API for up to 10 images
+        type: choice
+        options: [audit, generate]
+        default: audit
+        required: true
+  schedule:
+    - cron: '17 */4 * * *'
+
+permissions:
+  contents: write
+concurrency:
+  group: rf174-original-exercise-images
+  cancel-in-progress: false
+
+jobs:
+  batch:
+    if: github.event_name == 'workflow_dispatch' || vars.RF174_AUTO_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image validation dependency
+        run: python -m pip install 'Pillow>=11,<13'
+      - name: Prepare isolated review branch (never modify main or app data)
+        shell: bash
+        run: |
+          git config user.name 'routinefit-image-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git ls-remote --exit-code origin refs/heads/rf174-image-review >/dev/null 2>&1; then
+            git fetch origin rf174-image-review
+            git switch -C rf174-image-review origin/rf174-image-review
+          else
+            git switch -c rf174-image-review
+          fi
+          git checkout origin/main -- automation/rf174/catalog.json automation/rf174/generate_batch.py
+      - name: Create next 10 original exercise images, or audit without billing
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          RF174_IMAGE_MODEL: ${{ vars.RF174_IMAGE_MODEL || 'gpt-image-1-mini' }}
+          MANUAL_MODE: ${{ inputs.mode }}
+          EVENT_TYPE: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_TYPE" = "schedule" ]; then mode=generate; else mode="${MANUAL_MODE:-audit}"; fi
+          python automation/rf174/generate_batch.py --mode "$mode" --batch-size 10
+      - name: Commit batch in review branch only
+        shell: bash
+        run: |
+          git add -A -- automation/rf174/catalog.json automation/rf174/generate_batch.py
+          if [ -f media/rf174-review/progress.json ]; then git add -A -- media/rf174-review; fi
+          if git diff --cached --quiet; then
+            echo 'No new artwork to commit.'
+          else
+            git commit -m 'rf174: save original exercise image batch for review'
+            git push origin HEAD:rf174-image-review
+          fi
+      - name: Upload review contact sheet and status
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rf174-review-latest
+          path: |
+            media/rf174-review/latest-contact-sheet.webp
+            media/rf174-review/latest-batch.json
+            media/rf174-review/gallery.html
+            media/rf174-review/progress.json
+          if-no-files-found: ignore
+          retention-days: 30
