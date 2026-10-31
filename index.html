@@ -309,6 +309,22 @@ body.rf-editing-set #main-content{padding-bottom:max(58vh,320px)!important}
 body.rf-editing-set .set-entry{scroll-margin-top:80px;scroll-margin-bottom:34px}
 body.rf-editing-set .entry-input-label input:focus{outline:2px solid #b8f36b!important;outline-offset:1px}
 </style>
+
+<style id="routinefit-v171-keyboard-dock-css">
+#rf-v171-dock{position:fixed;z-index:9999;box-sizing:border-box;margin:0 auto;background:#10252e;color:#f0f8f3;border:2px solid #aef267;border-radius:15px 15px 10px 10px;box-shadow:0 0 0 9999px rgba(3,10,14,.16),0 -8px 24px rgba(0,0,0,.32);padding:9px 10px 8px;overflow:auto;overscroll-behavior:contain;touch-action:pan-y}
+#rf-v171-dock .rf-dock-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:7px;font-size:12px}
+#rf-v171-dock .rf-dock-head strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#rf-v171-dock .rf-dock-x{border:0;background:#233c46;border-radius:8px;padding:6px 10px;color:#e0edf0;font-size:11px;flex:none}
+#rf-v171-dock .rf-dock-fields{display:flex;align-items:flex-end;gap:7px}
+#rf-v171-dock label{display:flex;flex:1;min-width:0;flex-direction:column;gap:4px;font-size:11px;color:#c6d6d8}
+#rf-v171-dock input{width:100%;height:43px;min-width:0;font-size:18px!important;font-weight:800;text-align:center;border:1px solid #aef267;border-radius:8px;background:#071a23;color:#fff;box-sizing:border-box;outline:none}
+#rf-v171-dock input:focus{outline:2px solid #aef267;outline-offset:1px}
+#rf-v171-dock .rf-dock-record{height:43px;white-space:nowrap;border-radius:8px;padding:0 16px;background:#b8f56c;color:#15261c;font-weight:900;font-size:13px}
+#rf-v171-dock .rf-dock-help{display:block;margin-top:6px;color:#a0b6bd;font-size:9px}
+body.rf-v171-dock-open .bottom-nav,body.rf-v171-dock-open .timer-floating{visibility:hidden!important;pointer-events:none!important}
+@media(max-width:370px){#rf-v171-dock .rf-dock-record{padding:0 9px;font-size:12px}}
+</style>
+
 </head>
 <body>
 <div id="app"><div style="padding:32px;color:#b8f36b">루틴핏을 시작하는 중입니다.</div></div>
@@ -320,7 +336,7 @@ window.ROUTINEFIT_ASSETS={"assisted-pull-up":"data:image/svg+xml;base64,PHN2ZyB4
 /* RoutineFit v1.5.1 - offline-first exercise journal, exercise catalog expanded from independently authored sources. */
 (() => {
 'use strict';
-const VERSION='1.7.0', STORE_KEY='routinefit_v1_store', SNAP_KEY='routinefit_v13_snapshot', HISTORY_KEY='routinefit_v13_history';
+const VERSION='1.7.1', STORE_KEY='routinefit_v1_store', SNAP_KEY='routinefit_v13_snapshot', HISTORY_KEY='routinefit_v13_history';
 const FOOD_LIBRARY=[{"id":"rice","name":"흰쌀밥","kcal100":130,"cat":"곡류"},{"id":"brown","name":"현미밥","kcal100":140,"cat":"곡류"},{"id":"oat","name":"오트밀 건조","kcal100":380,"cat":"곡류"},{"id":"bread","name":"식빵","kcal100":260,"cat":"곡류"},{"id":"sweetpotato","name":"고구마 찐 것","kcal100":130,"cat":"곡류"},{"id":"potato","name":"감자 찐 것","kcal100":80,"cat":"곡류"},{"id":"egg","name":"달걀 삶은 것","kcal100":150,"cat":"단백질"},{"id":"chicken","name":"닭가슴살 조리","kcal100":165,"cat":"단백질"},{"id":"beef","name":"소고기 살코기 조리","kcal100":215,"cat":"단백질"},{"id":"pork","name":"돼지고기 등심 조리","kcal100":210,"cat":"단백질"},{"id":"tofu","name":"두부","kcal100":85,"cat":"단백질"},{"id":"salmon","name":"연어","kcal100":205,"cat":"단백질"},{"id":"tuna","name":"참치 수분","kcal100":120,"cat":"단백질"},{"id":"shrimp","name":"새우","kcal100":100,"cat":"단백질"},{"id":"milk","name":"우유 일반","kcal100":60,"cat":"유제품"},{"id":"soy","name":"무가당 두유","kcal100":45,"cat":"음료"},{"id":"yogurt","name":"플레인 요거트","kcal100":75,"cat":"유제품"},{"id":"cheese","name":"슬라이스 치즈","kcal100":320,"cat":"유제품"},{"id":"banana","name":"바나나","kcal100":89,"cat":"과일"},{"id":"apple","name":"사과","kcal100":52,"cat":"과일"},{"id":"orange","name":"오렌지","kcal100":47,"cat":"과일"},{"id":"strawberry","name":"딸기","kcal100":33,"cat":"과일"},{"id":"avocado","name":"아보카도","kcal100":160,"cat":"과일"},{"id":"tomato","name":"토마토","kcal100":18,"cat":"채소"},{"id":"broccoli","name":"브로콜리","kcal100":35,"cat":"채소"},{"id":"cucumber","name":"오이","kcal100":15,"cat":"채소"},{"id":"almond","name":"아몬드","kcal100":580,"cat":"견과"},{"id":"walnut","name":"호두","kcal100":650,"cat":"견과"},{"id":"peanutbutter","name":"땅콩버터","kcal100":590,"cat":"견과"},{"id":"oliveoil","name":"올리브유","kcal100":884,"cat":"기타"},{"id":"kimchi","name":"배추김치","kcal100":25,"cat":"반찬"},{"id":"kimchirice","name":"김치볶음밥","kcal100":170,"cat":"한식"},{"id":"bibimbap","name":"비빔밥","kcal100":150,"cat":"한식"},{"id":"bulgogi","name":"불고기","kcal100":190,"cat":"한식"},{"id":"doenjang","name":"된장찌개","kcal100":65,"cat":"한식"},{"id":"kimchistew","name":"김치찌개","kcal100":80,"cat":"한식"},{"id":"seolleongtang","name":"설렁탕","kcal100":75,"cat":"한식"},{"id":"samgyetang","name":"삼계탕","kcal100":95,"cat":"한식"},{"id":"gimbap","name":"김밥","kcal100":175,"cat":"한식"},{"id":"tteokbokki","name":"떡볶이","kcal100":180,"cat":"간식"},{"id":"ramyeon","name":"라면 조리 후 100g (국물 포함 추정)","kcal100":110,"cat":"면류"},{"id":"udon","name":"우동 조리","kcal100":85,"cat":"면류"},{"id":"spaghetti","name":"파스타 조리","kcal100":155,"cat":"면류"},{"id":"pizza","name":"피자","kcal100":260,"cat":"패스트푸드"},{"id":"hamburger","name":"햄버거","kcal100":250,"cat":"패스트푸드"},{"id":"friedchicken","name":"치킨 튀김","kcal100":270,"cat":"패스트푸드"},{"id":"fries","name":"감자튀김","kcal100":300,"cat":"패스트푸드"},{"id":"icedamericano","name":"아메리카노 무가당","kcal100":2,"cat":"음료"},{"id":"latte","name":"카페라떼 무가당","kcal100":45,"cat":"음료"},{"id":"cola","name":"콜라","kcal100":42,"cat":"음료"},{"id":"juice","name":"오렌지 주스","kcal100":45,"cat":"음료"},{"id":"protein","name":"프로틴 파우더","kcal100":390,"cat":"보충식"},{"id":"granola","name":"그래놀라","kcal100":460,"cat":"간식"},{"id":"ricecake","name":"백설기 떡","kcal100":230,"cat":"간식"},{"id":"chocolate","name":"밀크 초콜릿","kcal100":535,"cat":"간식"},{"id":"icecream","name":"아이스크림","kcal100":210,"cat":"간식"},{"id":"nongshim-shin-bag","name":"농심 신라면 봉지 1개 (120g)","kcal100":416.67,"cat":"봉지라면","portionG":120,"portionKcal":500,"portionLabel":"1봉","source":"농심 공식 제품정보"},{"id":"nongshim-shin-gold","name":"농심 신라면 골드 봉지 1개 (125g)","kcal100":432,"cat":"봉지라면","portionG":125,"portionKcal":540,"portionLabel":"1봉","source":"농심 공식 제품정보"},{"id":"ottogi-jin-spicy","name":"오뚜기 진라면 매운맛 봉지 1개 (120g)","kcal100":425,"cat":"봉지라면","portionG":120,"portionKcal":510,"portionLabel":"1봉","source":"오뚜기 공식 직영 상품 설명"},{"id":"nongshim-neoguri-spicy","name":"농심 얼큰한 너구리 봉지 1개 (120g)","kcal100":408.33,"cat":"봉지라면","portionG":120,"portionKcal":490,"portionLabel":"1봉","source":"농심 공식 제품정보"},{"id":"nongshim-shin-rose","name":"농심 신라면 로제 봉지 1개 (134g)","kcal100":421.64,"cat":"봉지라면","portionG":134,"portionKcal":565,"portionLabel":"1봉","source":"농심 공식 제품정보"}];
 /* Independently authored variations of exercise families discussed in FITFLEX clips.
    These are independent descriptions; only source-confirmed generic movements are tagged. */
@@ -816,7 +832,31 @@ function rfV170FallbackSvg(e){
  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240"><defs><radialGradient id="bg"><stop stop-color="#26414c"/><stop offset="1" stop-color="#09141d"/></radialGradient></defs><rect width="320" height="240" rx="16" fill="url(#bg)"/>${structures[pose]||structures.body}<text x="160" y="230" font-size="13" text-anchor="middle" fill="#c6d8d0" font-family="Arial,sans-serif">${description}</text></svg>`;
 }
 
+
+// v1.7.1: curated, newly generated original anatomical artwork; do not copy third-party images.
+// Strict exercise-name mappings avoid using a plausible but incorrect motion for another exercise.
+const RF_V171_EXACT={
+ 'v싯홀드':'v171_v_sit_hold.webp','브이싯홀드':'v171_v_sit_hold.webp','v시트홀드':'v171_v_sit_hold.webp',
+ '홀로우락':'v171_hollow_rock.webp','홀로우바디락':'v171_hollow_rock.webp','할로우락':'v171_hollow_rock.webp',
+ '홀로우홀드':'v171_hollow_hold.webp','홀로우바디홀드':'v171_hollow_hold.webp','할로우홀드':'v171_hollow_hold.webp',
+ '슈트케이스홀드':'v171_suitcase_hold.webp','수트케이스홀드':'v171_suitcase_hold.webp',
+ '라잉트라이셉스익스텐션':'v171_lying_triceps_extension.webp','라잉트라이셉익스텐션':'v171_lying_triceps_extension.webp',
+ '스컬크러셔':'v171_lying_triceps_extension.webp','스컬크러셔바벨':'v171_lying_triceps_extension.webp',
+ '리어델트플라이':'v171_rear_delt_fly.webp','벤트오버덤벨리어델트플라이':'v171_rear_delt_fly.webp',
+ '원암덤벨로우':'v171_one_arm_dumbbell_row.webp','원암덤벨로우벤치':'v171_one_arm_dumbbell_row.webp',
+ '와이드그립랫풀다운':'v171_wide_lat_pulldown.webp','와이드랫풀다운':'v171_wide_lat_pulldown.webp',
+ '인클라인덤벨프레스':'v171_incline_dumbbell_press.webp','덤벨인클라인프레스':'v171_incline_dumbbell_press.webp',
+ '벽푸시업':'v171_wall_pushup.webp','월푸시업':'v171_wall_pushup.webp',
+ '스미스머신인클라인벤치프레스':'v171_smith_incline_bench.webp',
+ '밴드체스트프레스':'v171_band_chest_press.webp','밴드스퀴즈프레스':'v171_band_chest_press.webp'
+};
+function rfV171Pose(e){
+ const key=rfV168Norm(e?.name),file=RF_V171_EXACT[key];
+ return file?{path:'./media/exercise/'+file,exact:true}:null;
+}
+
 function rfV168Pose(e){
+ const v171=rfV171Pose(e);if(v171)return v171;
  if(!e)return null;
  const v170=rfV170Pose(e);if(v170)return v170;
  const norm=rfV168Norm(e.name),key=RF_V168_EXACT[norm];
@@ -1167,9 +1207,9 @@ function catalog(){
   const c=e||{name:catalogSearch||'',muscle:'가슴',equipment:'machine',type:'weight',description:'',tip:'',videoUrl:'',imageUrl:''};
   body=`<div class="catalog-inner-scroll"><p class="setting-note">${locked?'기본 종목은 과거 운동 기록 보호를 위해 이름과 설명, 영상·이미지 주소만 수정할 수 있습니다.':'종목을 추가하면 요일별 루틴과 운동 기록에서 사용할 수 있습니다.'}</p><label class="catalog-form-label">종목 이름<input id="exercise-name" value="${esc(c.name)}" maxlength="65" placeholder="예: 스미스머신 벤치프레스"/></label><div class="catalog-form-grid"><label class="catalog-form-label">운동 부위<select id="exercise-muscle" ${locked?'disabled':''}>${all.filter(x=>x!=='전체').map(x=>`<option value="${x}" ${c.muscle===x?'selected':''}>${x}</option>`).join('')}</select></label><label class="catalog-form-label">운동 기구<select id="exercise-equip" ${locked?'disabled':''}>${Object.keys(EQUIP_LABEL).map(x=>`<option value="${x}" ${c.equipment===x?'selected':''}>${EQUIP_LABEL[x]}</option>`).join('')}</select></label></div><label class="catalog-form-label">기록 방식<select id="exercise-type" ${locked?'disabled':''}><option value="weight" ${c.type==='weight'?'selected':''}>무게(kg) + 횟수</option><option value="body" ${c.type==='body'?'selected':''}>횟수</option><option value="time" ${c.type==='time'?'selected':''}>시간(초)</option></select></label><label class="catalog-form-label">운동 설명<textarea id="exercise-desc" rows="3" maxlength="600" placeholder="동작과 목표 부위 설명">${esc(c.description)}</textarea></label><label class="catalog-form-label">자세 팁 및 주의사항<textarea id="exercise-tip" rows="3" maxlength="600" placeholder="안전하게 운동하는 방법">${esc(c.tip)}</textarea></label><label class="catalog-form-label">유튜브 영상 주소 (선택)<input id="exercise-video" type="url" value="${esc(c.videoUrl||'')}" maxlength="500" placeholder="https://www.youtube.com/watch?v=..."/></label><label class="catalog-form-label">실제 운동 이미지 주소 (선택, https)<input id="exercise-image" type="url" value="${esc(c.imageUrl||'')}" maxlength="700" placeholder="https://.../image.jpg"/></label><p class="setting-note">이미지가 없으면 앱에 있는 운동 이미지 또는 그림이 표시됩니다. 외부 이미지는 인터넷이 연결되어야 보일 수 있습니다.</p></div><div class="catalog-sticky"><button class="secondary-btn" data-action="catalog-back">뒤로</button><button class="primary-btn" data-action="save-exercise">${I('check',16)} 저장</button></div>`;
  }
- return `<div class="modal-backdrop" data-action="close-catalog"><section class="modal-sheet" role="dialog" aria-modal="true" aria-label="운동 선택" data-stop-close="1"><div class="sheet-grabber"></div><div class="sheet-header"><div><span class="overline">EXERCISE LIBRARY 1.7.0</span><h2>${heading}</h2></div><button class="round-button" data-action="close-catalog" aria-label="닫기">${I('close',20)}</button></div>${body}</section></div>`;
+ return `<div class="modal-backdrop" data-action="close-catalog"><section class="modal-sheet" role="dialog" aria-modal="true" aria-label="운동 선택" data-stop-close="1"><div class="sheet-grabber"></div><div class="sheet-header"><div><span class="overline">EXERCISE LIBRARY 1.7.1</span><h2>${heading}</h2></div><button class="round-button" data-action="close-catalog" aria-label="닫기">${I('close',20)}</button></div>${body}</section></div>`;
 }
-function renderCatalogItems(filtered){return filtered.length?filtered.map(e=>`<div class="catalog-exercise"><button class="catalog-item-main" data-action="exercise-detail" data-ex="${esc(e.id)}" aria-label="${esc(e.name)} 정보">${img(e.id,'catalog-art')}<span class="catalog-info"><strong>${esc(e.name)}${state.customExercises.some(x=>x.id===e.id)?' · 내 종목':''}</strong><span>${esc(e.muscle)} · ${esc(EQUIP_LABEL[e.equipment]||'기타')}</span><small>${esc(e.description)}</small><em class="rf-catalog-note">${rfVerifiedMotion(e)?'동작 예시':'근육 부위 참고도 · 영상으로 자세 확인'}</em></span></button><div class="catalog-side"><button class="catalog-icon-btn" data-action="youtube-search" data-ex="${esc(e.id)}" aria-label="${esc(e.name)} 유튜브 검색">${I('play',15)}</button><button class="catalog-icon-btn plus" data-action="${workoutPickerMode?'choose-workout-exercise':'add-routine'}" data-ex="${esc(e.id)}" aria-label="${esc(e.name)} ${workoutPickerMode?'운동 선택':'루틴 추가'}">${I('plus',19)}</button></div></div>`).join(''):`<div class="empty-small">일치하는 운동이 없습니다.<p>검색어를 달리 입력하거나 유튜브 검색으로 동작을 찾아보고 직접 종목을 추가해 보세요.</p><button class="secondary-btn" data-action="youtube-search" data-q="${esc(catalogSearch)}">유튜브 검색</button></div>`}
+function renderCatalogItems(filtered){return filtered.length?filtered.map(e=>`<div class="catalog-exercise"><button class="catalog-item-main" data-action="exercise-detail" data-ex="${esc(e.id)}" aria-label="${esc(e.name)} 정보">${img(e.id,'catalog-art')}<span class="catalog-info"><strong>${esc(e.name)}${state.customExercises.some(x=>x.id===e.id)?' · 내 종목':''}</strong><span>${esc(e.muscle)} · ${esc(EQUIP_LABEL[e.equipment]||'기타')}</span><small>${esc(e.description)}</small><em class="rf-catalog-note">${rfV168Pose(e)?'동작 자세 참고 · 영상으로 세부 동작 확인':rfVerifiedMotion(e)?'기존 동작 예시':'운동 유형 참고 그림 · 영상으로 자세 확인'}</em></span></button><div class="catalog-side"><button class="catalog-icon-btn" data-action="youtube-search" data-ex="${esc(e.id)}" aria-label="${esc(e.name)} 유튜브 검색">${I('play',15)}</button><button class="catalog-icon-btn plus" data-action="${workoutPickerMode?'choose-workout-exercise':'add-routine'}" data-ex="${esc(e.id)}" aria-label="${esc(e.name)} ${workoutPickerMode?'운동 선택':'루틴 추가'}">${I('plus',19)}</button></div></div>`).join(''):`<div class="empty-small">일치하는 운동이 없습니다.<p>검색어를 달리 입력하거나 유튜브 검색으로 동작을 찾아보고 직접 종목을 추가해 보세요.</p><button class="secondary-btn" data-action="youtube-search" data-q="${esc(catalogSearch)}">유튜브 검색</button></div>`}
 function saveExercise(){
  const id=catalogSelected,existing=id?byId(id):null;
  const name=(el('exercise-name')?.value||'').trim(),muscle=el('exercise-muscle')?.value,equipment=el('exercise-equip')?.value,type=el('exercise-type')?.value,description=(el('exercise-desc')?.value||'').trim(),tip=(el('exercise-tip')?.value||'').trim(),videoRaw=el('exercise-video')?.value?.trim()||'',imageRaw=el('exercise-image')?.value?.trim()||'';
@@ -1316,43 +1356,94 @@ function handleClick(ev){const b=ev.target.closest('[data-action]');if(!b)return
 }
 function handleChange(ev){const t=ev.target,f=t.dataset.field;if(f==='routine-rest'){const item=routinesFor(selectedDay)[Number(t.dataset.i)];if(!item)return;const n=Number(t.value);item.restSec=Number.isInteger(n)?Math.max(0,Math.min(3600,n)):90;save();render()}if(f==='active-rest'){const item=state.active?.routineSnapshot.find(x=>x.exerciseId===t.dataset.ex);if(!item)return;let n=Number(t.value);item.restSec=Number.isInteger(n)?Math.max(0,Math.min(3600,n)):90;save();render()}if(t.id==='workout-duration'&&state.active){state.active.durationMin=Math.max(1,Math.min(1440,Number(t.value)||1));save()}if(t.id==='workout-met'&&state.active){state.active.met=Number(t.value);save()}if(f==='food-day'){foodDate=t.value||localISO();foodSearch='';render()}if(f==='sound'||f==='vibration'||f==='countdown'||f==='keepAwake'){state.settings[f]=t.checked;if(f==='sound'&&t.checked)unlockWorkoutAudio();if(f==='keepAwake')syncScreenWakeLock();save();if(f==='keepAwake')render()}if(t.id==='import-file')importBackup(t.files?.[0])}
 function handleInput(ev){const t=ev.target,f=t.dataset.field;if(f&&f.startsWith('draft-')){const d=ensureDraft(t.dataset.ex);d[f.slice(6)]=t.value;}if(t.id==='food-search'){foodSearch=t.value;const list=el('food-search-list');if(list)list.innerHTML=foodItems()}if(t.id==='food-grams'){const f=FOOD_LIBRARY.find(x=>x.id===selectedFood);const kcal=el('food-kcal');if(f&&kcal&&t.value)kcal.value=f.portionG&&Number(t.value)===f.portionG?f.portionKcal:Math.round(Number(t.value)*f.kcal100/100)}if(t.id==='catalog-search'){catalogSearch=t.value;const matched=allExercises().filter(x=>(catalogFilter==='전체'||x.muscle===catalogFilter)&&(catalogEquip==='전체'||x.equipment===catalogEquip)&&(`${x.name} ${(x.aliases||[]).join(' ')} ${x.hwangReference?'황철순':''} ${x.muscle} ${EQUIP_LABEL[x.equipment]||''} ${x.description||''}`).toLocaleLowerCase().includes(catalogSearch.toLocaleLowerCase()));const list=el('catalog-list');if(list)list.innerHTML=renderCatalogItems(matched)}}
-// v1.6.9: keyboard-aware set editor for Samsung/Android WebView.
-function rfActiveDraftInput(){
- const a=document.activeElement;
- return a instanceof HTMLInputElement&&a.matches('.logger-card .set-entry input[data-field^="draft-"]')?a:null;
+
+// v1.7.1: Keyboard-safe set editor. Dock is positioned within the *visual viewport*.
+// Original draft state and addSet handler are preserved, including recent-set prefilling.
+let rfDock=null,rfDockExercise=null,rfDockOpening=false;
+function rfDockFocusField(fieldName){
+ const field=rfDock?.querySelector('input[data-rf-dock-field="'+fieldName+'"]');
+ if(field){field.focus({preventScroll:true});field.select?.()}
 }
-function rfMoveFocusedDraftIntoView(){
- const field=rfActiveDraftInput();if(!field)return;
- const viewport=window.visualViewport;
- const top=viewport?viewport.offsetTop:0;
- const bottom=viewport?viewport.offsetTop+viewport.height:window.innerHeight;
- const r=field.getBoundingClientRect();
- const safeTop=top+85,safeBottom=bottom-110;
- if(r.bottom>safeBottom)window.scrollBy(0,Math.ceil(r.bottom-safeBottom));
- else if(r.top<safeTop)window.scrollBy(0,Math.floor(r.top-safeTop));
+function rfDockPosition(){
+ if(!rfDock)return;
+ const v=window.visualViewport;
+ const docH=document.documentElement.clientHeight;
+ const availableBottom=v ? Math.max(0,docH-(v.offsetTop+v.height)):0;
+ const availableLeft=v?v.offsetLeft:0;
+ const width=v?v.width:window.innerWidth;
+ rfDock.style.bottom=Math.round(availableBottom+Math.max(6,Math.min(12,availableBottom?8:10)))+'px';
+ rfDock.style.left=Math.round(availableLeft)+'px';
+ rfDock.style.width=Math.min(width,480)+'px';
+ rfDock.style.maxHeight=Math.max(120,Math.round((v?v.height:window.innerHeight)-16))+'px';
 }
-function rfKeepDraftVisibleLater(){
- requestAnimationFrame(rfMoveFocusedDraftIntoView);
- setTimeout(rfMoveFocusedDraftIntoView,110);
- setTimeout(rfMoveFocusedDraftIntoView,310);
- setTimeout(rfMoveFocusedDraftIntoView,550);
+function rfDockClose(){
+ if(!rfDock)return;
+ const had=rfDock;
+ rfDock=null;rfDockExercise=null;
+ if(had.contains(document.activeElement))document.activeElement.blur();
+ had.remove();document.body.classList.remove('rf-v171-dock-open');
 }
-document.addEventListener('focusin',event=>{
- if(event.target?.matches?.('.logger-card .set-entry input[data-field^="draft-"]')){
-  document.body.classList.add('rf-editing-set');rfKeepDraftVisibleLater();
- }
-});
-document.addEventListener('focusout',()=>{
- setTimeout(()=>{
-  if(!rfActiveDraftInput())document.body.classList.remove('rf-editing-set');
-  else rfKeepDraftVisibleLater();
- },80);
-});
+function rfDockOpen(exId,fieldName){
+ const ex=byId(exId),active=state.active;
+ if(!active||!ex)return;
+ if(rfDock&&rfDockExercise===exId){rfDockFocusField(fieldName);return;}
+ rfDockClose();
+ const d=ensureDraft(exId);
+ const fields=ex.type==='time'?[['seconds','시간 (초)','numeric']]:ex.type==='body'?[['reps','횟수 (회)','numeric']]:[['weight','무게 (kg)','decimal'],['reps','횟수 (회)','numeric']];
+ const clean=s=>String(s).replace(/[&<>"']/g,'');
+ rfDock=document.createElement('div');rfDock.id='rf-v171-dock';rfDock.setAttribute('role','group');
+ rfDock.setAttribute('aria-label',ex.name+' 세트 입력');rfDockExercise=exId;
+ rfDock.innerHTML=`<div class="rf-dock-head"><strong>${clean(ex.name)} · ${active.entries.find(z=>z.exerciseId===exId)?.sets.length+1||1}세트</strong><button type="button" class="rf-dock-x" data-rf-dock-close aria-label="입력창 닫기">닫기 ✕</button></div><div class="rf-dock-fields">${fields.map(([k,label,mode],i)=>`<label>${label}<input type="number" data-rf-dock-field="${k}" inputmode="${mode}" enterkeyhint="${i===fields.length-1?'done':'next'}" min="0" ${k==='weight'?'step="0.5"':'step="1"'} value="${clean(d[k])}"></label>`).join('')}<button class="rf-dock-record" type="button">✓ 기록</button></div><small class="rf-dock-help">키보드 위에서 입력 · 기존 운동 기록 그대로 유지</small>`;
+ rfDock.querySelectorAll('input[data-rf-dock-field]').forEach(inp=>{
+  inp.addEventListener('input',()=>{
+   const field=inp.dataset.rfDockField;
+   ensureDraft(exId)[field]=inp.value;
+   const original=document.querySelector('.logger-card .set-entry input[data-field="draft-'+field+'"][data-ex="'+CSS.escape(exId)+'"]');
+   if(original)original.value=inp.value;
+  });
+  inp.addEventListener('keydown',ev=>{
+   if(ev.key==='Enter'){
+    ev.preventDefault();const next=inp.parentElement.nextElementSibling?.querySelector('input');
+    if(next)next.focus({preventScroll:true});else inp.blur();
+   }
+  });
+ });
+ rfDock.querySelector('[data-rf-dock-close]').addEventListener('click',rfDockClose);
+ rfDock.querySelector('.rf-dock-record').addEventListener('click',()=>{
+  const id=rfDockExercise;
+  rfDockClose();
+  const button=[...document.querySelectorAll('.logger-card .set-entry [data-action="add-set"]')].find(b=>b.dataset.ex===id);
+  if(button)button.click();
+ });
+ document.body.appendChild(rfDock);
+ document.body.classList.add('rf-v171-dock-open');
+ rfDockPosition();
+ rfDockFocusField(fieldName); // Synchronous focus inside tap gesture is necessary for Android IME.
+ requestAnimationFrame(rfDockPosition);
+}
+function rfDockFromOriginal(target){
+ return target instanceof HTMLInputElement&&target.matches('.logger-card .set-entry input[data-field^="draft-"]');
+}
+document.addEventListener('pointerdown',ev=>{
+ if(!rfDockFromOriginal(ev.target))return;
+ ev.preventDefault();rfDockOpen(ev.target.dataset.ex,ev.target.dataset.field.slice(6));
+},true);
+document.addEventListener('focusin',ev=>{
+ if(!rfDockFromOriginal(ev.target))return;
+ // Accessibility/keyboard navigation can bypass pointerdown.
+ ev.stopImmediatePropagation();
+ rfDockOpen(ev.target.dataset.ex,ev.target.dataset.field.slice(6));
+},true);
+window.addEventListener('resize',rfDockPosition);
 if(window.visualViewport){
- window.visualViewport.addEventListener('resize',rfMoveFocusedDraftIntoView);
- window.visualViewport.addEventListener('scroll',rfMoveFocusedDraftIntoView);
+ window.visualViewport.addEventListener('resize',rfDockPosition);
+ window.visualViewport.addEventListener('scroll',rfDockPosition);
 }
-window.addEventListener('resize',rfMoveFocusedDraftIntoView);
+document.addEventListener('click',ev=>{
+ if(!rfDock||rfDock.contains(ev.target))return;
+ const action=ev.target.closest('[data-action]')?.dataset.action;
+ if(action&&action!=='add-set')rfDockClose();
+},true);
 
 document.addEventListener('click',handleClick);document.addEventListener('change',handleChange);document.addEventListener('input',handleInput);
 if('serviceWorker'in navigator&&location.protocol==='https:'||('serviceWorker'in navigator&&location.hostname==='localhost'))navigator.serviceWorker.register('sw.js').catch(()=>{});
