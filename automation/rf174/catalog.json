@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "index.html",
-  "source_sha256": "3404182fbaa58d53cab4fc272eeb8d7f3062a1bb8ac2540a55d69e57a97867bb",
+  "source_sha256": "9e4479765c16516ff03e5be1dce4447828fb57da88bbac6785d1450e39e2e4a7",
   "excluded_names": [
     "스케이터 점프",
     "파이어 하이드런트",
@@ -5811,15 +5811,16 @@
       "type": "weight",
       "description": "벤치에 앉아 덤벨을 어깨 높이까지 옆으로 들어 올립니다.",
       "tip": "어깨를 으쓱하지 않고 허리를 반동으로 사용하지 않습니다."
-    },
+    }
+  ],
+  "legacy_hidden_id_map": {
+    "fitflex-barbell-row-underhand": "ex12-697ba720c2294"
+  },
+  "release_audit": "v1.7.4, legacy IDs remain readable via index.html compatibility map",
+  "removed_duplicate_names": [
     {
       "id": "fitflex-barbell-row-underhand",
-      "name": "언더핸드 바벨 로우",
-      "muscle": "등",
-      "equipment": "barbell",
-      "type": "weight",
-      "description": "손바닥이 앞을 향하도록 바벨을 잡고 힙힌지를 유지하며 복부 쪽으로 당깁니다.",
-      "tip": "허리 중립 유지, 반동 대신 견갑·팔꿈치 움직임을 조절합니다."
+      "name": "언더핸드 바벨 로우"
     }
   ]
 }

@@ -1,0 +1,548 @@
+{
+  "release": "1.7.4",
+  "catalog_original": 645,
+  "catalog_unique": 644,
+  "removed_duplicate_id": "fitflex-barbell-row-underhand",
+  "preserved_legacy_lookup": true,
+  "matched_high_res_images": 34,
+  "unmapped_or_excluded_high_res": [
+    {
+      "name": "스탠딩 카프 레이즈 머신",
+      "reason": "official_name_not_exact_or_ambiguous"
+    }
+  ],
+  "image_sources": [
+    {
+      "name": "스미스머신 벤치프레스",
+      "batch": "013",
+      "file": "001.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "782ac030f44919a9e40d2e86627efc549c7cc2c6b8a62f12a538e9be5dae1ff5",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_013",
+      "exercise_id": "ex-7fd7357d060a76",
+      "target": "media/rf174-release/ex-7fd7357d060a76.webp"
+    },
+    {
+      "name": "스미스머신 리버스 런지",
+      "batch": "013",
+      "file": "002.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "44bf5323082b16bc1228b3c9eccd700f298f9663b88699b46cfad86d93a72a18",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_013",
+      "exercise_id": "ex-4380cc3a5270b5",
+      "target": "media/rf174-release/ex-4380cc3a5270b5.webp"
+    },
+    {
+      "name": "스미스머신 힙쓰러스트",
+      "batch": "013",
+      "file": "003.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "65ab7a68808176bf2fd023ca432beddc2070b72c94413fdf49d3314f54263f78",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_013",
+      "exercise_id": "ex-70386d73ec1f56",
+      "target": "media/rf174-release/ex-70386d73ec1f56.webp"
+    },
+    {
+      "name": "스미스머신 루마니안 데드리프트",
+      "batch": "013",
+      "file": "004.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "b7fd035f123af9878ba9b7dbbb43bd44dc7881c7d23ef4484a23c3c07aa1f596",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_013",
+      "exercise_id": "ex-dbd58dd50cdcc2",
+      "target": "media/rf174-release/ex-dbd58dd50cdcc2.webp"
+    },
+    {
+      "name": "스미스머신 데드리프트",
+      "batch": "013",
+      "file": "005.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "4bf5d06b5f3d525a263815b359721ae7d6af65610ac481c6a6704d67c07506c2",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_013",
+      "exercise_id": "ex-9bb8b5bf020513",
+      "target": "media/rf174-release/ex-9bb8b5bf020513.webp"
+    },
+    {
+      "name": "스미스머신 숄더프레스",
+      "batch": "013",
+      "file": "006.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "3907702f98b04d4843eb128e75725d6c457cfaa9ca9dc9c0b7283aaa600ed5a5",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_013",
+      "exercise_id": "ex-06497e946f5a75",
+      "target": "media/rf174-release/ex-06497e946f5a75.webp"
+    },
+    {
+      "name": "스미스머신 업라이트 로우",
+      "batch": "013",
+      "file": "007.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "1801497fee88f793a9990233e2f93dd0237e7c831bd92903b03f8b511b551811",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_013",
+      "exercise_id": "ex-53e8a5a54858d9",
+      "target": "media/rf174-release/ex-53e8a5a54858d9.webp"
+    },
+    {
+      "name": "스미스머신 카프레이즈",
+      "batch": "013",
+      "file": "008.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "8a23c8ded2127bbb0a3bfb07d04cb87235f7a7dc1ba7a5712281c1e1c0f9a56d",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_013",
+      "exercise_id": "ex-0694405a115237",
+      "target": "media/rf174-release/ex-0694405a115237.webp"
+    },
+    {
+      "name": "케이블 삼두 푸시다운 스트레이트바",
+      "batch": "013",
+      "file": "009.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "8b43d3b03a81359581e5de09e9e1972c82805636a1f42fb6ddf8b38dca792e3d",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_013",
+      "exercise_id": "ex12-7493dfd2d0318",
+      "target": "media/rf174-release/ex12-7493dfd2d0318.webp"
+    },
+    {
+      "name": "케이블 원암 삼두 푸시다운",
+      "batch": "013",
+      "file": "010.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "7e00517963ffd21d32eaf31c32f1cbfcff43d213f261ef1cc9c4e60a3613ce28",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_013",
+      "exercise_id": "ex12-1209cbb3078b7",
+      "target": "media/rf174-release/ex12-1209cbb3078b7.webp"
+    },
+    {
+      "name": "하이 로우 머신",
+      "batch": "016",
+      "file": "011.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "8ded810ec41fd7488e3b4a93aa40a11967c3af3d4aa775545d3b707bc3373f9e",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_016",
+      "exercise_id": "ex-114b3c1cd8c427",
+      "target": "media/rf174-release/ex-114b3c1cd8c427.webp"
+    },
+    {
+      "name": "로우 로우 머신",
+      "batch": "016",
+      "file": "012.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "4c6eeeab09134cdff08f56b3c0d42bd408ab38808f1c409d2631fb7d29652d8e",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_016",
+      "exercise_id": "ex-8e1b8c6cedc2a4",
+      "target": "media/rf174-release/ex-8e1b8c6cedc2a4.webp"
+    },
+    {
+      "name": "시티드 로우 머신",
+      "batch": "016",
+      "file": "013.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "adb2671f28868721ea172f4a2aaa4d0327055960eb89be10fd84145645d324c2",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_016",
+      "exercise_id": "ex-b4b2c5585f3d17",
+      "target": "media/rf174-release/ex-b4b2c5585f3d17.webp"
+    },
+    {
+      "name": "아이소래터럴 로우 머신",
+      "batch": "016",
+      "file": "014.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "057b73ce3b4baae0290cdd6f5717d67cdb6f8f6f3fa4262d7efeb330cf27de96",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_016",
+      "exercise_id": "ex-b2ea3dd54c354c",
+      "target": "media/rf174-release/ex-b2ea3dd54c354c.webp"
+    },
+    {
+      "name": "해머스트렝스 로우",
+      "batch": "016",
+      "file": "015.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "cc58c4ea32f7eb2b4f2bb511e03878f63e0cf919248f19afb77d7ea0882f2bd0",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_016",
+      "exercise_id": "ex12-e0e710736d368",
+      "target": "media/rf174-release/ex12-e0e710736d368.webp"
+    },
+    {
+      "name": "45도 레그프레스",
+      "batch": "017",
+      "file": "016.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "2e7de6a2686037dc60b88cfa286c3c7f79d4beba52b2a9c5d36db4e4f2f3cca7",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_017_temporary_ids_discarded",
+      "exercise_id": "ex-b3809fe3558cb7",
+      "target": "media/rf174-release/ex-b3809fe3558cb7.webp"
+    },
+    {
+      "name": "핵스쿼트 머신",
+      "batch": "017",
+      "file": "017.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "8bd16d88335cb4ecec6a1fd08d6ac882cb5a18abf09ec24edb661f5da39786ae",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_017_temporary_ids_discarded",
+      "exercise_id": "ex-977ee867933d7c",
+      "target": "media/rf174-release/ex-977ee867933d7c.webp"
+    },
+    {
+      "name": "시티드 레그컬",
+      "batch": "017",
+      "file": "018.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "bb2fc846ccf9b8f584e3a26ba91e3a684882b136c2e975276e3a7abaa28038c4",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_017_temporary_ids_discarded",
+      "exercise_id": "ex-3349c796807032",
+      "target": "media/rf174-release/ex-3349c796807032.webp"
+    },
+    {
+      "name": "라잉 레그컬",
+      "batch": "017",
+      "file": "019.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "2a437fc9b18e6590aed34d177314bf640dcefbbc38501c9b1345eaa7f6bbe9cc",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_017_temporary_ids_discarded",
+      "exercise_id": "ex-aa58d609ed33d6",
+      "target": "media/rf174-release/ex-aa58d609ed33d6.webp"
+    },
+    {
+      "name": "힙 어브덕션 머신",
+      "batch": "017",
+      "file": "020.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "619a0cf4c820bfe922c3db1a530ac361cc818282de03fa9e686bea16e7399f1e",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_017_temporary_ids_discarded",
+      "exercise_id": "ex-3fb6d1f19c4348",
+      "target": "media/rf174-release/ex-3fb6d1f19c4348.webp"
+    },
+    {
+      "name": "힙 어덕션 머신",
+      "batch": "017",
+      "file": "021.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "3875ac28bd254534ec494830bd0634ce68ab24bcc9b44cc4cb27b589547011a1",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_017_temporary_ids_discarded",
+      "exercise_id": "ex-d388534c1ff6eb",
+      "target": "media/rf174-release/ex-d388534c1ff6eb.webp"
+    },
+    {
+      "name": "시티드 카프레이즈 머신",
+      "batch": "017",
+      "file": "022.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "da03ba1e6c18ff2f81c4471e26d93cc8fe7c3a2b9948dff4ad3e26cc91946fa7",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "generated_batch_017_temporary_ids_discarded",
+      "exercise_id": "ex-d1d49079c2c62e",
+      "target": "media/rf174-release/ex-d1d49079c2c62e.webp"
+    },
+    {
+      "name": "아처 푸시업",
+      "batch": "quality_patch_003",
+      "file": "024.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "3522401e4c611e1dab29e207a211a093d9538ea003104b99f3657cf1560f93c3",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "original_generated_pose_correction",
+      "exercise_id": "ex-fad374d54890b5",
+      "target": "media/rf174-release/ex-fad374d54890b5.webp"
+    },
+    {
+      "name": "힙쓰러스트 맨몸",
+      "batch": "quality_patch_003",
+      "file": "025.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "36d134a3b52d7110e665e3d6517702c02c8589b90d8be4801286dc15b0e4bc2e",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "original_generated_pose_correction",
+      "exercise_id": "ex-66d13ec3676854",
+      "target": "media/rf174-release/ex-66d13ec3676854.webp"
+    },
+    {
+      "name": "프로그 펌프",
+      "batch": "quality_patch_003",
+      "file": "026.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "222f8466e33fe72f5adff90fb1ed0de79c9fa585789a11c08f659727310f6fbd",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "original_generated_pose_correction",
+      "exercise_id": "ex-6ea1bfc6627ee9",
+      "target": "media/rf174-release/ex-6ea1bfc6627ee9.webp"
+    },
+    {
+      "name": "월싯",
+      "batch": "quality_patch_003",
+      "file": "027.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "d834d30b231913cfcbe7e3935061157e9d95996f005a5a2435873d41a2c718b2",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "original_generated_pose_correction",
+      "exercise_id": "ex-ee169d05f399e5",
+      "target": "media/rf174-release/ex-ee169d05f399e5.webp"
+    },
+    {
+      "name": "코사크 스쿼트",
+      "batch": "quality_patch_003",
+      "file": "028.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "5de1cd5ef0c97f00d723ba8067b1c8bd115da03684aff1407f859cad4c312dfe",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "original_generated_pose_correction",
+      "exercise_id": "ex-62f0750ebad725",
+      "target": "media/rf174-release/ex-62f0750ebad725.webp"
+    },
+    {
+      "name": "싱글레그 글루트 브리지",
+      "batch": "quality_patch_003",
+      "file": "029.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "3e67621818f0c10f76daaa730a7077ac7294f4de313a1ec6d590470b1709aa3a",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "original_generated_pose_correction",
+      "exercise_id": "ex-1ffea44dc0793b",
+      "target": "media/rf174-release/ex-1ffea44dc0793b.webp"
+    },
+    {
+      "name": "인버티드 로우",
+      "batch": "quality_patch_003",
+      "file": "030.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "a5bd508d9f81ea16cad0dd4633cf14d55d8772ee3024f30e23c6528476cc9a5e",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "original_generated_pose_correction",
+      "exercise_id": "ex-9fc86077795d30",
+      "target": "media/rf174-release/ex-9fc86077795d30.webp"
+    },
+    {
+      "name": "백 익스텐션 맨몸",
+      "batch": "quality_patch_003",
+      "file": "031.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "9d02c0c355e3af045788a7bba5a6e29ab75cdd05132b2e0c06ecdfa041600b4a",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "original_generated_pose_correction",
+      "exercise_id": "ex-1b77a566ab4dec",
+      "target": "media/rf174-release/ex-1b77a566ab4dec.webp"
+    },
+    {
+      "name": "힙 익스텐션 킥백",
+      "batch": "quality_patch_003",
+      "file": "032.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "5e5f4c9adba1c34c8e1850073681d100d8c7c1d390860aa7f0d6680de1ca4889",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "original_generated_pose_correction",
+      "exercise_id": "ex-d4198da8835ddc",
+      "target": "media/rf174-release/ex-d4198da8835ddc.webp"
+    },
+    {
+      "name": "플랭크 잭",
+      "batch": "quality_patch_003",
+      "file": "033.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "459b9f8226ce7cfedddbd725ba9e0e3d3c8d6bd0836d5b3e06d8621f122bd54e",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "original_generated_pose_correction",
+      "exercise_id": "ex-fc489058c133d7",
+      "target": "media/rf174-release/ex-fc489058c133d7.webp"
+    },
+    {
+      "name": "머슬업",
+      "batch": "quality_patch_005",
+      "file": "034.webp",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "ed98f6cfdc40de9afd285f336a4040f8afb36f91ffa385eeb9c13eaf3ea34011",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "original_generated_muscleup_two_phase",
+      "exercise_id": "ex-c9276a9298b283",
+      "target": "media/rf174-release/ex-c9276a9298b283.webp"
+    },
+    {
+      "name": "덤벨 쓰러스터",
+      "batch": "quality_patch_004",
+      "file": "035.webp",
+      "source_dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "9ce1bd973b29a23f292941381432a70c93e021c1bb2e400cd5bf78a760e4fef5",
+      "asset_status": "release_candidate_pose_reviewed",
+      "original_source": "original_generated_thruster_two_phase",
+      "exercise_id": "ex-0438098d998638",
+      "target": "media/rf174-release/ex-0438098d998638.webp"
+    }
+  ],
+  "excluded_low_quality": [
+    {
+      "name": "체스트 서포티드 로우 머신",
+      "batch": "016",
+      "reason": "chest_support_not_clearly_visible",
+      "source": "generated_batch_016"
+    },
+    {
+      "name": "원암 머신 로우",
+      "batch": "016",
+      "reason": "image_shows_bilateral_or_ambiguous_grip",
+      "source": "generated_batch_016"
+    },
+    {
+      "name": "리버스그립 로우 머신",
+      "batch": "016",
+      "reason": "reverse_grip_not_clearly_visible",
+      "source": "generated_batch_016"
+    },
+    {
+      "name": "아래 등 로우 머신",
+      "batch": "016",
+      "reason": "machine_pulldown_or_highrow_not_lowrow",
+      "source": "generated_batch_016"
+    },
+    {
+      "name": "해머스트렝스 하이로우",
+      "batch": "016",
+      "reason": "machine_configuration_does_not_clearly_match",
+      "source": "generated_batch_016"
+    },
+    {
+      "name": "레그 익스텐션",
+      "batch": "017",
+      "reason": "one_leg_extended_unilateral_image_for_bilateral_exercise",
+      "source": "generated_batch_017_temporary_ids_discarded"
+    },
+    {
+      "name": "45도 백 익스텐션",
+      "batch": "017",
+      "reason": "no_exact_matching_catalog_exercise",
+      "source": "generated_batch_017_temporary_ids_discarded"
+    },
+    {
+      "name": "18차 신규 이미지 10종",
+      "batch": "018",
+      "reason": "not_generated_review_only",
+      "source": "batch_018_review_pack"
+    }
+  ],
+  "app_package": "com.nanami128sketch.routinefit",
+  "versionCode": 174,
+  "storage_key_unchanged": "routinefit_v1_store",
+  "batch_018_new_images": 0,
+  "apk_built": false,
+  "signed_apk_produced": false
+}
