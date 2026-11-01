@@ -1,0 +1,1120 @@
+{
+  "dry_run": false,
+  "assets": 82,
+  "active_catalog": 644,
+  "version_name": "1.7.4.2",
+  "version_code": 175,
+  "id_preserved": "com.nanami128sketch.routinefit",
+  "local_storage_key_unchanged": "routinefit_v1_store",
+  "batch29_rejected": true,
+  "full_backup_created": false,
+  "manifest": {
+    "app": "RoutineFit",
+    "stage": "v1.7.4 release pass 2",
+    "version_name": "1.7.4.2",
+    "version_code": 175,
+    "original_version_code": 174,
+    "package_name": "com.nanami128sketch.routinefit",
+    "catalog_count": 644,
+    "included_unique_asset_count": 82,
+    "approved_and_reviewed_sources": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26,
+      27,
+      28
+    ],
+    "excluded_batches": {
+      "24": "all image IDs duplicate already reviewed 21",
+      "29": "all ten image assets rejected as low quality; not allowed in APK"
+    },
+    "partially_selected_batch20": [
+      1,
+      2,
+      10
+    ],
+    "collisions_last_reviewed_wins": [
+      {
+        "official_id": "ex-268e8779ff1cdf",
+        "old_batch": 20,
+        "new_batch": 23
+      }
+    ],
+    "new_user_records_changed": false,
+    "app_data_key": "routinefit_v1_store",
+    "safety": "The in-app JSON backup is recommended before upgrading. Never uninstall to update.",
+    "asset_entries": [
+      {
+        "batch": 19,
+        "sequence": 1,
+        "id": "ex-a955543e8cb379",
+        "name": "바벨 프론트 스쿼트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "71226d410d62e8d1ecb62757e60d3af965b5403f32c128dd9aac497af37750d3",
+        "original_exists": false,
+        "source_note": "2026-11-01 manual still-pose review"
+      },
+      {
+        "batch": 19,
+        "sequence": 2,
+        "id": "ex-7b86642197c92c",
+        "name": "덤벨 불가리안 스플릿 스쿼트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "bbbb792ea5ca4bb9e8d66a7133f23f03140b519042dc27f9ad3dff70d9993d94",
+        "original_exists": false,
+        "source_note": "2026-11-01 manual still-pose review"
+      },
+      {
+        "batch": 19,
+        "sequence": 3,
+        "id": "ex-997320a8cec5f5",
+        "name": "트랩바 데드리프트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "700d518b1f8cadf53bc38416301ef893e918caed8a870db46982ba0fea94efc2",
+        "original_exists": false,
+        "source_note": "2026-11-01 manual still-pose review"
+      },
+      {
+        "batch": 19,
+        "sequence": 4,
+        "id": "ex-5b272173051bb3",
+        "name": "덤벨 루마니안 데드리프트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "899cebb75fa75cb8dbf8253e3e7a428d1d5fb6c0ae4ec769b9483938134d29c6",
+        "original_exists": false,
+        "source_note": "2026-11-01 manual still-pose review"
+      },
+      {
+        "batch": 19,
+        "sequence": 5,
+        "id": "ex-5bcab26eddf1e4",
+        "name": "바벨 스모 데드리프트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "d8fee812330f3072510f1b8b93d3ef29ef538c63b2c4fe41f7df6fdbec223863",
+        "original_exists": false,
+        "source_note": "2026-11-01 manual still-pose review"
+      },
+      {
+        "batch": 19,
+        "sequence": 6,
+        "id": "ex-ba652079e71052",
+        "name": "케틀벨 스윙",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "1fd0660092d1ac7851c1d1f7bf088865849742d7372574a7ffce3f1df26beaaa",
+        "original_exists": false,
+        "source_note": "2026-11-01 manual still-pose review"
+      },
+      {
+        "batch": 19,
+        "sequence": 7,
+        "id": "ex-36a5c9b3079f18",
+        "name": "케틀벨 고블릿 스쿼트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "f924ff64ea8e39a5c9dfdc4316c86c5a7d58edacff8bc969db067a6db6264fab",
+        "original_exists": false,
+        "source_note": "2026-11-01 manual still-pose review"
+      },
+      {
+        "batch": 19,
+        "sequence": 8,
+        "id": "ex-24fb8ff2794f7e",
+        "name": "바벨 힙쓰러스트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "ee70d1f241ae3b49d946690d1c4567f40e470a26e19db0aeb645009497311d21",
+        "original_exists": false,
+        "source_note": "2026-11-01 manual still-pose review"
+      },
+      {
+        "batch": 19,
+        "sequence": 9,
+        "id": "ex12-aa402f9a4f19b",
+        "name": "덤벨 싱글레그 루마니안 데드리프트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "93e2aea2353b4c0b27489dade2c4e50490a2cbefe148996c2e6330c32ff980b9",
+        "original_exists": false,
+        "source_note": "2026-11-01 manual still-pose review"
+      },
+      {
+        "batch": 19,
+        "sequence": 10,
+        "id": "ex-d7250e28366b50",
+        "name": "케틀벨 데드리프트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "a5c65beb730866e234a3c9b33e7f768742ea65a855ebab62c3498e4ab1b478ae",
+        "original_exists": false,
+        "source_note": "2026-11-01 manual still-pose review"
+      },
+      {
+        "batch": 20,
+        "sequence": 1,
+        "id": "incline-dumbbell-press",
+        "name": "인클라인 덤벨프레스",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "b67e687d6da5b064e90da01faabb88de6ae6904f4c2294542c07a3907614729e",
+        "original_exists": false,
+        "source_note": "2026-11-01 manual still-pose review"
+      },
+      {
+        "batch": 20,
+        "sequence": 2,
+        "id": "ex-64dfc6ca23d690",
+        "name": "덤벨 벤치프레스",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "0d8145bb1aa5666d22581de95215c5545d2f8ed8be874f32dd31d05689a5c6c8",
+        "original_exists": false,
+        "source_note": "2026-11-01 manual still-pose review"
+      },
+      {
+        "batch": 21,
+        "sequence": 1,
+        "id": "ex-e387f77188e257",
+        "name": "메디신볼 슬램",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "8c17d1d5c6c39b1bed473620b08fc0bd3d1a362ed93b7cde1e95f35f01649640",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 21,
+        "sequence": 2,
+        "id": "ex-8dd7bfb16d18b7",
+        "name": "메디신볼 월볼",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "eab43855d6ddebae4c0d39b9e68d1253dc7cd33058399cb6e7ed3f21fb6a4885",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 21,
+        "sequence": 3,
+        "id": "ex-2ee17d5d541352",
+        "name": "메디신볼 러시안 트위스트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "d8f81e1c011a3c8e56418a0b19a666ef1fb15639d2cc008f1448210036ddedf5",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 21,
+        "sequence": 4,
+        "id": "ex-9921c893ff106e",
+        "name": "메디신볼 체스트패스",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "57c8e88fc92bd84805c004671065ad55ad9ed2f277ccc40fa8658382d6282ce8",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 21,
+        "sequence": 5,
+        "id": "ex-dc096605da43ce",
+        "name": "케틀벨 클린",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "55f3942f4aed9d148c943a75285fd68ca37382dd64ed5fa471ffdc7e24968222",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 21,
+        "sequence": 6,
+        "id": "ex-912feeddb43757",
+        "name": "케틀벨 프레스",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "51bf4778c2d8eb910aa6b77f699ac6113d29cc3009267c17ee245eaec07a367e",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 21,
+        "sequence": 7,
+        "id": "ex-bfe38f492736bf",
+        "name": "케틀벨 로우",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "abdefe99d0ed597d5ce78cbb2d686d89e5edef1a1ad3a7b6f1e1b6b62bee8f5b",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 21,
+        "sequence": 8,
+        "id": "ex-ceb7c75d710317",
+        "name": "케틀벨 파머스 캐리",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "cd1ca7d2b8ebe237ef20d9b83aca470fbac4fcaeaa7970c75e2bd3a7eb029b4b",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 21,
+        "sequence": 9,
+        "id": "ex-47cb88fc5b7f71",
+        "name": "케틀벨 헤일로",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "3b1ac2ce297c2d629516c60e20de503717a5088dd74b08c85ea49e765023e93e",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 21,
+        "sequence": 10,
+        "id": "ex-b2019e94df8946",
+        "name": "케틀벨 스내치",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "7d4b89c098788297e155735a261194ac4e3bac510f1bf4e1c8319d53832367df",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 22,
+        "sequence": 1,
+        "id": "ex-0b88bd65905b51",
+        "name": "밴드 스쿼트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "42142db8ed9a0a98a16594a211809e28178bcfa9836c31b16787db0ecd4afd7b",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 22,
+        "sequence": 2,
+        "id": "ex-3df1408c142969",
+        "name": "밴드 로우",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "4f832d03b7d5f9edbb9b2c0a396f2b7424d1ec8523a5b6747dc9d73168a97d73",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 22,
+        "sequence": 3,
+        "id": "ex-96c063d54a056e",
+        "name": "밴드 페이스풀",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "f20edcebcca2e8f167dd3612cc40d475d6ff538847a819d188afece7467ca4ae",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 22,
+        "sequence": 4,
+        "id": "ex-700eb1e6b3f5a4",
+        "name": "밴드 풀어파트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "967b0eb1ecefaf1c4d524269eff3620290e21839b531c935ab5e8a26ff73bb62",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 22,
+        "sequence": 5,
+        "id": "ex-d6cc21052c645d",
+        "name": "밴드 팔로프 프레스",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "005af91d82fe77f86150560791f19e48dfa722228cface3212df1d349e2029d5",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 22,
+        "sequence": 6,
+        "id": "ex-da9dc167d48932",
+        "name": "TRX 로우",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "d1b3820a418dce2bfc55fb0ce09c7add081a099e4dad3a73757e1b6f9af7a00e",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 22,
+        "sequence": 7,
+        "id": "ex-1dac96c62d63d4",
+        "name": "TRX 체스트프레스",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "6567f9ba507b9c8b499ae13d26d0dfe00956f3645bdefcd35b0dcd500320966d",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 22,
+        "sequence": 8,
+        "id": "ex-471767c4d67770",
+        "name": "TRX 스쿼트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "fbdf3f4bf647f82a511fd33d335e7137f3f70c3d5c1371a5cf41dfc290c6d18c",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 22,
+        "sequence": 9,
+        "id": "ex-1b470bc00a607e",
+        "name": "TRX 햄스트링 컬",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "6d9b38e18f4a25f9363c4bbb979262ef70d6f53bfc2f4be0a8d7d2f4a9a325f4",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 22,
+        "sequence": 10,
+        "id": "ex-ebbdaa025a56ff",
+        "name": "TRX 파이크",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "cfa808c2f4a786ee5b50de353d60853522d42193d79879edc6ff73a5a1ee4ade",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 23,
+        "sequence": 1,
+        "id": "ex-cda4464fb7bf7f",
+        "name": "바벨 랜드마인 프레스",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "ea06a246737872e4321299d0f2236830e03572f996682d7118899d510fa6efda",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 23,
+        "sequence": 2,
+        "id": "ex-4551310720fc4c",
+        "name": "랜드마인 스쿼트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "fe2eb8ba2fa90ee087053cc236b0b9af77caee60351af134f7990ff395196f0e",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 23,
+        "sequence": 3,
+        "id": "ex-7d72e2036f9f2b",
+        "name": "랜드마인 로우",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "3c8852f4551a6a89730b1992dad5827b1bda115e44e16e9d573b9a10e3854f08",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 23,
+        "sequence": 4,
+        "id": "ex-29e7769fe132b0",
+        "name": "랜드마인 회전 운동",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "536c92a43504e5cc5356bf1e4fbd460ce1edce086776de133660bbe0e7d94517",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 23,
+        "sequence": 5,
+        "id": "ex12-1762971faf3c4",
+        "name": "바벨 리버스 런지",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "5bc57adb15f633f67c693021e1905b4f1696494af213158334347512e002c6f3",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 23,
+        "sequence": 6,
+        "id": "ex-1ace19bcbdeada",
+        "name": "배틀로프",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "bd04c3c779331134ff86f81641bb1c4082ef7412909ece0a83a6ec9faf4b0f0b",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 23,
+        "sequence": 7,
+        "id": "ex12-1b85bc10d102c",
+        "name": "배틀로프 더블웨이브",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "c4cb759f9af87776cf2724d113c06b3c53a41331942551af2279934c2f1c4c01",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 23,
+        "sequence": 8,
+        "id": "ex12-05b3da7483232",
+        "name": "덤벨 시티드 숄더프레스",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "241ce98134c351b1c6355bf290a35421e418f91523e6a86a974e312e9aea1eb0",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 23,
+        "sequence": 9,
+        "id": "ex-268e8779ff1cdf",
+        "name": "EZ바 컬",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "71992bfe21afbccb08d5ee4d395c4937c860e14d8170b82740b39fb3f8c4a139",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 23,
+        "sequence": 10,
+        "id": "ex12-f93381b1bf7ef",
+        "name": "글루트 햄 레이즈 머신",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "3492d03d09dcfcd5b2eebab3bec1ce47165073d3a8e8c73861d290e61a88bdeb",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 25,
+        "sequence": 1,
+        "id": "ex12-094a83b4dd7cd",
+        "name": "사이드 플랭크 힙리프트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "5c669bda4a4919a585e581ea458d12860d7162ffb7dad2b34f170ea4d23f40d9",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 25,
+        "sequence": 2,
+        "id": "ex12-8c97f63c9cb55",
+        "name": "스파이더맨 푸시업",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "6b6249bef64ff677069c67e2a1b1075c16e6cd2af4fbbd0e3af136bf1284d307",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 25,
+        "sequence": 3,
+        "id": "pike-push-up",
+        "name": "파이크 푸시업",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "29f5139124a1e2738c3bf9c5705de4d14f11c4c72222b15977b30f87cf979e47",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 25,
+        "sequence": 4,
+        "id": "ex-8585407239cec6",
+        "name": "피스톨 스쿼트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "49ef7bcba4c8d454ee2aa8af8120f840714c308380a9b0e4294c3b9f46eff08c",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 25,
+        "sequence": 5,
+        "id": "ex12-ff7473a142abd",
+        "name": "노르딕 햄스트링 컬",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "9d92fafa26fa02816670efd4ad2e4ef93642bdb7e1c857eed854e3cbff060010",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 25,
+        "sequence": 6,
+        "id": "ex-902ebd164ab716",
+        "name": "마운틴 클라이머",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "23a5b2631e1ca0a469f8456cf4ab628b8d69eb8e6d3701da64367745a8fd870c",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 25,
+        "sequence": 7,
+        "id": "ex-2f5acf28bc5d70",
+        "name": "벤치 딥스",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "d2435fc0b6788c30647fb13159b9e7455ea9bce1a7ce470e4b0d3266ec308a23",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 25,
+        "sequence": 8,
+        "id": "ex-fb9977a4ef1838",
+        "name": "홀로우 바디 홀드",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "919f806a5152909b106a7282fd26cf60050a5063761edab8167b8d13ba2fec13",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 25,
+        "sequence": 9,
+        "id": "ex-2c6a5c5afbb9c8",
+        "name": "점프 런지",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "31b6bf3b9e3db5da48148bb6bd845dbda33be9aeb4e3be4d74a510e6aadc09e2",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 25,
+        "sequence": 10,
+        "id": "ex-bbe11a6f6de17b",
+        "name": "리버스 크런치",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "cedaa068c6d9da1c76cba828de594ca107a0ea8c4ea6331e9ced958288489fef",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 26,
+        "sequence": 1,
+        "id": "ex-c245485ab4e177",
+        "name": "버드독",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "0357774ebc67ac0e6bb9cbb08a3f79b3860f7703ec8fa186ef7b906d180a20bc",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 26,
+        "sequence": 2,
+        "id": "ex-627cdcfa000caa",
+        "name": "행잉 니 레이즈",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "7c3c4f0a629ad86ccfffcd654171d8cb40461b8410bc7856d4597a5d1f6aa3a8",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 26,
+        "sequence": 3,
+        "id": "ex12-54b07fba9ef30",
+        "name": "홀드 풀업",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "20ef25a89092faa9f54c3669fd1fce0c4d537c5549d12f64ff2916f495568ce2",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 26,
+        "sequence": 4,
+        "id": "ex12-e2a7378332375",
+        "name": "V싯 홀드",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "b4fc615d66bdfb529b15f9a45fabf4505e92522ec93d1555cfb88bd0eb7739d7",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 26,
+        "sequence": 5,
+        "id": "ex-1ffea44dc0793b",
+        "name": "싱글레그 글루트 브리지",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "6570bd16941ca355dc987a0eb70fb43326d16490bcc71c51f0ce5a2db9cdccd6",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 26,
+        "sequence": 6,
+        "id": "ex12-534caf8aa214f",
+        "name": "데드버그 홀드",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "44300569a7bec1d4aa9102d9722c21c20af6ff714db67273b8cd4980956551c7",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 26,
+        "sequence": 7,
+        "id": "ex-2a234c975c2d82",
+        "name": "베어 크롤",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "07a9192d1a69424621af2e35482d7f78d6a044c9f805d4adf45d1ab43c1b7d71",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 26,
+        "sequence": 8,
+        "id": "ex12-0aabbca3e97bb",
+        "name": "행잉 토투바",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "0234e49e89c1dbe1c0e91626d091e92e8b53887c8d5728e5a2f258cae6eea70b",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 26,
+        "sequence": 9,
+        "id": "ex-746de9b97ebb12",
+        "name": "슈퍼맨 홀드",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "345cee5a5a949f2239b52fab7bc2cf87b086ffd8d42dda52f752ce5a9c52c3e8",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 26,
+        "sequence": 10,
+        "id": "ex-ee169d05f399e5",
+        "name": "월싯",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "e22e907fd42a5caef3f0e3caf683241d9e10d146eea8e7bceb234cf7c65ece59",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 27,
+        "sequence": 1,
+        "id": "ex12-697ba720c2294",
+        "name": "언더핸드 바벨 로우",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "ac419485e439512b24a20cd09d2d59e9e490f9f24310e004774d9963941e29de",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 27,
+        "sequence": 2,
+        "id": "ex-9728d0b96d6521",
+        "name": "덤벨 스텝업",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "beaafb1aa91c73f0b335e56ba7b5f6f9252c18882c1bdc9cb878adac69fac8d7",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 27,
+        "sequence": 3,
+        "id": "ex-953611bf3ac403",
+        "name": "덤벨 풀오버",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "a9afa8382cc18004bd181aff76fd075af4bf2ee5f617414d1cc4aeffbb2580ba",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 27,
+        "sequence": 4,
+        "id": "ex-b07c95a6d51c0e",
+        "name": "EZ바 프리처 컬",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "60d7a938dda88fb13c8510d00083a0a538a2d30e09a097ed6d2cb5ea0fb9cf47",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 27,
+        "sequence": 5,
+        "id": "ex-46710d142a44b2",
+        "name": "덤벨 오버헤드 삼두 익스텐션",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "e0fa2efd24dceb4471068aaf3739c4fe6f48427dfa7a8f3d6ffc12d5d5bf9c5b",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 27,
+        "sequence": 6,
+        "id": "ex-632192a8181b79",
+        "name": "케이블 우드촙",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "d656d7ec79f84eec5258dc1558222240b5bebc63b9e8c6c7e9ab6d3e9fe06a3f",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 27,
+        "sequence": 7,
+        "id": "ex12-a85b8af8057f2",
+        "name": "케이블 미들 플라이",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "ae1ccd8bd40447f42d95234312863d714111cc1c31c67113a3e0387cdcc6e002",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 27,
+        "sequence": 8,
+        "id": "ex12-37589720131b8",
+        "name": "인클라인 덤벨 로우",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "69e1703bada9bb76eee5d06dd62707b36d167dfacc28ed13ca494a302f72d411",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 27,
+        "sequence": 9,
+        "id": "ex-62f0750ebad725",
+        "name": "코사크 스쿼트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "bf6a5f0fd325ea4b320a3a66a0d775fada4d123c9fce1ce4335d6e1fc6cdfc10",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 27,
+        "sequence": 10,
+        "id": "ex12-ca17ee5c40f78",
+        "name": "힙 에어플레인",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "aa173f4dcd409b81f02af98473a835d9a4ab891924abf07aecd0859c16dc75c8",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 28,
+        "sequence": 1,
+        "id": "ex-25fe535617be58",
+        "name": "케틀벨 러시안 트위스트",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "d28c79d8011f1b3c178db8842faf05dd7b5f4e9afc2241a87a52ad4e5747a1b4",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 28,
+        "sequence": 2,
+        "id": "ex12-bb38ab6fb24c2",
+        "name": "케틀벨 수트케이스 캐리",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "bf4d21522e1088e9f4761dbaec5557c5ea57d8f012dad2c9aeeb5e055d277eb1",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 28,
+        "sequence": 3,
+        "id": "ex12-b77fccc9e54b6",
+        "name": "케틀벨 프론트랙 캐리",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "7f6d711caee616e3df852ec2dfe8322c010116c016451a94467c7c4e9a3ffdb0",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 28,
+        "sequence": 4,
+        "id": "ex12-4167c3627ef25",
+        "name": "케틀벨 오버헤드 캐리",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "445434c53290cdd2f10268dbb406e5da8f66b4e10e6661515d83237e5daacb16",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 28,
+        "sequence": 5,
+        "id": "ex12-64da5956c6170",
+        "name": "케틀벨 싱글암 스윙",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "9d838d09f6458c3f3fb9bb9a168b8e7522c81b6f5ae9a7be487ab1c936b20e76",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 28,
+        "sequence": 6,
+        "id": "ex-a6aa4d68728671",
+        "name": "케틀벨 터키시 겟업",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "245a11d83ec0a0319fc62f97b9c05bee69a6e4eda4a91d79b34c767bc0a539c1",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 28,
+        "sequence": 7,
+        "id": "ex12-b88cc7755e58c",
+        "name": "케틀벨 데드클린",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "c6770668c8ab8859ba9f9c13ace070ec6898e12d14109fa06625f43964fe0eac",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 28,
+        "sequence": 8,
+        "id": "ex12-0d6d6ef79fc56",
+        "name": "케틀벨 클린앤프레스",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "48eae4c3eff9529f5d5ce681da222aeab372027f844b4d11fc0741925bce4e2f",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 28,
+        "sequence": 9,
+        "id": "ex12-72a53a6171312",
+        "name": "케틀벨 쓰러스터",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "0a5d09831b841b0b29d1d980e00bd9bc686cdbcbf141aa2266d687daea355288",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      },
+      {
+        "batch": 28,
+        "sequence": 10,
+        "id": "ex12-3a5f5cb1fe4dc",
+        "name": "케틀벨 롱사이클",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "sha256": "d750a8320490f9755397eecf9b445b6574df4ef1508f2152100396ce7d2d5e46",
+        "original_exists": true,
+        "source_note": "prior reviewed individual high-res image"
+      }
+    ]
+  },
+  "source_ref_built_from": "v1.7.4 main after first-release images"
+}
