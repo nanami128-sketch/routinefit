@@ -71,7 +71,7 @@ jobs:
 
   signed-release:
     name: Build signed release APK (manual, protected secrets)
-    if: github.event_name == 'workflow_dispatch' && inputs.build_signed == true && github.ref == 'refs/heads/main'
+    if: github.event_name == 'workflow_dispatch' && inputs.build_signed == true && github.ref == 'refs/heads/qa/r3-signed-preview-20261102'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
