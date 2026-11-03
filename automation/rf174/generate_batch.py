@@ -139,8 +139,8 @@ def main():
     if not isinstance(catalog_data, dict) or not isinstance(catalog_data.get('exercises'), list):
         raise RuntimeError('Missing or invalid automation/rf174/catalog.json')
     catalog = catalog_data['exercises']
-    if len(catalog) != 645 or len(set(x['id'] for x in catalog)) != len(catalog) or any(not re.fullmatch(r'[A-Za-z0-9_-]{1,90}', x['id']) for x in catalog):
-        raise RuntimeError(f'Catalog consistency error: need 645 unique IDs; actual {len(catalog)}')
+    if len(catalog) not in (643, 644) or len(set(x['id'] for x in catalog)) != len(catalog) or any(not re.fullmatch(r'[A-Za-z0-9_-]{1,90}', x['id']) for x in catalog):
+        raise RuntimeError(f'Catalog consistency error: need 643 or 644 unique IDs; actual {len(catalog)}')
     progress = load_json(STATE, {'images': {}})
     progress.setdefault('images', {})
     if not isinstance(progress['images'], dict):

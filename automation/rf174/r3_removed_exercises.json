@@ -1,0 +1,10 @@
+{
+  "removed": [
+    {
+      "id": "ex12-e7a63bd979e32",
+      "name": "스캡션 푸시업",
+      "original_batch": 33
+    }
+  ],
+  "note": "Keep historical batch IDs frozen"
+}
