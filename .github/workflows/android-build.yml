@@ -54,6 +54,10 @@ jobs:
         run: |
           python3 -c 'import pathlib,re; h=pathlib.Path("index.html").read_text(encoding="utf-8"); s=re.findall(r"<script[^>]*>(.*?)</script>",h,re.S|re.I); assert len(s)>=2, "Missing embedded RoutineFit JS"; [pathlib.Path(f"/tmp/routinefit-inline-{i}.js").write_text(c,encoding="utf-8") for i,c in enumerate(s)]'
           for file in /tmp/routinefit-inline-*.js; do node --check "$file"; done
+      - name: Validate complete 644 exercise release and record preservation
+        run: |
+          python3 automation/rf174/validate_complete644.py
+          node automation/rf174/verify_completion_state.cjs index.html
       - name: Build debug and unsigned release APK
         run: gradle -p android --no-daemon :app:assembleDebug :app:assembleRelease
       - name: Upload debug APK
@@ -84,6 +88,10 @@ jobs:
           gradle-version: '8.13'
       - name: Install Android SDK 35
         run: $(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager -print -quit) 'platforms;android-36' 'build-tools;36.0.0'
+      - name: Validate complete 644 exercise release and record preservation
+        run: |
+          python3 automation/rf174/validate_complete644.py
+          node automation/rf174/verify_completion_state.cjs index.html
       - name: Restore signing key from GitHub Actions secrets
         env:
           KEYSTORE_B64: ${{ secrets.ROUTINEFIT_KEYSTORE_BASE64 }}
@@ -105,6 +113,18 @@ jobs:
           ROUTINEFIT_KEY_PASSWORD: ${{ secrets.ROUTINEFIT_KEY_PASSWORD }}
           ROUTINEFIT_KEY_ALIAS: ${{ secrets.ROUTINEFIT_KEY_ALIAS }}
         run: gradle -p android --no-daemon :app:assembleRelease
+      - name: Verify signed APK and complete packaged exercise assets
+        run: |
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose --print-certs android/app/build/outputs/apk/release/app-release.apk
+          python3 automation/rf174/validate_complete644.py --apk android/app/build/outputs/apk/release/app-release.apk
+          python3 - <<'PY'
+          import os,re,subprocess
+          info=subprocess.check_output([os.environ['ANDROID_HOME']+'/build-tools/36.0.0/aapt','dump','badging','android/app/build/outputs/apk/release/app-release.apk'],text=True)
+          line=info.splitlines()[0]
+          assert "name='com.nanami128sketch.routinefit'" in line
+          assert "versionCode='177'" in line and "versionName='1.7.4.4'" in line
+          print(line)
+          PY
       - name: Upload signed APK
         uses: actions/upload-artifact@v4
         with:

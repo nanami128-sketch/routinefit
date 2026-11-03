@@ -1,0 +1,5805 @@
+{
+  "version": "1.7.4.4",
+  "versionCode": 177,
+  "count": 644,
+  "base_commit": "be95241ce05420fad415202ca66772c20794c8d9",
+  "package": "com.nanami128sketch.routinefit",
+  "images": [
+    {
+      "id": "barbell-bench",
+      "name": "벤치프레스",
+      "path": "media/rf174-complete/barbell-bench.webp",
+      "sha256": "f7b2d0d067132f4f0b14645008060462b30fcfc596e768b2c87143976e3bd0e9",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "incline-dumbbell-press",
+      "name": "인클라인 덤벨프레스",
+      "path": "media/rf174-release/incline-dumbbell-press.webp",
+      "sha256": "b67e687d6da5b064e90da01faabb88de6ae6904f4c2294542c07a3907614729e",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "chest-press",
+      "name": "체스트프레스 머신",
+      "path": "media/rf174-complete/chest-press.webp",
+      "sha256": "76abbdcebd5a03f93959ce01e1b3395f14912934dc1ab538810d31ab4dfc88ff",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "pec-deck",
+      "name": "펙덱 플라이",
+      "path": "media/rf174-complete/pec-deck.webp",
+      "sha256": "4d3e9569cd6d64374c73e1dd3925bb4e1691eb1c44b65621b3cd2995ff4ef77c",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "push-up",
+      "name": "푸시업",
+      "path": "media/rf174-complete/push-up.webp",
+      "sha256": "5fa4943c19d3b3152e450e627db541d853de1b9990e89d1c9da577291f6f6d18",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "cable-crossover",
+      "name": "케이블 크로스오버",
+      "path": "media/rf174-complete/cable-crossover.webp",
+      "sha256": "2a0e9c67f14b689491ed373744b62e58c15d64e934c4dcdfdfe355d7a2045228",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "lat-pulldown",
+      "name": "랫풀다운",
+      "path": "media/rf174-complete/lat-pulldown.webp",
+      "sha256": "2f54336ec1bd6a5d736b33eeaa47010bcebd522fa4ee83325284415b48f565d0",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "pull-up",
+      "name": "풀업",
+      "path": "media/rf174-complete/pull-up.webp",
+      "sha256": "b884af7bfe047f601057c07ee5de0b9b66f03d091d2be6691dea1ca3bf0109d5",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "seated-row",
+      "name": "시티드 로우",
+      "path": "media/rf174-complete/seated-row.webp",
+      "sha256": "81428f242d548839b2c91040440d10b8a49b1cb18abe749cc1e7db906099aec8",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "barbell-row",
+      "name": "바벨 로우",
+      "path": "media/rf174-complete/barbell-row.webp",
+      "sha256": "991aab01fbc46973a370d699fe64d2f3c95ddddf62ffd46a3239c01c4a4da6b4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "dumbbell-row",
+      "name": "원암 덤벨로우",
+      "path": "media/rf174-complete/dumbbell-row.webp",
+      "sha256": "1cdc5f662d5920a57fbfd6bc0476c9d0d672f94e290cc6912d64396130d5ef3c",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "assisted-pull-up",
+      "name": "어시스트 풀업",
+      "path": "media/rf174-complete/assisted-pull-up.webp",
+      "sha256": "c5142edc17e1359629c9303b125afc7428dca63e178a8231810ea1b562eba2ee",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "barbell-squat",
+      "name": "바벨 스쿼트",
+      "path": "media/rf174-complete/barbell-squat.webp",
+      "sha256": "ef5b0c29508ea301036aebf3afc619e6f14a7bf18aacebd3efa35d9b08152608",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "leg-press",
+      "name": "레그프레스",
+      "path": "media/rf174-complete/leg-press.webp",
+      "sha256": "01fbe5bb02f6d2a256cc5df9ef2a1d7405b68d9d1bd575b4e5ed8dc81d8f6daa",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "leg-extension",
+      "name": "레그 익스텐션",
+      "path": "media/rf174-complete/leg-extension.webp",
+      "sha256": "6ef5969fcfa39d8e457a66f7068db0f5171fda284daf5ee880f2e20e29e16095",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "leg-curl",
+      "name": "레그 컬",
+      "path": "media/rf174-complete/leg-curl.webp",
+      "sha256": "0d7cf89ef5b33d617fd1b29a66d600631f7a5b1996c5fce2090468fa29afb0fd",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "dumbbell-lunge",
+      "name": "덤벨 런지",
+      "path": "media/rf174-complete/dumbbell-lunge.webp",
+      "sha256": "11cd4a7ae89b542e60ba38d5faa0750ab73c6cf0dfc5415255354d87cdfebbad",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "calf-raise",
+      "name": "카프 레이즈",
+      "path": "media/rf174-complete/calf-raise.webp",
+      "sha256": "3282579bc7223d4f2eae39a4457a64042d16b8a7a4c0c3608b1009c88e260a30",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "goblet-squat",
+      "name": "고블릿 스쿼트",
+      "path": "media/rf174-complete/goblet-squat.webp",
+      "sha256": "788a7a04911f31cfa7ac2ca0b656b35af1c5cbb879bfaae4343ee601549d9673",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "bodyweight-squat",
+      "name": "맨몸 스쿼트",
+      "path": "media/rf174-complete/bodyweight-squat.webp",
+      "sha256": "09fd717edcf0ae056ad4e5aaf1c9afc27b2ac4873fc9c44854220f3438f3db11",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "shoulder-press",
+      "name": "숄더프레스",
+      "path": "media/rf174-complete/shoulder-press.webp",
+      "sha256": "2354dba87ad3d6dce1cbc6e90fc6d236ca9bf4a911dcd51d864be09a03a17e66",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "lateral-raise",
+      "name": "사이드 레터럴 레이즈",
+      "path": "media/rf174-complete/lateral-raise.webp",
+      "sha256": "d33baf7f583ee6d2c2b7a6172c581c09ecf7392617bc6f503c82831d58837dd3",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "rear-delt-fly",
+      "name": "리어 델트 플라이",
+      "path": "media/rf174-complete/rear-delt-fly.webp",
+      "sha256": "fb7b1e955a20868575f521325c37fa90a56e9e9d1dbc196db0a765d9ddf63b68",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "pike-push-up",
+      "name": "파이크 푸시업",
+      "path": "media/rf174-release/pike-push-up.webp",
+      "sha256": "29f5139124a1e2738c3bf9c5705de4d14f11c4c72222b15977b30f87cf979e47",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "barbell-curl",
+      "name": "바벨 컬",
+      "path": "media/rf174-complete/barbell-curl.webp",
+      "sha256": "9d7e8f751dea132f5ccad92a9e5468b69e7ff1b924c10d2ec96c3c586fe7abf6",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "hammer-curl",
+      "name": "해머 컬",
+      "path": "media/rf174-complete/hammer-curl.webp",
+      "sha256": "b542c88ca579ac6de328b623491244c87c3e8720efe32e7cfbb5793122a8dd3f",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "triceps-pushdown",
+      "name": "트라이셉스 푸시다운",
+      "path": "media/rf174-complete/triceps-pushdown.webp",
+      "sha256": "1a3b27a939fe8049ed666a75cb94d6881801cbc042ccb059b070552ac4a6d7c0",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "dips",
+      "name": "딥스",
+      "path": "media/rf174-complete/dips.webp",
+      "sha256": "094a5f1cdc9f56f45443e76ec81f7461b11c045fd9e32474f6e112e50d806ae2",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "skullcrusher",
+      "name": "라잉 트라이셉스 익스텐션",
+      "path": "media/rf174-complete/skullcrusher.webp",
+      "sha256": "eba040c6aa2c218fa71d4c420dbf9a0050796019e799f7ad205372845a174d99",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "plank",
+      "name": "플랭크",
+      "path": "media/rf174-complete/plank.webp",
+      "sha256": "1d6f6a5ad17726437479ecedf2be53b1d5cc9dafd87032e418ca8c233bffee00",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "sit-up",
+      "name": "싯업",
+      "path": "media/rf174-complete/sit-up.webp",
+      "sha256": "31106b9cdede31edcbfa380251c7014d04ef1e19e78c3f58f9edb5c67d734f48",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "dead-bug",
+      "name": "데드버그",
+      "path": "media/rf174-complete/dead-bug.webp",
+      "sha256": "9c6e94e465f7a2e1a5d1a6ab00351caf8e095ee42e4a1fbd42de89f7a83c78b0",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "bicycle-crunch",
+      "name": "바이시클 크런치",
+      "path": "media/rf174-complete/bicycle-crunch.webp",
+      "sha256": "63a305dcefbbeefd63f4b09fb35f880a055942ef999c1021bcfb459316643421",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "leg-raise",
+      "name": "레그 레이즈",
+      "path": "media/rf174-complete/leg-raise.webp",
+      "sha256": "fef04fa159208d293617024f7ac6e013c7e16fa39b8fcb85c1e8b9042f9b3dae",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "russian-twist",
+      "name": "러시안 트위스트",
+      "path": "media/rf174-complete/russian-twist.webp",
+      "sha256": "db715437196de7bbb9fe3bce150940c57f574852cd01ff5771b4e93865f9766f",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "treadmill",
+      "name": "트레드밀",
+      "path": "media/rf174-complete/treadmill.webp",
+      "sha256": "4eab5e64139fbe176997abf55c3a5dbfb1e6878c904dbbbc9eccd49d3605ae6f",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "stationary-bike",
+      "name": "실내 자전거",
+      "path": "media/rf174-complete/stationary-bike.webp",
+      "sha256": "1f20a3b2a1b8745b7af338f09d616f44e7ede35bd9c6c1666e2ca1d5f376df16",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "jumping-jack",
+      "name": "점핑잭",
+      "path": "media/rf174-complete/jumping-jack.webp",
+      "sha256": "4bd5beb36dbc23883de3d36a884de404d4bcf04d3de036396f5892003ba7eaf7",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "burpee",
+      "name": "버피",
+      "path": "media/rf174-complete/burpee.webp",
+      "sha256": "7f6f64e6de417816d1b3c29a62f764550348c10f105033c7e160154a248a534f",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-7fd7357d060a76",
+      "name": "스미스머신 벤치프레스",
+      "path": "media/rf174-release/ex-7fd7357d060a76.webp",
+      "sha256": "782ac030f44919a9e40d2e86627efc549c7cc2c6b8a62f12a538e9be5dae1ff5",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-ef032fe7278211",
+      "name": "스미스머신 인클라인 벤치프레스",
+      "path": "media/rf174-complete/ex-ef032fe7278211.webp",
+      "sha256": "d3b9aafb6777f9c15f4525421596c73f2960660b376145e47dd2f779ec13be6f",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-5f597917eec034",
+      "name": "스미스머신 디클라인 벤치프레스",
+      "path": "media/rf174-complete/ex-5f597917eec034.webp",
+      "sha256": "b02a0bea596a9191c547b78f709d198d12865df914ae42fb5ca2dd549f1f92d9",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-7758972f3bd43f",
+      "name": "스미스머신 클로즈그립 벤치프레스",
+      "path": "media/rf174-complete/ex-7758972f3bd43f.webp",
+      "sha256": "2b41eb0e8aaa78eb73ac10a2f8154005ccef3b526d4518c53141a5f24b1a6fde",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-e95c414b8a0436",
+      "name": "스미스머신 스쿼트",
+      "path": "media/rf174-complete/ex-e95c414b8a0436.webp",
+      "sha256": "e5011d842aa53fe9170355fa49ca2161d5f83c6db6555f0e3c1f975b13ba6b16",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-0f8795731d8e06",
+      "name": "스미스머신 프론트 스쿼트",
+      "path": "media/rf174-complete/ex-0f8795731d8e06.webp",
+      "sha256": "fa6aa90d3619969e525e67e14f370fac8d1d9db5419f302cc043452f87e0c7c5",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-c669ace074c226",
+      "name": "스미스머신 와이드 스쿼트",
+      "path": "media/rf174-complete/ex-c669ace074c226.webp",
+      "sha256": "1ffbb2ffbfae1153ada74af08055dd33675c9544872edc30c24d3048ce6bd504",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-a6bdb77284c2b5",
+      "name": "스미스머신 스모 스쿼트",
+      "path": "media/rf174-complete/ex-a6bdb77284c2b5.webp",
+      "sha256": "715b8d41dcd67786d45ec5265c0f430b2ef858a703827b3b29d9524990d9a01a",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-b5f01cf32e4310",
+      "name": "스미스머신 런지",
+      "path": "media/rf174-complete/ex-b5f01cf32e4310.webp",
+      "sha256": "8f7cca4aa1561615b2c3e52beebda0c0f2e7469f28c63e1f1d3ad4e340423358",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-4380cc3a5270b5",
+      "name": "스미스머신 리버스 런지",
+      "path": "media/rf174-release/ex-4380cc3a5270b5.webp",
+      "sha256": "44bf5323082b16bc1228b3c9eccd700f298f9663b88699b46cfad86d93a72a18",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-3d0c05a8fb3ac1",
+      "name": "스미스머신 불가리안 스플릿 스쿼트",
+      "path": "media/rf174-complete/ex-3d0c05a8fb3ac1.webp",
+      "sha256": "684e3792d8cdab26207a14898ecddae4bf89322f704d863c794815162d7e7b47",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-70386d73ec1f56",
+      "name": "스미스머신 힙쓰러스트",
+      "path": "media/rf174-release/ex-70386d73ec1f56.webp",
+      "sha256": "65ab7a68808176bf2fd023ca432beddc2070b72c94413fdf49d3314f54263f78",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-dbd58dd50cdcc2",
+      "name": "스미스머신 루마니안 데드리프트",
+      "path": "media/rf174-release/ex-dbd58dd50cdcc2.webp",
+      "sha256": "b7fd035f123af9878ba9b7dbbb43bd44dc7881c7d23ef4484a23c3c07aa1f596",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-9bb8b5bf020513",
+      "name": "스미스머신 데드리프트",
+      "path": "media/rf174-release/ex-9bb8b5bf020513.webp",
+      "sha256": "4bf5d06b5f3d525a263815b359721ae7d6af65610ac481c6a6704d67c07506c2",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-06497e946f5a75",
+      "name": "스미스머신 숄더프레스",
+      "path": "media/rf174-release/ex-06497e946f5a75.webp",
+      "sha256": "3907702f98b04d4843eb128e75725d6c457cfaa9ca9dc9c0b7283aaa600ed5a5",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-53e8a5a54858d9",
+      "name": "스미스머신 업라이트 로우",
+      "path": "media/rf174-release/ex-53e8a5a54858d9.webp",
+      "sha256": "1801497fee88f793a9990233e2f93dd0237e7c831bd92903b03f8b511b551811",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-204b30ef5188c2",
+      "name": "스미스머신 바벨 로우",
+      "path": "media/rf174-complete/ex-204b30ef5188c2.webp",
+      "sha256": "1bd38cf72464f3b026fabd43beec78e47c8d6d74d83a123aee63d181bd708950",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-6cf24ac08f877b",
+      "name": "스미스머신 인버티드 로우",
+      "path": "media/rf174-complete/ex-6cf24ac08f877b.webp",
+      "sha256": "fb754b63f7d8d0712a8fe66d4c84462850a8a5c0a961af042c19fbf1d11c4548",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-1a712ad308d32c",
+      "name": "스미스머신 슈러그",
+      "path": "media/rf174-complete/ex-1a712ad308d32c.webp",
+      "sha256": "bc0330b6bbb8c129ea9b6ce25a178b82de8a4cbfbe48f1efea00db30020efa8c",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-0694405a115237",
+      "name": "스미스머신 카프레이즈",
+      "path": "media/rf174-release/ex-0694405a115237.webp",
+      "sha256": "8a23c8ded2127bbb0a3bfb07d04cb87235f7a7dc1ba7a5712281c1e1c0f9a56d",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-23e026b4e95484",
+      "name": "스미스머신 글루트 브리지",
+      "path": "media/rf174-complete/ex-23e026b4e95484.webp",
+      "sha256": "285a951bccc365e9f7c8eff64106806e9a0c2f2a16dc6ccaf45b60ae867dff20",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-3a6fcb595a842c",
+      "name": "스미스머신 랙풀",
+      "path": "media/rf174-complete/ex-3a6fcb595a842c.webp",
+      "sha256": "2855242c1849914c469386686d33dec8eb47c507552d38a88bd57acd043326f3",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-ee1ecb8ae3664c",
+      "name": "인클라인 체스트프레스 머신",
+      "path": "media/rf174-complete/ex-ee1ecb8ae3664c.webp",
+      "sha256": "e0fca1de356fd5bc99559c41ffe9f4ae46916b1b9c7b9346d41b0075ea768b1f",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-62671417cc24e1",
+      "name": "디클라인 체스트프레스 머신",
+      "path": "media/rf174-complete/ex-62671417cc24e1.webp",
+      "sha256": "75eb482dcb87197c6416d3fca2df44b21a12d9bea2b6a96aa9771628ad987eab",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-e43325b908f6c5",
+      "name": "시티드 체스트프레스 머신",
+      "path": "media/rf174-complete/ex-e43325b908f6c5.webp",
+      "sha256": "5b863ddea79a0b535c35b6788f52e822cff96ff1e0b5dcbb6dcbb4b522e253f0",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-a87dedff10ec9c",
+      "name": "인클라인 플라이 머신",
+      "path": "media/rf174-complete/ex-a87dedff10ec9c.webp",
+      "sha256": "9f31a49f31b47182b23b32d6d2ecce1f222ef42d77011d3414d5002c751cb325",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-995a4a6ec247b6",
+      "name": "펙덱 리버스 플라이",
+      "path": "media/rf174-complete/ex-995a4a6ec247b6.webp",
+      "sha256": "d01db4777066044553091551436c5d339b58d5c5dd2e689b8e0924d0db2dbfa0",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-22e678481c073c",
+      "name": "어깨 프레스 머신",
+      "path": "media/rf174-complete/ex-22e678481c073c.webp",
+      "sha256": "8866dc997306d7420171c70bc47cc8ea4a05d3736d8f7afcb1444b32a7854b96",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-e68374620b5f89",
+      "name": "레터럴 레이즈 머신",
+      "path": "media/rf174-complete/ex-e68374620b5f89.webp",
+      "sha256": "3a059090b76a3a67d7d731cb8aa34d4d071f56bbfcbd830a29deb74fa82f4251",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-79cb9310b81cf8",
+      "name": "리어델트 머신",
+      "path": "media/rf174-complete/ex-79cb9310b81cf8.webp",
+      "sha256": "13ebe1020a2bfb3ebda82d82c8a9e314a2c35b1f13863e7d334fb14c379ee8dd",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-114b3c1cd8c427",
+      "name": "하이 로우 머신",
+      "path": "media/rf174-release/ex-114b3c1cd8c427.webp",
+      "sha256": "8ded810ec41fd7488e3b4a93aa40a11967c3af3d4aa775545d3b707bc3373f9e",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-8e1b8c6cedc2a4",
+      "name": "로우 로우 머신",
+      "path": "media/rf174-release/ex-8e1b8c6cedc2a4.webp",
+      "sha256": "4c6eeeab09134cdff08f56b3c0d42bd408ab38808f1c409d2631fb7d29652d8e",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-b4b2c5585f3d17",
+      "name": "시티드 로우 머신",
+      "path": "media/rf174-release/ex-b4b2c5585f3d17.webp",
+      "sha256": "adb2671f28868721ea172f4a2aaa4d0327055960eb89be10fd84145645d324c2",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-1fd8870b7f3ded",
+      "name": "체스트 서포티드 로우 머신",
+      "path": "media/rf174-complete/ex-1fd8870b7f3ded.webp",
+      "sha256": "e08ebfa331fef0ba853af0086b2cdb63e5216ab0662881fea78de8f1f791d7e7",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-b2ea3dd54c354c",
+      "name": "아이소래터럴 로우 머신",
+      "path": "media/rf174-release/ex-b2ea3dd54c354c.webp",
+      "sha256": "057b73ce3b4baae0290cdd6f5717d67cdb6f8f6f3fa4262d7efeb330cf27de96",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-18655ff3336777",
+      "name": "풀오버 머신",
+      "path": "media/rf174-complete/ex-18655ff3336777.webp",
+      "sha256": "cfb183539bdc3b53fbf13fa6780b21e3312b8b3e90ae4ce04ca99be9fa7feda7",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-7682a3386e2e52",
+      "name": "어시스트 딥스 머신",
+      "path": "media/rf174-complete/ex-7682a3386e2e52.webp",
+      "sha256": "e3538353767809eca92dca6fb831a5aaad029e5be89855b5f9841914be61251f",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-8767fddc7c2096",
+      "name": "암 컬 머신",
+      "path": "media/rf174-complete/ex-8767fddc7c2096.webp",
+      "sha256": "53b9bafe24bc499aefeb9afc3ddc9fbb17d8d05b60b348c522a1840ff344cc37",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-263a5a0d920645",
+      "name": "프리처 컬 머신",
+      "path": "media/rf174-complete/ex-263a5a0d920645.webp",
+      "sha256": "19193d9ccef34ac03c6dd690cd5f1e9ead86ed35fd2510568f87cb3b16cfaf42",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-60e50207724ceb",
+      "name": "트라이셉스 익스텐션 머신",
+      "path": "media/rf174-complete/ex-60e50207724ceb.webp",
+      "sha256": "f54e848737d2c2e6d62dbcdc951fbb6da8ce896fea4557583ca71c777f9d748e",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-977ee867933d7c",
+      "name": "핵스쿼트 머신",
+      "path": "media/rf174-release/ex-977ee867933d7c.webp",
+      "sha256": "8bd16d88335cb4ecec6a1fd08d6ac882cb5a18abf09ec24edb661f5da39786ae",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-7148bd04792cca",
+      "name": "브이 스쿼트 머신",
+      "path": "media/rf174-complete/ex-7148bd04792cca.webp",
+      "sha256": "815ea3f88f2790725906f42905b5842dcf3a55f262ceecbfc16069d1a9ad5b09",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-d11d21a2496d66",
+      "name": "벨트 스쿼트 머신",
+      "path": "media/rf174-complete/ex-d11d21a2496d66.webp",
+      "sha256": "763e4edc9debb346b77f60dcc970e4b8ce82fdc6a711e895257461f9d37e4790",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-e5fcc6a3c93b85",
+      "name": "펜듈럼 스쿼트 머신",
+      "path": "media/rf174-complete/ex-e5fcc6a3c93b85.webp",
+      "sha256": "e5ea6403ca975c83af26d119326b1eb5c559a78169c39b70a97486024f7bc4a3",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-9d22092550d145",
+      "name": "호리존탈 레그프레스",
+      "path": "media/rf174-complete/ex-9d22092550d145.webp",
+      "sha256": "ae0967f71b22c97f6974fb0d1c06e1deb1f201e8e5bd046297e2d6bd9ce694ad",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-b3809fe3558cb7",
+      "name": "45도 레그프레스",
+      "path": "media/rf174-release/ex-b3809fe3558cb7.webp",
+      "sha256": "2e7de6a2686037dc60b88cfa286c3c7f79d4beba52b2a9c5d36db4e4f2f3cca7",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-ed777c21dfbb93",
+      "name": "싱글레그 레그프레스",
+      "path": "media/rf174-complete/ex-ed777c21dfbb93.webp",
+      "sha256": "ad6ab5366ae64d36f000938fdfb2341f3eb5e616de035a1af33f2e6f7f911139",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-3349c796807032",
+      "name": "시티드 레그컬",
+      "path": "media/rf174-release/ex-3349c796807032.webp",
+      "sha256": "bb2fc846ccf9b8f584e3a26ba91e3a684882b136c2e975276e3a7abaa28038c4",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-aa58d609ed33d6",
+      "name": "라잉 레그컬",
+      "path": "media/rf174-release/ex-aa58d609ed33d6.webp",
+      "sha256": "2a437fc9b18e6590aed34d177314bf640dcefbbc38501c9b1345eaa7f6bbe9cc",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-54a6a413517b0e",
+      "name": "스탠딩 레그컬 머신",
+      "path": "media/rf174-complete/ex-54a6a413517b0e.webp",
+      "sha256": "67b552c4e2ef13916c83ecea96029d723fbdfadce4f6f1d0fc1738aebae169ff",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-3fb6d1f19c4348",
+      "name": "힙 어브덕션 머신",
+      "path": "media/rf174-release/ex-3fb6d1f19c4348.webp",
+      "sha256": "619a0cf4c820bfe922c3db1a530ac361cc818282de03fa9e686bea16e7399f1e",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-d388534c1ff6eb",
+      "name": "힙 어덕션 머신",
+      "path": "media/rf174-release/ex-d388534c1ff6eb.webp",
+      "sha256": "3875ac28bd254534ec494830bd0634ce68ab24bcc9b44cc4cb27b589547011a1",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-2e723d5f21ebaa",
+      "name": "글루트 킥백 머신",
+      "path": "media/rf174-complete/ex-2e723d5f21ebaa.webp",
+      "sha256": "14848167375ac5a1fae1d34faca240b39da87fa12fac98fa602d91d31b8d7e38",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-7bf355f48dbe0a",
+      "name": "글루트 드라이브 머신",
+      "path": "media/rf174-complete/ex-7bf355f48dbe0a.webp",
+      "sha256": "4f24488b270a6f5c35151bd73f45ddea667fd232003f542d7bf08fc788ade321",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-d1d49079c2c62e",
+      "name": "시티드 카프레이즈 머신",
+      "path": "media/rf174-release/ex-d1d49079c2c62e.webp",
+      "sha256": "da03ba1e6c18ff2f81c4471e26d93cc8fe7c3a2b9948dff4ad3e26cc91946fa7",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-cf2e631917e4b8",
+      "name": "스탠딩 카프레이즈 머신",
+      "path": "media/rf174-complete/ex-cf2e631917e4b8.webp",
+      "sha256": "d9f531abd2bcaa7e7236678e502cd2f1b218d8c490f07c759c74af7ea199ae67",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-735d29a20698da",
+      "name": "복근 크런치 머신",
+      "path": "media/rf174-complete/ex-735d29a20698da.webp",
+      "sha256": "476a0fa3eddef4df4f55ab5900cadf785640d584a4a56a5f4cde5e9225006180",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-026d9a0e3f942c",
+      "name": "토르소 로테이션 머신",
+      "path": "media/rf174-complete/ex-026d9a0e3f942c.webp",
+      "sha256": "5cc9b418675ffa811a1273177619052151f0e938ddb8a6b40301f65262b4a7bf",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-206b21d3bbd954",
+      "name": "백 익스텐션 머신",
+      "path": "media/rf174-complete/ex-206b21d3bbd954.webp",
+      "sha256": "8b0e554785164d406aeee558f1eaa4d3e75d0c92be049c952d023c11ff3f74b9",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-a2bb6ad735359a",
+      "name": "그라비트론 풀업",
+      "path": "media/rf174-complete/ex-a2bb6ad735359a.webp",
+      "sha256": "d017c84e8e85e60186142fedc1108d9a4e724e3dcf8b5bf0b3af6f97772fc416",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-544a7d5dfb65c8",
+      "name": "케이블 하이 투 로우 플라이",
+      "path": "media/rf174-complete/ex-544a7d5dfb65c8.webp",
+      "sha256": "92644b16a447fdb67e46b067a05f02777a1d771df3e2adbbce98ddf9b39e8446",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-2db469d1bc685a",
+      "name": "케이블 로우 투 하이 플라이",
+      "path": "media/rf174-complete/ex-2db469d1bc685a.webp",
+      "sha256": "8a03d2ed37796f61fa042f5df9362fa359efdd1d1ec98711b782ec8d0fb0a662",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-7d15d61b947276",
+      "name": "케이블 체스트프레스",
+      "path": "media/rf174-complete/ex-7d15d61b947276.webp",
+      "sha256": "888c10cf63b35e13eedaee14fc86fb623dae687544fed0909c866ccbd3388a4f",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-46d3edd23ebdf1",
+      "name": "싱글암 케이블 플라이",
+      "path": "media/rf174-complete/ex-46d3edd23ebdf1.webp",
+      "sha256": "c948cfd7a8b6e3aac378e6f2149fc0d2882e4235f40064cb500cc08e739bbbf7",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-2e4d6a888360bc",
+      "name": "스트레이트 암 풀다운",
+      "path": "media/rf174-complete/ex-2e4d6a888360bc.webp",
+      "sha256": "61bd59a572eaae4cb7510887fd3c87c452ca4c1f319616590512e5a8bad4e790",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-d2fa62525ebcf7",
+      "name": "원암 케이블 로우",
+      "path": "media/rf174-complete/ex-d2fa62525ebcf7.webp",
+      "sha256": "a91518828ec22f59cebdb5959b9771c3d5d8b26fc208702c64c84edb057247fe",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-3eeb8c5b38e96b",
+      "name": "케이블 페이스풀",
+      "path": "media/rf174-complete/ex-3eeb8c5b38e96b.webp",
+      "sha256": "af8fd34c54ea3117c4904c19e3e0a10b2cbad4963bc98bfe03758b57e88a0adf",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-dc51a1cfd5b6e5",
+      "name": "케이블 리버스 플라이",
+      "path": "media/rf174-complete/ex-dc51a1cfd5b6e5.webp",
+      "sha256": "2bc8f4bd78274a673f1861f14b1a88a097b761b65d2a6b0bfeb17a7f53d97c53",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-83f484d2da0b74",
+      "name": "케이블 레터럴 레이즈",
+      "path": "media/rf174-complete/ex-83f484d2da0b74.webp",
+      "sha256": "7b4b1e08269c640e824d32c4244923a35e21685502a5eedef0b0bd08d1cf6f4c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-5c30e1afdea4db",
+      "name": "케이블 프론트 레이즈",
+      "path": "media/rf174-complete/ex-5c30e1afdea4db.webp",
+      "sha256": "fe3f75421134bce227a61e543f8003ce927ae98e1d91382e6224c0723728c45a",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-ca1c9f3f3f371c",
+      "name": "케이블 업라이트 로우",
+      "path": "media/rf174-complete/ex-ca1c9f3f3f371c.webp",
+      "sha256": "9fa0e85152ea4a84555f6349efec47f5cc432f17526e316ea8d6e7ee12db1fc1",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-c4ed1febaabedc",
+      "name": "케이블 바이셉스 컬",
+      "path": "media/rf174-complete/ex-c4ed1febaabedc.webp",
+      "sha256": "c7adb19cb7beaf2a30654ade5d28bf79c00631c4f13b5c7e8edbe006201bbbdb",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-698cbf7247f66d",
+      "name": "케이블 해머 컬",
+      "path": "media/rf174-complete/ex-698cbf7247f66d.webp",
+      "sha256": "f3d890c5446a9452aa3dbaae68e5661f297a600639f8aafcf382b40780f31ae9",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-3bf2ab8709fe52",
+      "name": "케이블 프리처 컬",
+      "path": "media/rf174-complete/ex-3bf2ab8709fe52.webp",
+      "sha256": "1badcc04ce3d5a4b2327d34dce290b9df76fe3258b37a876c40f20874c3142da",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-2b065ec94a6edd",
+      "name": "오버헤드 케이블 삼두 익스텐션",
+      "path": "media/rf174-complete/ex-2b065ec94a6edd.webp",
+      "sha256": "08383e9ed85867270c191fed4ee7c100d61cb3e37f32d8fe7736af950a4102e1",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-6c72bfa3c3c808",
+      "name": "케이블 로프 푸시다운",
+      "path": "media/rf174-complete/ex-6c72bfa3c3c808.webp",
+      "sha256": "0537f5ae6c178b22d9a841dace937f9cb5e603fada68c4da5f8e5f8a88283ffb",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-b4cd7d44332d20",
+      "name": "케이블 킥백",
+      "path": "media/rf174-complete/ex-b4cd7d44332d20.webp",
+      "sha256": "5e300bb0b87d097734746ba2b5a13d9a2f4f6dadb81b8bc03bd658f3c7c10c89",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-ed0397ab4ce968",
+      "name": "케이블 크런치",
+      "path": "media/rf174-complete/ex-ed0397ab4ce968.webp",
+      "sha256": "e0a651e3c258d5caa80af532a35560af3116f4c293845de37046f07e421a0784",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-632192a8181b79",
+      "name": "케이블 우드촙",
+      "path": "media/rf174-release/ex-632192a8181b79.webp",
+      "sha256": "d656d7ec79f84eec5258dc1558222240b5bebc63b9e8c6c7e9ab6d3e9fe06a3f",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-de330af0df27f6",
+      "name": "케이블 팔로프 프레스",
+      "path": "media/rf174-complete/ex-de330af0df27f6.webp",
+      "sha256": "829d95c2c6a20f09a0c9d7d22939436d8b51ea41f409cd4a80457259eca4fe39",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-c8a351fc247438",
+      "name": "케이블 풀스루",
+      "path": "media/rf174-complete/ex-c8a351fc247438.webp",
+      "sha256": "26f786a9edbdeafe6f3fc65fa28a3bac34e08ef3560fd95185e73d8bbd2242a2",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-a6a1fc2cab245e",
+      "name": "케이블 글루트 킥백",
+      "path": "media/rf174-complete/ex-a6a1fc2cab245e.webp",
+      "sha256": "b3ee3e4871999d9ac558fe9d6da20519b4c0c86fd450d0681f7964ff9a196d16",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-3cba34cd7d07cb",
+      "name": "케이블 힙 어브덕션",
+      "path": "media/rf174-complete/ex-3cba34cd7d07cb.webp",
+      "sha256": "e2008e80159b7b92d118d435a3bfee9d33b1944f596becf8fa93cf431fa8ab8e",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-e3aba728abdb82",
+      "name": "케이블 힙 어덕션",
+      "path": "media/rf174-complete/ex-e3aba728abdb82.webp",
+      "sha256": "fbc68947f814ae415cc164162fc1a52950316e2457bdf1faff6a2163d4d2e2b4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-50701b4b5aaa67",
+      "name": "바벨 데드리프트",
+      "path": "media/rf174-complete/ex-50701b4b5aaa67.webp",
+      "sha256": "8678ef8fb5fd80e9600f1f1eea163351357eeb1929f7b5a388014c11c5719c22",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-b36509857f693c",
+      "name": "바벨 루마니안 데드리프트",
+      "path": "media/rf174-complete/ex-b36509857f693c.webp",
+      "sha256": "4ba3c4fa1173fd635afc03f24cfe91d5a2270ebd17ff2ed6e901a96da793d302",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-5bcab26eddf1e4",
+      "name": "바벨 스모 데드리프트",
+      "path": "media/rf174-release/ex-5bcab26eddf1e4.webp",
+      "sha256": "d8fee812330f3072510f1b8b93d3ef29ef538c63b2c4fe41f7df6fdbec223863",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-a955543e8cb379",
+      "name": "바벨 프론트 스쿼트",
+      "path": "media/rf174-release/ex-a955543e8cb379.webp",
+      "sha256": "71226d410d62e8d1ecb62757e60d3af965b5403f32c128dd9aac497af37750d3",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-1cad770e9804c3",
+      "name": "바벨 박스 스쿼트",
+      "path": "media/rf174-complete/ex-1cad770e9804c3.webp",
+      "sha256": "f8a26e305d9a0f0ac55e914f83efdb052832845c53ff2c2bd27b2978fd2a13e6",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-24fb8ff2794f7e",
+      "name": "바벨 힙쓰러스트",
+      "path": "media/rf174-release/ex-24fb8ff2794f7e.webp",
+      "sha256": "ee70d1f241ae3b49d946690d1c4567f40e470a26e19db0aeb645009497311d21",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-2731c7c55e2bd2",
+      "name": "바벨 굿모닝",
+      "path": "media/rf174-complete/ex-2731c7c55e2bd2.webp",
+      "sha256": "dafca3cb42fbd22cba3ec9f8f2d07a438dee8d943fc8bf8976d3cee44a0cc266",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-6f54c3c4cbdcdc",
+      "name": "바벨 스플릿 스쿼트",
+      "path": "media/rf174-complete/ex-6f54c3c4cbdcdc.webp",
+      "sha256": "893506ed425262814b2965bfce5dc614e8208f653e4a28d18ea0c95bd7cedb23",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-3e9355d18170d1",
+      "name": "바벨 밀리터리 프레스",
+      "path": "media/rf174-complete/ex-3e9355d18170d1.webp",
+      "sha256": "a9273d59f6fecb68e7fe407102ff5e793498bfe67cd560bc8b091490b5be6a64",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-a3742593fa1e51",
+      "name": "바벨 푸시프레스",
+      "path": "media/rf174-complete/ex-a3742593fa1e51.webp",
+      "sha256": "281306f4169eb43309f20f1c3c3f64581cefc3bca0e922e3256a9f98f7458fd0",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-30a9af9a7545cf",
+      "name": "바벨 업라이트 로우",
+      "path": "media/rf174-complete/ex-30a9af9a7545cf.webp",
+      "sha256": "a8182ea01e866fc7a3f490c78b4a82bad70124fb7372f0bc3b14d167203ed8a4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-f27daf0c0549df",
+      "name": "바벨 슈러그",
+      "path": "media/rf174-complete/ex-f27daf0c0549df.webp",
+      "sha256": "69c9535d920bfcab998cc32e2da8503446ead9adff63ee4b36cf7b7e49f58db2",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-88a967932049bd",
+      "name": "바벨 펜들레이 로우",
+      "path": "media/rf174-complete/ex-88a967932049bd.webp",
+      "sha256": "a7eae21a65b675dafa524efee3b4146e690729aba7af3caae1d1fed9d1804b26",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-a8312b2bcee86b",
+      "name": "바벨 T바 로우",
+      "path": "media/rf174-complete/ex-a8312b2bcee86b.webp",
+      "sha256": "05e34259b7f1dd0cdd5f30cf99cf10e15f38231b983463ebe2e40c2128d9fb81",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-9130c511eab254",
+      "name": "바벨 클로즈그립 벤치프레스",
+      "path": "media/rf174-complete/ex-9130c511eab254.webp",
+      "sha256": "c5c48d3715899c24245c1f662f485dbbb9f00535b92c5dba6fc74901ff23b131",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-4621f69d36a7d6",
+      "name": "바벨 리버스 컬",
+      "path": "media/rf174-complete/ex-4621f69d36a7d6.webp",
+      "sha256": "1365f2efbbf2390bc5aba770f36a2483d985fc47948369cf408d58d29a03e687",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-616244540559a5",
+      "name": "바벨 롤아웃",
+      "path": "media/rf174-complete/ex-616244540559a5.webp",
+      "sha256": "641a32c4959ad47bc6b4093d239f14debc8b89d896602e7b7cfd9429a351c784",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-cda4464fb7bf7f",
+      "name": "바벨 랜드마인 프레스",
+      "path": "media/rf174-release/ex-cda4464fb7bf7f.webp",
+      "sha256": "ea06a246737872e4321299d0f2236830e03572f996682d7118899d510fa6efda",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-7d72e2036f9f2b",
+      "name": "랜드마인 로우",
+      "path": "media/rf174-release/ex-7d72e2036f9f2b.webp",
+      "sha256": "3c8852f4551a6a89730b1992dad5827b1bda115e44e16e9d573b9a10e3854f08",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-4551310720fc4c",
+      "name": "랜드마인 스쿼트",
+      "path": "media/rf174-release/ex-4551310720fc4c.webp",
+      "sha256": "fe2eb8ba2fa90ee087053cc236b0b9af77caee60351af134f7990ff395196f0e",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-29e7769fe132b0",
+      "name": "랜드마인 회전 운동",
+      "path": "media/rf174-release/ex-29e7769fe132b0.webp",
+      "sha256": "536c92a43504e5cc5356bf1e4fbd460ce1edce086776de133660bbe0e7d94517",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-64dfc6ca23d690",
+      "name": "덤벨 벤치프레스",
+      "path": "media/rf174-release/ex-64dfc6ca23d690.webp",
+      "sha256": "0d8145bb1aa5666d22581de95215c5545d2f8ed8be874f32dd31d05689a5c6c8",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-845f77dc591cb0",
+      "name": "덤벨 인클라인 플라이",
+      "path": "media/rf174-complete/ex-845f77dc591cb0.webp",
+      "sha256": "99c98f68a8a4231c820c0474398870e1692d776ab373e278f3cc39d0166fc5fa",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-7495c92bec6c4f",
+      "name": "덤벨 플랫 플라이",
+      "path": "media/rf174-complete/ex-7495c92bec6c4f.webp",
+      "sha256": "6e179f82af80d5fba797a0051d4141e74ab6fdcf7a2fdfe6a82bdceb4c401c68",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-953611bf3ac403",
+      "name": "덤벨 풀오버",
+      "path": "media/rf174-release/ex-953611bf3ac403.webp",
+      "sha256": "a9afa8382cc18004bd181aff76fd075af4bf2ee5f617414d1cc4aeffbb2580ba",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-8f311bba0ade90",
+      "name": "덤벨 아놀드 프레스",
+      "path": "media/rf174-complete/ex-8f311bba0ade90.webp",
+      "sha256": "d1fd671939cc3ecf1965ba0e476e233b10d88a9231003d7f3d5cb85df27230e3",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-c225ca4d240ae8",
+      "name": "덤벨 프론트 레이즈",
+      "path": "media/rf174-complete/ex-c225ca4d240ae8.webp",
+      "sha256": "02eca6c4338dc9226478ad85024790fc5d09926ce9879c73045e0965ac3d7590",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-9d375dbf5598bf",
+      "name": "덤벨 리버스 플라이",
+      "path": "media/rf174-complete/ex-9d375dbf5598bf.webp",
+      "sha256": "693805bb56cf2ad1d9e0e2925ca68ce4b1faa87bb215a0a22ad8604608a29cb4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-a9b5bc41b545a9",
+      "name": "덤벨 업라이트 로우",
+      "path": "media/rf174-complete/ex-a9b5bc41b545a9.webp",
+      "sha256": "2c1652cb62a360433b10e7184991f1ef20c263dc09a6b339bdeb67ceecb43f3e",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-f87ba2bdb89fe9",
+      "name": "덤벨 슈러그",
+      "path": "media/rf174-complete/ex-f87ba2bdb89fe9.webp",
+      "sha256": "cf121c3f8b3f91dbf1faafc1ef2b2c46e466e78beb7627d78ea8b8c519ee62b1",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-0e2a9fb9032677",
+      "name": "덤벨 체스트 서포티드 로우",
+      "path": "media/rf174-complete/ex-0e2a9fb9032677.webp",
+      "sha256": "faded888a34ee93bbc1349b8f11ef24ee97870f07fbb59f49f3e226ed81d8c53",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex-8490caa0431f4f",
+      "name": "덤벨 레니게이드 로우",
+      "path": "media/rf174-complete/ex-8490caa0431f4f.webp",
+      "sha256": "9418d64e2f97840777d8ae517a73c985caa52d54d7a2af47f3726d90ef79e0dd",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex-5b272173051bb3",
+      "name": "덤벨 루마니안 데드리프트",
+      "path": "media/rf174-release/ex-5b272173051bb3.webp",
+      "sha256": "899cebb75fa75cb8dbf8253e3e7a428d1d5fb6c0ae4ec769b9483938134d29c6",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-9728d0b96d6521",
+      "name": "덤벨 스텝업",
+      "path": "media/rf174-release/ex-9728d0b96d6521.webp",
+      "sha256": "beaafb1aa91c73f0b335e56ba7b5f6f9252c18882c1bdc9cb878adac69fac8d7",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-7b86642197c92c",
+      "name": "덤벨 불가리안 스플릿 스쿼트",
+      "path": "media/rf174-release/ex-7b86642197c92c.webp",
+      "sha256": "bbbb792ea5ca4bb9e8d66a7133f23f03140b519042dc27f9ad3dff70d9993d94",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-56bf6559007682",
+      "name": "덤벨 리버스 런지",
+      "path": "media/rf174-complete/ex-56bf6559007682.webp",
+      "sha256": "0112d76f2010e382902f677d2ad23a4ef1d35891131b841345bd2e0acd04326d",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-7f6246dc31bb00",
+      "name": "덤벨 사이드 런지",
+      "path": "media/rf174-complete/ex-7f6246dc31bb00.webp",
+      "sha256": "937d5735f5a3cbc5a429b60c309935b15754c13fa93730fbf968104c4586ccfa",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-eba551428541aa",
+      "name": "덤벨 카프레이즈",
+      "path": "media/rf174-complete/ex-eba551428541aa.webp",
+      "sha256": "d3e4c7191ab544587721a7108d69b5b9ffbdc6af5080b4df04d8a2a7960726d9",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-582edd73ab282b",
+      "name": "덤벨 컨센트레이션 컬",
+      "path": "media/rf174-complete/ex-582edd73ab282b.webp",
+      "sha256": "9941a23e0dc72cc857cdbb459e8eb0c8d74553654f1126d81a688d4756a5610c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-e542c8ec5f88b2",
+      "name": "덤벨 인클라인 컬",
+      "path": "media/rf174-complete/ex-e542c8ec5f88b2.webp",
+      "sha256": "2b0c4d25c392b2ffdbef7fe8e69ca4d7e4e825c600ac408894d9f2ff994b9957",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-5c1cdd74456b85",
+      "name": "덤벨 프리처 컬",
+      "path": "media/rf174-complete/ex-5c1cdd74456b85.webp",
+      "sha256": "d4a688bc33a66d9b44f689d3f84eb2190df98314e7e043c5faf91bb9c5384e52",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-9531e8feb89780",
+      "name": "덤벨 트라이셉스 킥백",
+      "path": "media/rf174-complete/ex-9531e8feb89780.webp",
+      "sha256": "c5a3a7166ba37290725268ed2ad8c3d303a1a523b0876ad4faa7006b9a56b4f2",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-46710d142a44b2",
+      "name": "덤벨 오버헤드 삼두 익스텐션",
+      "path": "media/rf174-release/ex-46710d142a44b2.webp",
+      "sha256": "e0fa2efd24dceb4471068aaf3739c4fe6f48427dfa7a8f3d6ffc12d5d5bf9c5b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-cbad04091a4102",
+      "name": "덤벨 스컬크러셔",
+      "path": "media/rf174-complete/ex-cbad04091a4102.webp",
+      "sha256": "3ea4abd565377be3ce6e79a3b0da8339c683c6660f242f9dc5b966999c963861",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-d14aabc7ad2c6b",
+      "name": "덤벨 파머스 워크",
+      "path": "media/rf174-complete/ex-d14aabc7ad2c6b.webp",
+      "sha256": "1abac8ab34ec78d5512548fedbb5204b80215a53afb7736f9e926469e52a1943",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-0438098d998638",
+      "name": "덤벨 쓰러스터",
+      "path": "media/rf174-release/ex-0438098d998638.webp",
+      "sha256": "9ce1bd973b29a23f292941381432a70c93e021c1bb2e400cd5bf78a760e4fef5",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-5467694f25e3b1",
+      "name": "덤벨 고블릿 런지",
+      "path": "media/rf174-complete/ex-5467694f25e3b1.webp",
+      "sha256": "49e6e17b7599911198631c49fce9a62270af85a55a83b6fd2cc956c6ed091626",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-0b521a312e8083",
+      "name": "무릎대고 푸시업",
+      "path": "media/rf174-complete/ex-0b521a312e8083.webp",
+      "sha256": "0dbbb05b6953632940662cc670310549d27197ae3f32d69e7edf3574df165d8e",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-d8e5cab3a6a43d",
+      "name": "인클라인 푸시업",
+      "path": "media/rf174-complete/ex-d8e5cab3a6a43d.webp",
+      "sha256": "b01cfbe1e2e4b75261e82a1d92749af39e8aee741024176dab2c4a0e5f96cf37",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-8b2ae4b1fc0008",
+      "name": "디클라인 푸시업",
+      "path": "media/rf174-complete/ex-8b2ae4b1fc0008.webp",
+      "sha256": "c10f754c27c97b8d1598ed11f35f784e26396af98f15fac6319823d944040fb2",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-d2cd9596dbc719",
+      "name": "다이아몬드 푸시업",
+      "path": "media/rf174-complete/ex-d2cd9596dbc719.webp",
+      "sha256": "8d54717a55071c535febcfef3dc3302c81bb361473eb38509d60004ef2ce4749",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-567b7857d21cb5",
+      "name": "와이드 푸시업",
+      "path": "media/rf174-complete/ex-567b7857d21cb5.webp",
+      "sha256": "314b862f691dd2b3a5b1a71b7328be8eff723bfc04f46a6d8eceb22fa39dd493",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-fad374d54890b5",
+      "name": "아처 푸시업",
+      "path": "media/rf174-release/ex-fad374d54890b5.webp",
+      "sha256": "3522401e4c611e1dab29e207a211a093d9538ea003104b99f3657cf1560f93c3",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-80cd34222c2e19",
+      "name": "물구나무 벽 버티기",
+      "path": "media/rf174-complete/ex-80cd34222c2e19.webp",
+      "sha256": "044d801e8181765cb0212054e6d6b4c2fe2426400b43a921a88057428e18b5a4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-30f51e047b73d9",
+      "name": "핸드스탠드 푸시업",
+      "path": "media/rf174-complete/ex-30f51e047b73d9.webp",
+      "sha256": "d36113192f9846d5ae5c7acaff3f70f0c34f09a7b60ac9e5d346e1b2e23cd71c",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-aa80d0fb97dda6",
+      "name": "친업",
+      "path": "media/rf174-complete/ex-aa80d0fb97dda6.webp",
+      "sha256": "f0dd4a21296614a6caaf886d745f69947f2caa25e0b4259930b7742ccb718cd4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-9b91d6aca80efa",
+      "name": "중립그립 풀업",
+      "path": "media/rf174-complete/ex-9b91d6aca80efa.webp",
+      "sha256": "1ea7d4d5708c26b96b60681eef5bdc3df08f609f8b1a7a88b0bd7eea2508f769",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-3f8cd0c30d500a",
+      "name": "네거티브 풀업",
+      "path": "media/rf174-complete/ex-3f8cd0c30d500a.webp",
+      "sha256": "7da608ba1b37f2dc903094cc2a4615c784b715a756424fe5af74758d91c8722e",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-9fc86077795d30",
+      "name": "인버티드 로우",
+      "path": "media/rf174-release/ex-9fc86077795d30.webp",
+      "sha256": "a5bd508d9f81ea16cad0dd4633cf14d55d8772ee3024f30e23c6528476cc9a5e",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-c9276a9298b283",
+      "name": "머슬업",
+      "path": "media/rf174-release/ex-c9276a9298b283.webp",
+      "sha256": "ed98f6cfdc40de9afd285f336a4040f8afb36f91ffa385eeb9c13eaf3ea34011",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-fc2d5489a0f964",
+      "name": "평행봉 딥스",
+      "path": "media/rf174-complete/ex-fc2d5489a0f964.webp",
+      "sha256": "26e0e209fa1c75b2b519f0fd5f12c40f4cd0cf55bccbf381c0e77f4c6d4af9b4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-2f5acf28bc5d70",
+      "name": "벤치 딥스",
+      "path": "media/rf174-release/ex-2f5acf28bc5d70.webp",
+      "sha256": "d2435fc0b6788c30647fb13159b9e7455ea9bce1a7ce470e4b0d3266ec308a23",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-8585407239cec6",
+      "name": "피스톨 스쿼트",
+      "path": "media/rf174-release/ex-8585407239cec6.webp",
+      "sha256": "49ef7bcba4c8d454ee2aa8af8120f840714c308380a9b0e4294c3b9f46eff08c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-cd2f6ad75e107a",
+      "name": "점프 스쿼트",
+      "path": "media/rf174-complete/ex-cd2f6ad75e107a.webp",
+      "sha256": "0bcb311d69fcd877cd5169c402a07c7f3705a4439c8a8c38ddc33850b5491dc5",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-2c6a5c5afbb9c8",
+      "name": "점프 런지",
+      "path": "media/rf174-release/ex-2c6a5c5afbb9c8.webp",
+      "sha256": "31b6bf3b9e3db5da48148bb6bd845dbda33be9aeb4e3be4d74a510e6aadc09e2",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-7a00e1b4dfe426",
+      "name": "워킹 런지",
+      "path": "media/rf174-complete/ex-7a00e1b4dfe426.webp",
+      "sha256": "446eb6f2d4302a65dcaa7178213a3b35c7dcfa004d33d55a469130723947a762",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-40d3cb99cdd85e",
+      "name": "리버스 런지",
+      "path": "media/rf174-complete/ex-40d3cb99cdd85e.webp",
+      "sha256": "88a6757b322da6a1d9f2b25802dec1df4a5a4352938b9c18df39c6dd2a396831",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-4b369115531002",
+      "name": "사이드 런지",
+      "path": "media/rf174-complete/ex-4b369115531002.webp",
+      "sha256": "630a4fa7c1be22b38b83642d9beba77700c38a75a68e5f5d8f6d338f37467d18",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-62f0750ebad725",
+      "name": "코사크 스쿼트",
+      "path": "media/rf174-release/ex-62f0750ebad725.webp",
+      "sha256": "bf6a5f0fd325ea4b320a3a66a0d775fada4d123c9fce1ce4335d6e1fc6cdfc10",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-fc33a946d058f2",
+      "name": "글루트 브리지",
+      "path": "media/rf174-complete/ex-fc33a946d058f2.webp",
+      "sha256": "ddb8b7df6e54c8b6f78eb36a1f3f4ff118195908731399501b5dd114cbf76eeb",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-1ffea44dc0793b",
+      "name": "싱글레그 글루트 브리지",
+      "path": "media/rf174-release/ex-1ffea44dc0793b.webp",
+      "sha256": "6570bd16941ca355dc987a0eb70fb43326d16490bcc71c51f0ce5a2db9cdccd6",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-66d13ec3676854",
+      "name": "힙쓰러스트 맨몸",
+      "path": "media/rf174-release/ex-66d13ec3676854.webp",
+      "sha256": "36d134a3b52d7110e665e3d6517702c02c8589b90d8be4801286dc15b0e4bc2e",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-6ea1bfc6627ee9",
+      "name": "프로그 펌프",
+      "path": "media/rf174-release/ex-6ea1bfc6627ee9.webp",
+      "sha256": "222f8466e33fe72f5adff90fb1ed0de79c9fa585789a11c08f659727310f6fbd",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-ee169d05f399e5",
+      "name": "월싯",
+      "path": "media/rf174-release/ex-ee169d05f399e5.webp",
+      "sha256": "e22e907fd42a5caef3f0e3caf683241d9e10d146eea8e7bceb234cf7c65ece59",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-501d9f226cba65",
+      "name": "싱글레그 카프레이즈",
+      "path": "media/rf174-complete/ex-501d9f226cba65.webp",
+      "sha256": "330d0530801c98b143f2ea866dc2cf59c47cf5c0fb8727341ebdffee3bd9728f",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-39de917ae6f740",
+      "name": "사이드 플랭크",
+      "path": "media/rf174-complete/ex-39de917ae6f740.webp",
+      "sha256": "253a026c22d7964f6ec1cda65669216cb68899177f2e6feeb149011b380428bb",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-23a02dcee44c7b",
+      "name": "플랭크 숄더탭",
+      "path": "media/rf174-complete/ex-23a02dcee44c7b.webp",
+      "sha256": "002db4cb1b16dcb53ce56452cb2803b80b23675ad2a834dd2ada62e12626fe33",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-fc489058c133d7",
+      "name": "플랭크 잭",
+      "path": "media/rf174-release/ex-fc489058c133d7.webp",
+      "sha256": "459b9f8226ce7cfedddbd725ba9e0e3d3c8d6bd0836d5b3e06d8621f122bd54e",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-c245485ab4e177",
+      "name": "버드독",
+      "path": "media/rf174-release/ex-c245485ab4e177.webp",
+      "sha256": "0357774ebc67ac0e6bb9cbb08a3f79b3860f7703ec8fa186ef7b906d180a20bc",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-fb9977a4ef1838",
+      "name": "홀로우 바디 홀드",
+      "path": "media/rf174-release/ex-fb9977a4ef1838.webp",
+      "sha256": "919f806a5152909b106a7282fd26cf60050a5063761edab8167b8d13ba2fec13",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-bbe11a6f6de17b",
+      "name": "리버스 크런치",
+      "path": "media/rf174-release/ex-bbe11a6f6de17b.webp",
+      "sha256": "cedaa068c6d9da1c76cba828de594ca107a0ea8c4ea6331e9ced958288489fef",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-287bae1b524ecd",
+      "name": "크런치",
+      "path": "media/rf174-complete/ex-287bae1b524ecd.webp",
+      "sha256": "d6834e7420993d3c2f1cc983b18c25af0bb7de3d151862f72df6962c2a997bb6",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-66d4276ec087f4",
+      "name": "브이업",
+      "path": "media/rf174-complete/ex-66d4276ec087f4.webp",
+      "sha256": "4a5d1c88be32e9993924f3004e22673c5eb5850b9caff4f78edf0e8ba2d6124d",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-902ebd164ab716",
+      "name": "마운틴 클라이머",
+      "path": "media/rf174-release/ex-902ebd164ab716.webp",
+      "sha256": "23a5b2631e1ca0a469f8456cf4ab628b8d69eb8e6d3701da64367745a8fd870c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-2a234c975c2d82",
+      "name": "베어 크롤",
+      "path": "media/rf174-release/ex-2a234c975c2d82.webp",
+      "sha256": "07a9192d1a69424621af2e35482d7f78d6a044c9f805d4adf45d1ab43c1b7d71",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-746de9b97ebb12",
+      "name": "슈퍼맨 홀드",
+      "path": "media/rf174-release/ex-746de9b97ebb12.webp",
+      "sha256": "345cee5a5a949f2239b52fab7bc2cf87b086ffd8d42dda52f752ce5a9c52c3e8",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-1b77a566ab4dec",
+      "name": "백 익스텐션 맨몸",
+      "path": "media/rf174-release/ex-1b77a566ab4dec.webp",
+      "sha256": "9d02c0c355e3af045788a7bba5a6e29ab75cdd05132b2e0c06ecdfa041600b4a",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-d4198da8835ddc",
+      "name": "힙 익스텐션 킥백",
+      "path": "media/rf174-release/ex-d4198da8835ddc.webp",
+      "sha256": "5e5f4c9adba1c34c8e1850073681d100d8c7c1d390860aa7f0d6680de1ca4889",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-627cdcfa000caa",
+      "name": "행잉 니 레이즈",
+      "path": "media/rf174-release/ex-627cdcfa000caa.webp",
+      "sha256": "7c3c4f0a629ad86ccfffcd654171d8cb40461b8410bc7856d4597a5d1f6aa3a8",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-fa8b4cb1e154c4",
+      "name": "행잉 레그 레이즈",
+      "path": "media/rf174-complete/ex-fa8b4cb1e154c4.webp",
+      "sha256": "430d23f13db21b9214e802f717f23af90db6b4c7a54291831c6fe525efea0f96",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-7d51b8f47de76c",
+      "name": "AB휠 롤아웃",
+      "path": "media/rf174-complete/ex-7d51b8f47de76c.webp",
+      "sha256": "0dca145fd3701eed6977a3f9a68c6c13c7908ac9cdde12d9f1f9186314df0e94",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-207c087e3e0e5d",
+      "name": "박스 점프",
+      "path": "media/rf174-complete/ex-207c087e3e0e5d.webp",
+      "sha256": "a5d6a7fc89672007125a688fdbbff30b0cc552a6f3b3dc7d2ff1bb67bc4a56e6",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-cf4edb91597c69",
+      "name": "계단 오르기",
+      "path": "media/rf174-complete/ex-cf4edb91597c69.webp",
+      "sha256": "e27c6ee18b02efc260a3ea9aea51ac817cc28f6a5cdb81dd7db36032be02d172",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-36f54a81b01ca5",
+      "name": "제자리 뛰기",
+      "path": "media/rf174-complete/ex-36f54a81b01ca5.webp",
+      "sha256": "a22120f68498846f50b292a3baf1a137a25f441b3b96574be726c544bb8b5111",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-95674de841eb6f",
+      "name": "줄넘기",
+      "path": "media/rf174-complete/ex-95674de841eb6f.webp",
+      "sha256": "f8284c0b2e3c2db76d3adb526628714f317e370ee140a0e0a4112aab5f53d87b",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-ba652079e71052",
+      "name": "케틀벨 스윙",
+      "path": "media/rf174-release/ex-ba652079e71052.webp",
+      "sha256": "1fd0660092d1ac7851c1d1f7bf088865849742d7372574a7ffce3f1df26beaaa",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-36a5c9b3079f18",
+      "name": "케틀벨 고블릿 스쿼트",
+      "path": "media/rf174-release/ex-36a5c9b3079f18.webp",
+      "sha256": "f924ff64ea8e39a5c9dfdc4316c86c5a7d58edacff8bc969db067a6db6264fab",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-d7250e28366b50",
+      "name": "케틀벨 데드리프트",
+      "path": "media/rf174-release/ex-d7250e28366b50.webp",
+      "sha256": "a5c65beb730866e234a3c9b33e7f768742ea65a855ebab62c3498e4ab1b478ae",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-dc096605da43ce",
+      "name": "케틀벨 클린",
+      "path": "media/rf174-release/ex-dc096605da43ce.webp",
+      "sha256": "55f3942f4aed9d148c943a75285fd68ca37382dd64ed5fa471ffdc7e24968222",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-912feeddb43757",
+      "name": "케틀벨 프레스",
+      "path": "media/rf174-release/ex-912feeddb43757.webp",
+      "sha256": "51bf4778c2d8eb910aa6b77f699ac6113d29cc3009267c17ee245eaec07a367e",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-bfe38f492736bf",
+      "name": "케틀벨 로우",
+      "path": "media/rf174-release/ex-bfe38f492736bf.webp",
+      "sha256": "abdefe99d0ed597d5ce78cbb2d686d89e5edef1a1ad3a7b6f1e1b6b62bee8f5b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-b2019e94df8946",
+      "name": "케틀벨 스내치",
+      "path": "media/rf174-release/ex-b2019e94df8946.webp",
+      "sha256": "7d4b89c098788297e155735a261194ac4e3bac510f1bf4e1c8319d53832367df",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-a6aa4d68728671",
+      "name": "케틀벨 터키시 겟업",
+      "path": "media/rf174-release/ex-a6aa4d68728671.webp",
+      "sha256": "245a11d83ec0a0319fc62f97b9c05bee69a6e4eda4a91d79b34c767bc0a539c1",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-ceb7c75d710317",
+      "name": "케틀벨 파머스 캐리",
+      "path": "media/rf174-release/ex-ceb7c75d710317.webp",
+      "sha256": "cd1ca7d2b8ebe237ef20d9b83aca470fbac4fcaeaa7970c75e2bd3a7eb029b4b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-47cb88fc5b7f71",
+      "name": "케틀벨 헤일로",
+      "path": "media/rf174-release/ex-47cb88fc5b7f71.webp",
+      "sha256": "3b1ac2ce297c2d629516c60e20de503717a5088dd74b08c85ea49e765023e93e",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-25fe535617be58",
+      "name": "케틀벨 러시안 트위스트",
+      "path": "media/rf174-release/ex-25fe535617be58.webp",
+      "sha256": "d28c79d8011f1b3c178db8842faf05dd7b5f4e9afc2241a87a52ad4e5747a1b4",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-c1a4344d55e9a2",
+      "name": "미니밴드 사이드워크",
+      "path": "media/rf174-complete/ex-c1a4344d55e9a2.webp",
+      "sha256": "f6dc444eb1120976abad9087dd7fa7a338506eb42aa60608e36e8f151e59c08d",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-0b88bd65905b51",
+      "name": "밴드 스쿼트",
+      "path": "media/rf174-release/ex-0b88bd65905b51.webp",
+      "sha256": "42142db8ed9a0a98a16594a211809e28178bcfa9836c31b16787db0ecd4afd7b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-306890307b578d",
+      "name": "밴드 힙 어브덕션",
+      "path": "media/rf174-complete/ex-306890307b578d.webp",
+      "sha256": "6b42104ceaf8e2c30eb409ce501276ac37c4606b3128a25573518e88098eb4f4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-4f38af7101cee3",
+      "name": "밴드 글루트 브리지",
+      "path": "media/rf174-complete/ex-4f38af7101cee3.webp",
+      "sha256": "315937bbd74703cc95b0b5cff977f32571570b483df4ab5f0e4ba9bd670ddd36",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-3df1408c142969",
+      "name": "밴드 로우",
+      "path": "media/rf174-release/ex-3df1408c142969.webp",
+      "sha256": "4f832d03b7d5f9edbb9b2c0a396f2b7424d1ec8523a5b6747dc9d73168a97d73",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-d6441295e3bf42",
+      "name": "밴드 랫풀다운",
+      "path": "media/rf174-complete/ex-d6441295e3bf42.webp",
+      "sha256": "20a2daece996be6395fb2299ffc047de8f96ff81965ae708fa5f80af481d11c4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-96c063d54a056e",
+      "name": "밴드 페이스풀",
+      "path": "media/rf174-release/ex-96c063d54a056e.webp",
+      "sha256": "f20edcebcca2e8f167dd3612cc40d475d6ff538847a819d188afece7467ca4ae",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-700eb1e6b3f5a4",
+      "name": "밴드 풀어파트",
+      "path": "media/rf174-release/ex-700eb1e6b3f5a4.webp",
+      "sha256": "967b0eb1ecefaf1c4d524269eff3620290e21839b531c935ab5e8a26ff73bb62",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-09d2d175dec810",
+      "name": "밴드 체스트프레스",
+      "path": "media/rf174-complete/ex-09d2d175dec810.webp",
+      "sha256": "64dc510812a73f7ec6ffe15a8df639e55abd725f3a773ff25aeb57e0c5e2cc95",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-0a53fad0e70119",
+      "name": "밴드 바이셉스 컬",
+      "path": "media/rf174-complete/ex-0a53fad0e70119.webp",
+      "sha256": "78861e68b4640b2d05e460f972b51e538dda21a5651882287ab53bdb1969e1dc",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-b35cc94eb43f6f",
+      "name": "밴드 트라이셉스 푸시다운",
+      "path": "media/rf174-complete/ex-b35cc94eb43f6f.webp",
+      "sha256": "f64cb9f01193204031525ff438190965f35ee7f1157f9f1632396578fead04d2",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-4dc0b28d49d36d",
+      "name": "밴드 오버헤드 삼두 익스텐션",
+      "path": "media/rf174-complete/ex-4dc0b28d49d36d.webp",
+      "sha256": "b448e84e6979a9fb61376c89d5c8bf02ec05d26d9569b1ecf36e10fedb38228c",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-d6cc21052c645d",
+      "name": "밴드 팔로프 프레스",
+      "path": "media/rf174-release/ex-d6cc21052c645d.webp",
+      "sha256": "005af91d82fe77f86150560791f19e48dfa722228cface3212df1d349e2029d5",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-cb1d531e24c36f",
+      "name": "밴드 외회전",
+      "path": "media/rf174-complete/ex-cb1d531e24c36f.webp",
+      "sha256": "3b7ef49e597e8a9fa448ef3cfd259d016a5547a4661088535eee79f75bd0ec1e",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-da9dc167d48932",
+      "name": "TRX 로우",
+      "path": "media/rf174-release/ex-da9dc167d48932.webp",
+      "sha256": "d1b3820a418dce2bfc55fb0ce09c7add081a099e4dad3a73757e1b6f9af7a00e",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-1dac96c62d63d4",
+      "name": "TRX 체스트프레스",
+      "path": "media/rf174-release/ex-1dac96c62d63d4.webp",
+      "sha256": "6567f9ba507b9c8b499ae13d26d0dfe00956f3645bdefcd35b0dcd500320966d",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-471767c4d67770",
+      "name": "TRX 스쿼트",
+      "path": "media/rf174-release/ex-471767c4d67770.webp",
+      "sha256": "fbdf3f4bf647f82a511fd33d335e7137f3f70c3d5c1371a5cf41dfc290c6d18c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-dd32f0aa93915c",
+      "name": "TRX 런지",
+      "path": "media/rf174-complete/ex-dd32f0aa93915c.webp",
+      "sha256": "430a71597eb50f9dc36ac65c6528b194dcf0c20bae26dca36f52594075fc85a8",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-1b470bc00a607e",
+      "name": "TRX 햄스트링 컬",
+      "path": "media/rf174-release/ex-1b470bc00a607e.webp",
+      "sha256": "6d9b38e18f4a25f9363c4bbb979262ef70d6f53bfc2f4be0a8d7d2f4a9a325f4",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-ebbdaa025a56ff",
+      "name": "TRX 파이크",
+      "path": "media/rf174-release/ex-ebbdaa025a56ff.webp",
+      "sha256": "cfa808c2f4a786ee5b50de353d60853522d42193d79879edc6ff73a5a1ee4ade",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-4a477a119c9cd4",
+      "name": "TRX 플랭크",
+      "path": "media/rf174-complete/ex-4a477a119c9cd4.webp",
+      "sha256": "9dfd0e5cc776ec8c6cb47c63d2efeba0fd2632ce40097e65e4ffb98041e3a80d",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-92802912e9830a",
+      "name": "TRX 바이셉스 컬",
+      "path": "media/rf174-complete/ex-92802912e9830a.webp",
+      "sha256": "d279dc210f0a6ba705f1bcec8281cfdd82d9da20f84bb26f86e0fc447f35e5fe",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-b536ef1b4a6496",
+      "name": "TRX 트라이셉스 익스텐션",
+      "path": "media/rf174-complete/ex-b536ef1b4a6496.webp",
+      "sha256": "70f1974181bd0370cc56b240b84bad098a5b87f128309e7603e4d8ee26ca1a4e",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-510a9cf3093b4d",
+      "name": "TRX 페이스풀",
+      "path": "media/rf174-complete/ex-510a9cf3093b4d.webp",
+      "sha256": "0f9ec000dfb7200a15ab91c377211f299b818061e6f51ae024f8364f06e7d50b",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-268e8779ff1cdf",
+      "name": "EZ바 컬",
+      "path": "media/rf174-release/ex-268e8779ff1cdf.webp",
+      "sha256": "71992bfe21afbccb08d5ee4d395c4937c860e14d8170b82740b39fb3f8c4a139",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-e9daacd60a021c",
+      "name": "EZ바 리버스 컬",
+      "path": "media/rf174-complete/ex-e9daacd60a021c.webp",
+      "sha256": "4e2702c4a6bf764f877975e0388e15301b038d2c97e4db30b87fba3755bad53e",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-b07c95a6d51c0e",
+      "name": "EZ바 프리처 컬",
+      "path": "media/rf174-release/ex-b07c95a6d51c0e.webp",
+      "sha256": "60d7a938dda88fb13c8510d00083a0a538a2d30e09a097ed6d2cb5ea0fb9cf47",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-492e3dceffe27a",
+      "name": "EZ바 스컬크러셔",
+      "path": "media/rf174-complete/ex-492e3dceffe27a.webp",
+      "sha256": "be3c308b75af0d48452c399f08b2ad6caae95958c4f741149b2f3888b1617db4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-997320a8cec5f5",
+      "name": "트랩바 데드리프트",
+      "path": "media/rf174-release/ex-997320a8cec5f5.webp",
+      "sha256": "700d518b1f8cadf53bc38416301ef893e918caed8a870db46982ba0fea94efc2",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-d0f572812ddd0f",
+      "name": "트랩바 파머스 워크",
+      "path": "media/rf174-complete/ex-d0f572812ddd0f.webp",
+      "sha256": "1fb404dfd008ce30bde49084721a234d6764016b332992e826b72a90dec0c13e",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-e387f77188e257",
+      "name": "메디신볼 슬램",
+      "path": "media/rf174-release/ex-e387f77188e257.webp",
+      "sha256": "8c17d1d5c6c39b1bed473620b08fc0bd3d1a362ed93b7cde1e95f35f01649640",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-8dd7bfb16d18b7",
+      "name": "메디신볼 월볼",
+      "path": "media/rf174-release/ex-8dd7bfb16d18b7.webp",
+      "sha256": "eab43855d6ddebae4c0d39b9e68d1253dc7cd33058399cb6e7ed3f21fb6a4885",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-2ee17d5d541352",
+      "name": "메디신볼 러시안 트위스트",
+      "path": "media/rf174-release/ex-2ee17d5d541352.webp",
+      "sha256": "d8f81e1c011a3c8e56418a0b19a666ef1fb15639d2cc008f1448210036ddedf5",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-9921c893ff106e",
+      "name": "메디신볼 체스트패스",
+      "path": "media/rf174-release/ex-9921c893ff106e.webp",
+      "sha256": "57c8e88fc92bd84805c004671065ad55ad9ed2f277ccc40fa8658382d6282ce8",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex-a1266da235b59d",
+      "name": "폼롤러 플랭크",
+      "path": "media/rf174-complete/ex-a1266da235b59d.webp",
+      "sha256": "b2713d0fe781c514f8f21b52b3ba68d0dc970cfd9d3d23aac8338cc0ceb5f23b",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-9c811e843d9820",
+      "name": "짐볼 크런치",
+      "path": "media/rf174-complete/ex-9c811e843d9820.webp",
+      "sha256": "fb04c3bcb84c4a9adeb5e1c4238194024f65537925f5cf67914ced359b55c944",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-78e2ec5919e669",
+      "name": "짐볼 햄스트링 컬",
+      "path": "media/rf174-complete/ex-78e2ec5919e669.webp",
+      "sha256": "47100f0d1e2124ab881c2e1f64177a78b9008108415bccdb58901c9bbb3d04d4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-fca90c88fff1a6",
+      "name": "짐볼 월스쿼트",
+      "path": "media/rf174-complete/ex-fca90c88fff1a6.webp",
+      "sha256": "68d148ef446e09090682b72afb36b9460de432d1da7783036df2ed35ede3038e",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-c17befefd5ea6b",
+      "name": "실내 로잉머신",
+      "path": "media/rf174-complete/ex-c17befefd5ea6b.webp",
+      "sha256": "280758c0e8927408f8ae091f2471bb79f93274b9073a176335427ddbc28fd20d",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-157b3559b1c550",
+      "name": "스텝밀 천국의계단",
+      "path": "media/rf174-complete/ex-157b3559b1c550.webp",
+      "sha256": "04da4ccdfbbebf28490f281a75641d3499255f767e0ab0c405b72608490553d4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-ba766901cd70bc",
+      "name": "일립티컬",
+      "path": "media/rf174-complete/ex-ba766901cd70bc.webp",
+      "sha256": "5feaef76cc79e73424edbe585b64471429bbbcafdb4a7e1e18f014b3b42887ad",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-ba03c374abfbf1",
+      "name": "스키에르그",
+      "path": "media/rf174-complete/ex-ba03c374abfbf1.webp",
+      "sha256": "4c298f8bf8e205f498fb2e1d064e8bae14ed7342b1b3de67b3b555cb33f67958",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-a57ef97bc5c104",
+      "name": "에어바이크",
+      "path": "media/rf174-complete/ex-a57ef97bc5c104.webp",
+      "sha256": "e85675f59093d932742f3f051b832a4215d3b60f34b02eb081b7dfc427749b13",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-ffcda428e50aed",
+      "name": "스핀 바이크",
+      "path": "media/rf174-complete/ex-ffcda428e50aed.webp",
+      "sha256": "8c98af0dc86d4642542ce398c3c6c64473c7b737eb336528dc71627ac3d973f3",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-553bc7faa02a04",
+      "name": "워킹패드",
+      "path": "media/rf174-complete/ex-553bc7faa02a04.webp",
+      "sha256": "00b2a5738f31d9673b2474a85000015ecb898e3ea9c52873a98df528adacb47d",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-b141b1d527370c",
+      "name": "계단 스텝퍼",
+      "path": "media/rf174-complete/ex-b141b1d527370c.webp",
+      "sha256": "35a5d492b714810547e8c3a88851dcc74309aadb66128a5a01df4e7716071dec",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex-1ace19bcbdeada",
+      "name": "배틀로프",
+      "path": "media/rf174-release/ex-1ace19bcbdeada.webp",
+      "sha256": "bd04c3c779331134ff86f81641bb1c4082ef7412909ece0a83a6ec9faf4b0f0b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a08fd140d71c6",
+      "name": "덤벨 스퀴즈 프레스",
+      "path": "media/rf174-complete/ex12-a08fd140d71c6.webp",
+      "sha256": "89075376ec86c0c57a460c13b74f7ccc962604f8c73f45135cbb4160769f9feb",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-ceb22490408d3",
+      "name": "인클라인 덤벨 스퀴즈 프레스",
+      "path": "media/rf174-complete/ex12-ceb22490408d3.webp",
+      "sha256": "24b17a0b9e7a8daa3832964d6f2b0cf78b9dcdc76e822de13873ac41b3ca41cc",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-8af995e3eee9a",
+      "name": "덤벨 플로어 스퀴즈 프레스",
+      "path": "media/rf174-complete/ex12-8af995e3eee9a.webp",
+      "sha256": "42f656c8f39823dbf5d9769aa1f2df862bb086ab29cb0f81ec8907f1b6f2d020",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-6946c6d89cccc",
+      "name": "덤벨 플로어 프레스",
+      "path": "media/rf174-complete/ex12-6946c6d89cccc.webp",
+      "sha256": "49a0f10461ce428149a994eb2068feab2db62ba5ed7f3a3b0befb0cac0af6899",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-f9c7ea997a39c",
+      "name": "덤벨 디클라인 프레스",
+      "path": "media/rf174-complete/ex12-f9c7ea997a39c.webp",
+      "sha256": "35606c714f0a496438278cb861c3a376a1fa3d638aa4ff1eee3e6119d5414583",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-db85cbbd85bff",
+      "name": "덤벨 뉴트럴그립 벤치프레스",
+      "path": "media/rf174-complete/ex12-db85cbbd85bff.webp",
+      "sha256": "7b92510089e4da76c12c8b011c211429f25b9c4b3e727674ab1878ae044653db",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-44ee4bb49ba07",
+      "name": "덤벨 리버스그립 벤치프레스",
+      "path": "media/rf174-complete/ex12-44ee4bb49ba07.webp",
+      "sha256": "a95049c69b2bfdc43563a766de37616e8bed330ff1573e11b4cf27e67ef6e8e6",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-bb6975da615d5",
+      "name": "덤벨 얼터네이팅 벤치프레스",
+      "path": "media/rf174-complete/ex12-bb6975da615d5.webp",
+      "sha256": "a949d377169577f836a6e45d02aee0a47ea92d54d5989f08afdd3ea9bab9bc07",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-64a2c76c0adbf",
+      "name": "원암 덤벨 벤치프레스",
+      "path": "media/rf174-complete/ex12-64a2c76c0adbf.webp",
+      "sha256": "25ca2c037ad89c6f2999afdff5fbec6a74ad27199e912ed8903a28fcb5c37522",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-cb79d80d17dd6",
+      "name": "원암 인클라인 덤벨프레스",
+      "path": "media/rf174-complete/ex12-cb79d80d17dd6.webp",
+      "sha256": "082be1f31998d225d682980f4df3ac457772a0eea40efcba72dc2cb6f7701ef3",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-f946150b5cc07",
+      "name": "덤벨 아라운드더월드",
+      "path": "media/rf174-complete/ex12-f946150b5cc07.webp",
+      "sha256": "93a8d7c31e2ff126df696c1dcf9497fcfd6e6322fd04018b914be35143f0ea6a",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-e888849e7e067",
+      "name": "덤벨 프레스 플라이",
+      "path": "media/rf174-complete/ex12-e888849e7e067.webp",
+      "sha256": "f34ebd8181ddb0a87bf6ea5195ea308e46db0e0aaac7e1a1274b7a873bea5b3e",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-0206e449f60ab",
+      "name": "덤벨 인클라인 아라운드더월드",
+      "path": "media/rf174-complete/ex12-0206e449f60ab.webp",
+      "sha256": "b1f1742ec0be5cefe0d6281a7b1daffd58a06c1736af866bfeb5360e48e7a2ac",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-b1b5a4df5d44c",
+      "name": "덤벨 프레스 탑홀드",
+      "path": "media/rf174-complete/ex12-b1b5a4df5d44c.webp",
+      "sha256": "80fe57eacea9c1a66be47b9092c813f25a2ae624fe2cbd62e1a9f095fdf6d6d2",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-c2fc3f44517d9",
+      "name": "바벨 인클라인 벤치프레스",
+      "path": "media/rf174-complete/ex12-c2fc3f44517d9.webp",
+      "sha256": "f5847fc792e06d03ce6189b672de8dc9117cc7fba4c85ca3e4469075fa6baafa",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-64670b67c235b",
+      "name": "바벨 디클라인 벤치프레스",
+      "path": "media/rf174-complete/ex12-64670b67c235b.webp",
+      "sha256": "56e9a918782f977283e063296857a085539b4b97d85601e5fb5c4fd3fae52abc",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-90924b151153e",
+      "name": "바벨 플로어 프레스",
+      "path": "media/rf174-complete/ex12-90924b151153e.webp",
+      "sha256": "b4b09697253688a32dc2bc9193e7ef40c29634994e2317256983393b92182529",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-ea6cf705ffe59",
+      "name": "바벨 라슨 프레스",
+      "path": "media/rf174-complete/ex12-ea6cf705ffe59.webp",
+      "sha256": "41ab2bbccab7d86dfdc44dddd941c3a7d090f714ba1b85c9c96fcf035ab129b0",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-83f47ecb3bf02",
+      "name": "바벨 템포 벤치프레스",
+      "path": "media/rf174-complete/ex12-83f47ecb3bf02.webp",
+      "sha256": "ad4a883101e6f396c4ade351e0d62a9296ee8a7b7fa86252702b864a2bea64cf",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-5bc8155960bb7",
+      "name": "바벨 스포토 프레스",
+      "path": "media/rf174-complete/ex12-5bc8155960bb7.webp",
+      "sha256": "cbc9c7c967ff5f99bdd56d4980d93cb42b43f3f6108f1732102d3d061f2d25a6",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-aadc3f8eb10dc",
+      "name": "바벨 일시정지 벤치프레스",
+      "path": "media/rf174-complete/ex12-aadc3f8eb10dc.webp",
+      "sha256": "5fad94bb418d1f0448d8ea25644b023296eb1ae60cfecd12eabe1473b8e72728",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-cadb13c1b960a",
+      "name": "바벨 리버스그립 벤치프레스",
+      "path": "media/rf174-complete/ex12-cadb13c1b960a.webp",
+      "sha256": "661741b43ebb9f6888939fbb17e7d3ef475c1f8f76f2b83c489d2a19d483c327",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-49eb7e498d00d",
+      "name": "바벨 핀 프레스",
+      "path": "media/rf174-complete/ex12-49eb7e498d00d.webp",
+      "sha256": "a210b7df530bee4fbe4b94a87419e9effa44349751c2ab684b3c8b31cecaa03b",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-126985dc316cd",
+      "name": "바벨 와이드그립 벤치프레스",
+      "path": "media/rf174-complete/ex12-126985dc316cd.webp",
+      "sha256": "61afac4babcf9a9d548ddbf7f793fc00b7000a8d1b261ef5008ddf13d96b704d",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-8e8ec8939c3b4",
+      "name": "아이소래터럴 체스트프레스 머신",
+      "path": "media/rf174-complete/ex12-8e8ec8939c3b4.webp",
+      "sha256": "857267d36e17e89476ba983a8b8594a2dea4cc1609b4aaa363ea2488588918e6",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-994fafa44b3bb",
+      "name": "플레이트로드 체스트프레스",
+      "path": "media/rf174-complete/ex12-994fafa44b3bb.webp",
+      "sha256": "e569ef3fbda9240397eb37812d5f64829b3d43b1de34ebd9004ac422399e4db2",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-e595727f078ac",
+      "name": "수평 체스트프레스 머신",
+      "path": "media/rf174-complete/ex12-e595727f078ac.webp",
+      "sha256": "69fd46d70023ef5ccac57b8cbfb977233d461cc2e7c35d67f8692f9ea0aabaa0",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-d51fed9ebf8ed",
+      "name": "컨버징 체스트프레스 머신",
+      "path": "media/rf174-complete/ex12-d51fed9ebf8ed.webp",
+      "sha256": "db828a9c85aaa9d004e3b476a78b43434152ba92f675bccbe925a04d0ef4b205",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-3f919a4e88bb6",
+      "name": "디버징 체스트프레스 머신",
+      "path": "media/rf174-complete/ex12-3f919a4e88bb6.webp",
+      "sha256": "1645ad020ea731bc8bfd6b2b4e2631e6dda522721055008bf5abb8ef12bb4122",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-0ed3815a33ca7",
+      "name": "원암 체스트프레스 머신",
+      "path": "media/rf174-complete/ex12-0ed3815a33ca7.webp",
+      "sha256": "5b7d2b15501811cc876edb130f9f1c2eada79e78038a6c60c706668ed8ecf098",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-f4068b912470b",
+      "name": "플레이트로드 인클라인 프레스",
+      "path": "media/rf174-complete/ex12-f4068b912470b.webp",
+      "sha256": "3b328b8e12f12eeb82dbc6ae6ef7b51a3a65fc5f1b12479d911224f6f1b43e40",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-ea88a064dbe66",
+      "name": "플레이트로드 디클라인 프레스",
+      "path": "media/rf174-complete/ex12-ea88a064dbe66.webp",
+      "sha256": "e68ed4f8e7f6983ca3f5df81455f28d73400f09cdeb42c9826de07aa05d6d2bb",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-8ddb48d6b271c",
+      "name": "시티드 펙 플라이 머신",
+      "path": "media/rf174-complete/ex12-8ddb48d6b271c.webp",
+      "sha256": "b80a98702caf5adcca80d9a0d3d56328dce3af6cb7a49348feb8a4dba32078d1",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-b92a773108b42",
+      "name": "수평 플라이 머신",
+      "path": "media/rf174-complete/ex12-b92a773108b42.webp",
+      "sha256": "519b6410f036e5c481dfe83aaaed9f21cb63188a2548751df441ef6abd8926f8",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-cf65f22ac7c63",
+      "name": "원암 펙덱 플라이",
+      "path": "media/rf174-complete/ex12-cf65f22ac7c63.webp",
+      "sha256": "813965ac127065fa453741e0aedbb34105f5432f751929f975045642969da557",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a85b8af8057f2",
+      "name": "케이블 미들 플라이",
+      "path": "media/rf174-release/ex12-a85b8af8057f2.webp",
+      "sha256": "ae1ccd8bd40447f42d95234312863d714111cc1c31c67113a3e0387cdcc6e002",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-4452cacae49ac",
+      "name": "케이블 인클라인 플라이",
+      "path": "media/rf174-complete/ex12-4452cacae49ac.webp",
+      "sha256": "cf8b571e16748483afa3758ae3a30d8f76b305654957064c7e66bdb6c3a49796",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a8f0a5fd542f0",
+      "name": "케이블 디클라인 플라이",
+      "path": "media/rf174-complete/ex12-a8f0a5fd542f0.webp",
+      "sha256": "fc8ecf25ddb1bef89054a399e31a9db337ab5661aa6be9726b46b4af12bcbbe2",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0b084a344a354",
+      "name": "케이블 언더핸드 플라이",
+      "path": "media/rf174-complete/ex12-0b084a344a354.webp",
+      "sha256": "940822661025059e216967bbab4be63964b1b748ade20da014c150085e12c0d1",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f476a97c02c9c",
+      "name": "케이블 클로즈그립 체스트프레스",
+      "path": "media/rf174-complete/ex12-f476a97c02c9c.webp",
+      "sha256": "3623551de2a5069d556deeecce7c3c3cb67f32304f9eb0528ccb3622fd17d18d",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f2183468297d4",
+      "name": "싱글암 케이블 체스트프레스",
+      "path": "media/rf174-complete/ex12-f2183468297d4.webp",
+      "sha256": "fe546e6ee3b21664903d05c4fad63efdd70f31f092838437da804da6bd50956b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-be45376901b2b",
+      "name": "케이블 스퀴즈 프레스",
+      "path": "media/rf174-complete/ex12-be45376901b2b.webp",
+      "sha256": "4c04847b73418d488d5a5afae6b59512844eb759463b80b5b924a12bf39b0164",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-06c1eb36b13c4",
+      "name": "하프니링 케이블 체스트프레스",
+      "path": "media/rf174-complete/ex12-06c1eb36b13c4.webp",
+      "sha256": "1c01073be54f6681e5d7b65d39edd358685cf38dec41ea22a78254f744fdf69e",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a32ae5c50d123",
+      "name": "케이블 시티드 플라이",
+      "path": "media/rf174-complete/ex12-a32ae5c50d123.webp",
+      "sha256": "92315117634d5b28560ff3295b1b0a16b3b380199cb72039e9ab442715e9ef62",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a50da931f2647",
+      "name": "케이블 크로스오버 일시정지",
+      "path": "media/rf174-complete/ex12-a50da931f2647.webp",
+      "sha256": "7ae2e959ac1c72191c441011bb3832c565a3d9b75ef682b49192f865f1fe6182",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-c4d32a73113ba",
+      "name": "클로즈그립 푸시업",
+      "path": "media/rf174-complete/ex12-c4d32a73113ba.webp",
+      "sha256": "b021917247b929c0d44984a82b627a4f814013ef993c1c29947566b40994aff8",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e9a98bfd7e41a",
+      "name": "템포 푸시업",
+      "path": "media/rf174-complete/ex12-e9a98bfd7e41a.webp",
+      "sha256": "fab3e3ff0bd1eb3ea43fb235f6c028b035715e8193079a282ed9fafd6626691c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0ed41c40b5b7f",
+      "name": "정지 푸시업",
+      "path": "media/rf174-complete/ex12-0ed41c40b5b7f.webp",
+      "sha256": "4b54b4c25cb8a30fb08eddc8c54f0ae3043da8814fc33425a08bf2a64d901674",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e296333205368",
+      "name": "링 푸시업",
+      "path": "media/rf174-complete/ex12-e296333205368.webp",
+      "sha256": "ce1b99c7ddf5c3fc25d09e0f2de2396fc52a74fffd7e6d9d1530b348bf5687e6",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-85375fc2494d2",
+      "name": "링 딥스",
+      "path": "media/rf174-complete/ex12-85375fc2494d2.webp",
+      "sha256": "bc004ba68371e443d54d81322a7a40f70d3bbc099f8e1444216d8bedad4bc6e0",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-bc5ae98164131",
+      "name": "타입라이터 푸시업",
+      "path": "media/rf174-complete/ex12-bc5ae98164131.webp",
+      "sha256": "9d9d83adb7ba1ada782fb9f1104651d7b44ad66b44b987f7bcc3e323caca59da",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-8c97f63c9cb55",
+      "name": "스파이더맨 푸시업",
+      "path": "media/rf174-release/ex12-8c97f63c9cb55.webp",
+      "sha256": "6b6249bef64ff677069c67e2a1b1075c16e6cd2af4fbbd0e3af136bf1284d307",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e7a63bd979e32",
+      "name": "스캐풀라 푸시업",
+      "path": "media/rf174-complete/ex12-e7a63bd979e32.webp",
+      "sha256": "8f04978e92e4aa8f314ee0af948400e13a013fcd40942b6848556d7cdeb5e090",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-10f3af05fb912",
+      "name": "푸시업 플러스",
+      "path": "media/rf174-complete/ex12-10f3af05fb912.webp",
+      "sha256": "6763705e2e740acb0459a96ac29c8ba9aafad61fa575138626a20482cc6421e1",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-34fc23bdb986f",
+      "name": "폭발 푸시업",
+      "path": "media/rf174-complete/ex12-34fc23bdb986f.webp",
+      "sha256": "f2a68162da4134c21ca2a8d865083aec2048b5d9dcb71b73457214e28e2d8f86",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-2bbcd0c234597",
+      "name": "오프셋 푸시업",
+      "path": "media/rf174-complete/ex12-2bbcd0c234597.webp",
+      "sha256": "00fd5e73f920534e00fb78510fe865f40e6616b656107758a46e3c735cbc8fec",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0ab4906ccceac",
+      "name": "벽 푸시업",
+      "path": "media/rf174-complete/ex12-0ab4906ccceac.webp",
+      "sha256": "010d0f2fd8f33d1c91a664f6f319a845a6c787dea9871913778ec4cd396a0e7e",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-74652f978af22",
+      "name": "푸시업 투 다운독",
+      "path": "media/rf174-complete/ex12-74652f978af22.webp",
+      "sha256": "1eac7978de3d836ae5b44c9b7d90b11a8e34c0d0e564569fe26a10be04f8c9e5",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-af2efbea2e054",
+      "name": "밴드 스퀴즈 프레스",
+      "path": "media/rf174-complete/ex12-af2efbea2e054.webp",
+      "sha256": "8751df391528a4e19b55172d4d2c2fef010e692b9215977343c22c704b6e5d0e",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-c9a851a7ab7c4",
+      "name": "밴드 플라이",
+      "path": "media/rf174-complete/ex12-c9a851a7ab7c4.webp",
+      "sha256": "5f0d642f06c9d67df7fd8f07074dbce24cfe729a70b4d85a68a52cf168b3b1e9",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-47544a67cf6cf",
+      "name": "밴드 인클라인 체스트프레스",
+      "path": "media/rf174-complete/ex12-47544a67cf6cf.webp",
+      "sha256": "c75e561db2c1246235fc9758fff1a6ae824d1cbc2daafde79f51a26227b464da",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0702089457a77",
+      "name": "밴드 디클라인 체스트프레스",
+      "path": "media/rf174-complete/ex12-0702089457a77.webp",
+      "sha256": "71bfdeb802a3ec0026516627cb484d0f11893b4761953c52350e72e0f2bcf15a",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b462fc4e42d14",
+      "name": "밴드 푸시업",
+      "path": "media/rf174-complete/ex12-b462fc4e42d14.webp",
+      "sha256": "01ec0b8b89758aabbb1e3c291784630c512dc60e09dbca772031822758ab7438",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1bf76e3c7993f",
+      "name": "원암 밴드 체스트프레스",
+      "path": "media/rf174-complete/ex12-1bf76e3c7993f.webp",
+      "sha256": "2f047c94dde6c6fdd05a52693108f4fef0f562c9a8f42e1ccb7fd38aa7b3168f",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-3ea9c3006aba4",
+      "name": "플레이트 스벤 프레스",
+      "path": "media/rf174-complete/ex12-3ea9c3006aba4.webp",
+      "sha256": "8e0dea13efdb073e5909a5f2fa6532eda15ee1cb4fcab531242cedfd0e152154",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-8b98af92a14f3",
+      "name": "플레이트 스퀴즈 홀드",
+      "path": "media/rf174-complete/ex12-8b98af92a14f3.webp",
+      "sha256": "142af0bc06a06a2186ba2fd3152cb5132ae6556dfea59d3de2a7c3b145f1969b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f7a1f555c6b5d",
+      "name": "덤벨 벤트오버 로우",
+      "path": "media/rf174-complete/ex12-f7a1f555c6b5d.webp",
+      "sha256": "6d361229374b006b898a30a9c2b530b8bbef8ac6176b182b520bc125cb395ec4",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a6dde836bb2b3",
+      "name": "덤벨 뉴트럴그립 로우",
+      "path": "media/rf174-complete/ex12-a6dde836bb2b3.webp",
+      "sha256": "493fe428f0f6e976a9542e199482a8c8ea10032077f1602c0ea66d6bec1264bf",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-9e6039f73ab1e",
+      "name": "덤벨 언더핸드 로우",
+      "path": "media/rf174-complete/ex12-9e6039f73ab1e.webp",
+      "sha256": "d9099afc4533c0c7318a1a4be3da46ea2b76cf598fd2d90d4799f06a446c78c7",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1db8786b3d50a",
+      "name": "덤벨 엘보아웃 로우",
+      "path": "media/rf174-complete/ex12-1db8786b3d50a.webp",
+      "sha256": "b7e826b72bbb571a809ecadd8ec63d01a4e4b84f0bab144bae81f83a772cac37",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-37589720131b8",
+      "name": "인클라인 덤벨 로우",
+      "path": "media/rf174-release/ex12-37589720131b8.webp",
+      "sha256": "69e1703bada9bb76eee5d06dd62707b36d167dfacc28ed13ca494a302f72d411",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-349ead855c83f",
+      "name": "덤벨 데드스탑 로우",
+      "path": "media/rf174-complete/ex12-349ead855c83f.webp",
+      "sha256": "d1e8c966c6d2ff8f39350acd072b2a5b05f7212bbe3a98771c4f69f87580e0e0",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-bc0ab557839d6",
+      "name": "벤치 지지 원암 덤벨로우",
+      "path": "media/rf174-complete/ex12-bc0ab557839d6.webp",
+      "sha256": "3d2162c9daafe135aa295edc42792b1b5168a4d2bc896432fba07934ac63412f",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-eac8624c5c925",
+      "name": "원암 덤벨 풀오버",
+      "path": "media/rf174-complete/ex12-eac8624c5c925.webp",
+      "sha256": "19f70383eb357db2bda4340da854c51e95e9ad2cd51866d99f31e6aab59e999f",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-d60a7dc9b2cd4",
+      "name": "덤벨 Y레이즈",
+      "path": "media/rf174-complete/ex12-d60a7dc9b2cd4.webp",
+      "sha256": "57e18a0cf43c0c78c0784cc93b95b66c2ca2ca1ad01c8ced8ff34c43656e9b66",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-697ba720c2294",
+      "name": "언더핸드 바벨 로우",
+      "path": "media/rf174-release/ex12-697ba720c2294.webp",
+      "sha256": "ac419485e439512b24a20cd09d2d59e9e490f9f24310e004774d9963941e29de",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0faf98c9944fd",
+      "name": "와이드그립 바벨 로우",
+      "path": "media/rf174-complete/ex12-0faf98c9944fd.webp",
+      "sha256": "fb6318845a0056f23bc6351f958c279457f550a89c796437521313c18a33c956",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-cdddc57a9b432",
+      "name": "바벨 데드스탑 로우",
+      "path": "media/rf174-complete/ex12-cdddc57a9b432.webp",
+      "sha256": "76ef6bea1860f4379d3bcb7988f78fabb1de418c44b8051c70a064f1a47515e4",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1257561877e9f",
+      "name": "바벨 체스트 서포티드 로우",
+      "path": "media/rf174-complete/ex12-1257561877e9f.webp",
+      "sha256": "d1fc8c3bcc28e0a61bbce660c188be4e3209085b7b2d553d384b9cbf42be8bf1",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-45bb1f53dc2d0",
+      "name": "바벨 인클라인 로우",
+      "path": "media/rf174-complete/ex12-45bb1f53dc2d0.webp",
+      "sha256": "55c5c0e3a122593505ea72027a0454fc38daedc4a95b3ce358a5ddaec0c110a9",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-3b20aa73a7ab9",
+      "name": "바벨 파워 슈러그",
+      "path": "media/rf174-complete/ex12-3b20aa73a7ab9.webp",
+      "sha256": "245248b8434773dfeb2a4fda5ad80b0d9da139e499a205a827b8708fd9efe67d",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0b3b63acaba43",
+      "name": "바벨 랙 로우",
+      "path": "media/rf174-complete/ex12-0b3b63acaba43.webp",
+      "sha256": "9ddb6fd46b8ad271d34bc46a0f2d814824d3ca4ee554a792487b9a433653a7c6",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-d4749522f2947",
+      "name": "뉴트럴그립 랫풀다운",
+      "path": "media/rf174-complete/ex12-d4749522f2947.webp",
+      "sha256": "503f9c754a81bfa1447b295bd0d9753a187a5be9bd024f1ff0e5777fbe6a1450",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e91e5eabcedaf",
+      "name": "언더그립 랫풀다운",
+      "path": "media/rf174-complete/ex12-e91e5eabcedaf.webp",
+      "sha256": "c4d9260c9ceb32fbd05e451d812bda9ec497e1eb58d5f8fe21426a986f1f917f",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b028d3ea0f769",
+      "name": "와이드그립 랫풀다운",
+      "path": "media/rf174-complete/ex12-b028d3ea0f769.webp",
+      "sha256": "b3c3b978f88e9d8ee42a6051389a0fb0571b65fa777582e3ab5d35c0f3e2e0d5",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-2886decdb69a5",
+      "name": "클로즈그립 랫풀다운",
+      "path": "media/rf174-complete/ex12-2886decdb69a5.webp",
+      "sha256": "b607e1b55696f5fbd9f232b191ba60a666d24d284cfa3ca52bf4f53be832b257",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-bf7bffe07f992",
+      "name": "V바 랫풀다운",
+      "path": "media/rf174-complete/ex12-bf7bffe07f992.webp",
+      "sha256": "f82c7da3c25f0448c1925c82d95aefeb9b33446b7b8fcbc5b7c330936453468d",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-3eb5d8d9ff47f",
+      "name": "원암 랫풀다운",
+      "path": "media/rf174-complete/ex12-3eb5d8d9ff47f.webp",
+      "sha256": "fcd19aa3db96fd764a67e14242d4138a17c5cd4fb4a6d5582c1efd10a2d4d07c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-c5e7394a6cade",
+      "name": "무릎꿇고 랫풀다운",
+      "path": "media/rf174-complete/ex12-c5e7394a6cade.webp",
+      "sha256": "2d906270d42a919d31d78dcc8210419156d494ee6594b3a26be5819794b43292",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b68e30306dd8d",
+      "name": "케이블 하이 로우",
+      "path": "media/rf174-complete/ex12-b68e30306dd8d.webp",
+      "sha256": "0f0652e3f6cd522e0f6916551e314222403dba484a7b7d8a8e773d41b08dee74",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-792bd25ed91ee",
+      "name": "케이블 로우 언더핸드",
+      "path": "media/rf174-complete/ex12-792bd25ed91ee.webp",
+      "sha256": "531c21cbd7ead9473de8e6450a137783847ba1e2b2db790b8fe8c2da62167286",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-ae21a55d5647f",
+      "name": "케이블 로우 와이드그립",
+      "path": "media/rf174-complete/ex12-ae21a55d5647f.webp",
+      "sha256": "0c10059a7d17330d0a3a43eaeb0bea25b1b20a3ec58c88ed6ec84c87ca80f325",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-9de9af177f81c",
+      "name": "케이블 로우 뉴트럴그립",
+      "path": "media/rf174-complete/ex12-9de9af177f81c.webp",
+      "sha256": "55685bd57ff4bb640fbed4bf8efa0fec59af247e87fc89bd70c127e355a0468d",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-4d99ef5b261c4",
+      "name": "케이블 시티드 로우 한팔씩",
+      "path": "media/rf174-complete/ex12-4d99ef5b261c4.webp",
+      "sha256": "7d49489d8ac5500d952a9ea3536e03f25bfd43d6f4dcbd6cd284c0af1da9afa9",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b18d2d8689239",
+      "name": "케이블 하이풀",
+      "path": "media/rf174-complete/ex12-b18d2d8689239.webp",
+      "sha256": "e6e647069d35c2150799c1e6e3b475087edfed64ab6556ea7a0c636a18a3012e",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-22afec7ccac86",
+      "name": "케이블 풀오버",
+      "path": "media/rf174-complete/ex12-22afec7ccac86.webp",
+      "sha256": "7f830fc192278a240707fab983391a93344c7086f9e70bd1f75f6c554539d286",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-82ca605efd7c4",
+      "name": "케이블 로프 풀오버",
+      "path": "media/rf174-complete/ex12-82ca605efd7c4.webp",
+      "sha256": "b48f6686735e54fb96e960f61febb377b28ce018af535aeffd5405acc9695679",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-50c3ece8f74d2",
+      "name": "케이블 슈러그",
+      "path": "media/rf174-complete/ex12-50c3ece8f74d2.webp",
+      "sha256": "d5ea8de7d6f4948b27037d2f3360b17e98a133141f92a69360f015bfbe2d00cc",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-89e197c554b12",
+      "name": "아이소래터럴 랫풀다운 머신",
+      "path": "media/rf174-complete/ex12-89e197c554b12.webp",
+      "sha256": "f45b1f41acf751012c72a0949b32825d4f8bd2ae131ba19a9840e2f02f872302",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e0fc05be243fc",
+      "name": "플레이트로드 랫풀다운",
+      "path": "media/rf174-complete/ex12-e0fc05be243fc.webp",
+      "sha256": "41f8ec736b478c20d1f17e4ad596d4e7e55f544323985cee8a849f5615e69ef4",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-23436bd920978",
+      "name": "와이드그립 랫풀다운 머신",
+      "path": "media/rf174-complete/ex12-23436bd920978.webp",
+      "sha256": "601871e27869414f3e7c6ec9a15e6db076475a4a3858e318f6ef031cf3f14266",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-ffa0eb05e394c",
+      "name": "듀얼 그립 랫풀다운 머신",
+      "path": "media/rf174-complete/ex12-ffa0eb05e394c.webp",
+      "sha256": "500c9dab0c68f25a5b24900f2a58c855ddafc9f1e26e48861db0c6e3c1fcc89a",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e0e710736d368",
+      "name": "해머스트렝스 로우",
+      "path": "media/rf174-release/ex12-e0e710736d368.webp",
+      "sha256": "cc58c4ea32f7eb2b4f2bb511e03878f63e0cf919248f19afb77d7ea0882f2bd0",
+      "width": 1024,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-fb661297b42ed",
+      "name": "해머스트렝스 하이로우",
+      "path": "media/rf174-complete/ex12-fb661297b42ed.webp",
+      "sha256": "9318165e75c6bebfca600e7feb852a7ea4ce14afff076287dd179e25fbee1c98",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-3d5e3f114edab",
+      "name": "해머스트렝스 로우로우",
+      "path": "media/rf174-complete/ex12-3d5e3f114edab.webp",
+      "sha256": "a40a6ae6b331afe996ee7a86a7a64c25b3f9e75f64aef538109c68d669761e8a",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f4f81606a42f2",
+      "name": "레버리지 T바 로우 머신",
+      "path": "media/rf174-complete/ex12-f4f81606a42f2.webp",
+      "sha256": "994ec5119260d90b3aa5d509a683f43494e5fdee55c9035955b5f79120dcd61f",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1dcb126657469",
+      "name": "원암 머신 로우",
+      "path": "media/rf174-complete/ex12-1dcb126657469.webp",
+      "sha256": "8fc17e8957ef542860bf7aaa3ad3672e6cd763d031b7f092f8850b029226d395",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-7e424743fb011",
+      "name": "리버스그립 로우 머신",
+      "path": "media/rf174-complete/ex12-7e424743fb011.webp",
+      "sha256": "e6319b427f86bd191aac6999f4ea3e620cf3d68b29de8ef59beeb476755587f2",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-fe0b4c8d0ecf2",
+      "name": "시티드 슈러그 머신",
+      "path": "media/rf174-complete/ex12-fe0b4c8d0ecf2.webp",
+      "sha256": "aec3549c57c04d21c5d139b30dd548dee87033e064de0cfcb7b786d58d780a8e",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-373eddd323154",
+      "name": "아래 등 로우 머신",
+      "path": "media/rf174-complete/ex12-373eddd323154.webp",
+      "sha256": "9bb2d7bd3c130bdf04c89d872da51e7e50968584d553773e794b8148583a1ead",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-3dcf65c5fb895",
+      "name": "로터리 랫풀다운 머신",
+      "path": "media/rf174-complete/ex12-3dcf65c5fb895.webp",
+      "sha256": "7c66cdda93777430859faf64e5e08f00fc57a699849edf1458fc1030d6859265",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-299c055a1882f",
+      "name": "와이드그립 풀업",
+      "path": "media/rf174-complete/ex12-299c055a1882f.webp",
+      "sha256": "aa435cd9bb84e861ae8cf79175f874995960b6905a3744da2b485e1d3f02ec78",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-491f50b86150f",
+      "name": "커맨도 풀업",
+      "path": "media/rf174-complete/ex12-491f50b86150f.webp",
+      "sha256": "1e89e6f4a455b47da554c09bac845ea71167e4a8b16581a4ebe8026b52bc8815",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e3ea52e7dc959",
+      "name": "아처 풀업",
+      "path": "media/rf174-complete/ex12-e3ea52e7dc959.webp",
+      "sha256": "fb7aa92f7f78d658387f8b0a6dc145ae91b02283502ddcbcc863ed1ddbd93964",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-d4f6e25fc9c7c",
+      "name": "스캡풀업",
+      "path": "media/rf174-complete/ex12-d4f6e25fc9c7c.webp",
+      "sha256": "d79980f6dc028e0c95855724e6cd8266988e34b64def08d74fe3734c430dbb3b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-5ace8a073f219",
+      "name": "타월 풀업",
+      "path": "media/rf174-complete/ex12-5ace8a073f219.webp",
+      "sha256": "89569c6f0606e2720a7b073e797ff1e83eaa24e394116c3d05b8483a9646c0a9",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-54b07fba9ef30",
+      "name": "홀드 풀업",
+      "path": "media/rf174-release/ex12-54b07fba9ef30.webp",
+      "sha256": "20ef25a89092faa9f54c3669fd1fce0c4d537c5549d12f64ff2916f495568ce2",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-3c80c75b0c2bc",
+      "name": "링 로우",
+      "path": "media/rf174-complete/ex12-3c80c75b0c2bc.webp",
+      "sha256": "e2a44b2deb56397dbdbd6c24da0c767dae3f62ccf0b050b93c157c4b42ea76d1",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-0607494a375b4",
+      "name": "링 풀업",
+      "path": "media/rf174-complete/ex12-0607494a375b4.webp",
+      "sha256": "7dd4faac1049c1500316fa699da0b1a6e348744801be47c462d675bfa1c84360",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-d22075093e6a5",
+      "name": "오스트레일리안 풀업",
+      "path": "media/rf174-complete/ex12-d22075093e6a5.webp",
+      "sha256": "2f64e7384f2c7923cdd7b06a179533eb00342611389476b003490d87d4c1a8bb",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e261ca9bb1570",
+      "name": "플레이트 로우",
+      "path": "media/rf174-complete/ex12-e261ca9bb1570.webp",
+      "sha256": "66f756c4c4c010e4f29d48a33ee6f1332846465193d43587531e6dd0085bc6dd",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-d86634c0c8f39",
+      "name": "플레이트 슈러그",
+      "path": "media/rf174-complete/ex12-d86634c0c8f39.webp",
+      "sha256": "77c3f5a089d061934524479817c0dce4405aa06588cf7ca8145cd587452d8e77",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-556bebc94226c",
+      "name": "체스트 서포티드 T바 로우",
+      "path": "media/rf174-complete/ex12-556bebc94226c.webp",
+      "sha256": "4cf1a8489414e02c9dbab54ac765ec1bb8178c668e5ed80ae6929bd5083e63d2",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-9f2a54bb54b25",
+      "name": "T바 로우 머신",
+      "path": "media/rf174-complete/ex12-9f2a54bb54b25.webp",
+      "sha256": "2872173166fc25ccb366be0c611cbc8541ff001d052eb66c4f7edb68b78bd1d3",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-4815d78e29cb6",
+      "name": "리버스 하이퍼익스텐션",
+      "path": "media/rf174-complete/ex12-4815d78e29cb6.webp",
+      "sha256": "2f1ead286f9717119ebb1a906dc38737035b96d681110917e89a8d21adcca8a8",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-ce5a9941968bc",
+      "name": "바벨 와이드 스쿼트",
+      "path": "media/rf174-complete/ex12-ce5a9941968bc.webp",
+      "sha256": "2f4e7f1f47fd360abd5e49aed6251ab5026e02df72051fc6ba0d5ff725783afd",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-dc28ad5b244d6",
+      "name": "바벨 템포 스쿼트",
+      "path": "media/rf174-complete/ex12-dc28ad5b244d6.webp",
+      "sha256": "ec0102fd155fc44c7bfb88935a0602f20a9957f6dbf7b6d97bc52e554c991678",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f1afb79772639",
+      "name": "바벨 일시정지 스쿼트",
+      "path": "media/rf174-complete/ex12-f1afb79772639.webp",
+      "sha256": "922bcc334d3c525bc6394d042636e3fe9f014135c6364582efa984f3a41b8e06",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-eaa8b90ce1b9d",
+      "name": "바벨 저처 스쿼트",
+      "path": "media/rf174-complete/ex12-eaa8b90ce1b9d.webp",
+      "sha256": "af63d1e0bfda8d16e75a70fd3aca3be58a315389e5dc46ff614dd4c81e2236ef",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-2fa8fcfabe9fa",
+      "name": "바벨 하이바 스쿼트",
+      "path": "media/rf174-complete/ex12-2fa8fcfabe9fa.webp",
+      "sha256": "a4c9e1a373a123bf1841a858c0665c630ebbfb35d896c6d1b3714e289fa3a9e8",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-84cb6561281bf",
+      "name": "바벨 로우바 스쿼트",
+      "path": "media/rf174-complete/ex12-84cb6561281bf.webp",
+      "sha256": "977cafc3a0c2f2b2921b2a5c98e6264410e9844f940eb3564c632c68d5d98371",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-e263284efd135",
+      "name": "바벨 오버헤드 스쿼트",
+      "path": "media/rf174-complete/ex12-e263284efd135.webp",
+      "sha256": "ba20fc4aeea009e70bd86a84e5ffd5282a82ea8a85c55022ffcbeca0022ef0c1",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-1762971faf3c4",
+      "name": "바벨 리버스 런지",
+      "path": "media/rf174-release/ex12-1762971faf3c4.webp",
+      "sha256": "5bc57adb15f633f67c693021e1905b4f1696494af213158334347512e002c6f3",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b124123733bfd",
+      "name": "바벨 워킹 런지",
+      "path": "media/rf174-complete/ex12-b124123733bfd.webp",
+      "sha256": "54f67eb923f1364aaaa4e7fe935e396f48ca167ea6987e664d33d35523c731f4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_RECOVERED"
+    },
+    {
+      "id": "ex12-1ec2069a54d96",
+      "name": "바벨 사이드 런지",
+      "path": "media/rf174-complete/ex12-1ec2069a54d96.webp",
+      "sha256": "4ff44f655d2ab0d64e03cd51cb8c658c65aa88b6c72d266cb27695f915478461",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-12dd1cd3a087f",
+      "name": "바벨 스텝업",
+      "path": "media/rf174-complete/ex12-12dd1cd3a087f.webp",
+      "sha256": "ee7a362299410fee1e4056200a39c17a29904501faa7bd9852df40498e0c4c7d",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-2d9948f1d1979",
+      "name": "바벨 카프레이즈",
+      "path": "media/rf174-complete/ex12-2d9948f1d1979.webp",
+      "sha256": "9a9d769c1ac8d616eeb154d1106293a047e8a960e49d8d0e5762b123155cd8ed",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b82989675b787",
+      "name": "바벨 글루트 브리지",
+      "path": "media/rf174-complete/ex12-b82989675b787.webp",
+      "sha256": "39e231a7a93867441ea4c9712733430aafbd75bb224ebdb1db90b9dc377990cb",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-bdc36b60045a3",
+      "name": "바벨 싱글레그 루마니안 데드리프트",
+      "path": "media/rf174-complete/ex12-bdc36b60045a3.webp",
+      "sha256": "6702f74351d8f44b5c645bea5cf04211fc37bed3b22c4b0fa066d9c22b8c2e8c",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-722c8fc72ea3d",
+      "name": "바벨 스티프레그 데드리프트",
+      "path": "media/rf174-complete/ex12-722c8fc72ea3d.webp",
+      "sha256": "16f348f67e588eaf1b2e68e244c3e7083f8f0378caf71bda17c3fb8cefede2ff",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-c4797ef2fa228",
+      "name": "바벨 스내치그립 루마니안 데드리프트",
+      "path": "media/rf174-complete/ex12-c4797ef2fa228.webp",
+      "sha256": "3498a9f6710dac4073e92a8e02c6b65554c275e4a0ea9d925083e91758d3f8e4",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-e7183ea67e06b",
+      "name": "레버리지 스쿼트 머신",
+      "path": "media/rf174-complete/ex12-e7183ea67e06b.webp",
+      "sha256": "a65d23a15de2c3b3d75321312b06d667dbaa0ee5e34a69a4c9557e36fbc7c4db",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-893e9e69f389e",
+      "name": "스탠딩 핵스쿼트 머신",
+      "path": "media/rf174-complete/ex12-893e9e69f389e.webp",
+      "sha256": "703cce98b7ab395ada446f9d05e142114cc5a4704427781e92ada9b5b6a6fbfc",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-666b021c6766c",
+      "name": "핵스쿼트 리버스",
+      "path": "media/rf174-complete/ex12-666b021c6766c.webp",
+      "sha256": "14d2c8f5655847b7f7c7b71ed651f52b6d67fba861d8735ba025d4daf65c13a7",
+      "width": 1254,
+      "height": 1254,
+      "review": "VERIFIED_GENERATED"
+    },
+    {
+      "id": "ex12-fbe7710cd2c18",
+      "name": "핵스쿼트 카프레이즈",
+      "path": "media/rf174-batch043/ex12-fbe7710cd2c18.webp",
+      "sha256": "20be4531b10bda93f9fcf2092f51e2001c73f82d5ad901b587e6334e7edb405d",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-4b4e314e898e9",
+      "name": "시티드 싱글레그 익스텐션",
+      "path": "media/rf174-batch043/ex12-4b4e314e898e9.webp",
+      "sha256": "acd3f2d70bd9650ea5fba1bdcd41c5069a4726c3eeb2cbe4a3df26c6c12b5ec3",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-ab7ec7966d1a4",
+      "name": "레그 익스텐션 한쪽다리",
+      "path": "media/rf174-batch043/ex12-ab7ec7966d1a4.webp",
+      "sha256": "a7a244d6e573393e52b4212de28a1e76bbb26b2349cddb3992b55c213e191381",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-245a6e263aff8",
+      "name": "레그컬 한쪽다리",
+      "path": "media/rf174-batch043/ex12-245a6e263aff8.webp",
+      "sha256": "63bfa2018d6c66abe51e78b52d3c1edbf0d4ccf665ccfab05d34e63ba78b449f",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b8efe166a8364",
+      "name": "시티드 레그프레스 한쪽다리",
+      "path": "media/rf174-batch043/ex12-b8efe166a8364.webp",
+      "sha256": "26cf04d8a14593722557e98dc09a0d9dd4cddc659cd4ffd37f74280a96f21848",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f42d21e4d1ce7",
+      "name": "플레이트로드 레그프레스",
+      "path": "media/rf174-batch043/ex12-f42d21e4d1ce7.webp",
+      "sha256": "fac89764561442e87e45592d0bbb313bdb9efc778b221bb54f41b66c61b9a3d7",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b2f9d9aa2a944",
+      "name": "스탠딩 힙쓰러스트 머신",
+      "path": "media/rf174-batch043/ex12-b2f9d9aa2a944.webp",
+      "sha256": "28283794007e320282c2f1ec5a980f87d5df4c1c4317beb2f005b607edb0f64b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-71b6cb5d90d75",
+      "name": "힙 어브덕션 한쪽다리",
+      "path": "media/rf174-batch043/ex12-71b6cb5d90d75.webp",
+      "sha256": "a9a36d973eb8b535a03a22b644513ee27673a561fe9b81a27b63de0e91419887",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-3e1cb385b4fa6",
+      "name": "힙 어덕션 한쪽다리",
+      "path": "media/rf174-batch043/ex12-3e1cb385b4fa6.webp",
+      "sha256": "ed248cefbe143b1a413269efa57423ef25926a2372da35828dcae5b328213b9e",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f93381b1bf7ef",
+      "name": "글루트 햄 레이즈 머신",
+      "path": "media/rf174-batch043/ex12-f93381b1bf7ef.webp",
+      "sha256": "df216da5a9243e9c35a623a24d84feb073774aefee11d504db801c53e6b89327",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-ce40914268f4e",
+      "name": "노르딕 햄스트링 보조 머신",
+      "path": "media/rf174-batch044/ex12-ce40914268f4e.webp",
+      "sha256": "b3ae2a6dbb900d02de6240b316543c96d4432e031c317146a10de6c9e025afef",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f0b09cc6c3f02",
+      "name": "수직 레그프레스",
+      "path": "media/rf174-batch044/ex12-f0b09cc6c3f02.webp",
+      "sha256": "a1e6100aa893ce77ad24695201c120dacb974e7709f2414a0efbeca89494a116",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-90187f2f2ac0c",
+      "name": "리버스 하이퍼 머신",
+      "path": "media/rf174-batch044/ex12-90187f2f2ac0c.webp",
+      "sha256": "a3a3494bd05dffae464b3fbf07e5f01d7c549d13f034872445d0619c8d9aa803",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a87b0c08be9d9",
+      "name": "덤벨 스모 스쿼트",
+      "path": "media/rf174-batch044/ex12-a87b0c08be9d9.webp",
+      "sha256": "ba0164ad4f46fda8b38fccb04c185a053e49a130a03c3b457b2cc94f1a9f1397",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f361ebd2678ce",
+      "name": "덤벨 프론트 스쿼트",
+      "path": "media/rf174-batch044/ex12-f361ebd2678ce.webp",
+      "sha256": "a6fdce40fa30120784564122be9d045f6408c4f86ac6a35d1f5fd5f59c2617a4",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-aa402f9a4f19b",
+      "name": "덤벨 싱글레그 루마니안 데드리프트",
+      "path": "media/rf174-batch044/ex12-aa402f9a4f19b.webp",
+      "sha256": "ea0137a78fa38dfcc2202590f61b7c1544afd6652b7ef1178f82dbba8fef57e1",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-61ea8230b54f1",
+      "name": "덤벨 데드리프트",
+      "path": "media/rf174-batch044/ex12-61ea8230b54f1.webp",
+      "sha256": "4cfc5cc7152ecd96edb9ffe474746c89e451c7037a93353a64c4f4e2579cfbb6",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-017d94b17f3df",
+      "name": "덤벨 스티프레그 데드리프트",
+      "path": "media/rf174-batch044/ex12-017d94b17f3df.webp",
+      "sha256": "8002e741000c754cf686bacaff986f7c6d60923f00ca0747ac8b960087e890b6",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-3064a3cd6768d",
+      "name": "덤벨 워킹 런지",
+      "path": "media/rf174-batch044/ex12-3064a3cd6768d.webp",
+      "sha256": "67b819607e913b32fff8dda99bbce9ad622dcc5ebfdc0cf0fd75351a218c180d",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0a2632a540636",
+      "name": "덤벨 사이드 스텝업",
+      "path": "media/rf174-batch044/ex12-0a2632a540636.webp",
+      "sha256": "110cff9687b13a539feb48b4f1f64e056931282777622b2d49700fcc7ed88151",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-c1f29760a6300",
+      "name": "덤벨 크로스오버 런지",
+      "path": "media/rf174-batch045/ex12-c1f29760a6300.webp",
+      "sha256": "4b63f45a7625fdf99c15e8a747de1f9e1318897f5882ade1557b0fb27a1ae26d",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b7884da24ca6c",
+      "name": "덤벨 스플릿 스쿼트",
+      "path": "media/rf174-batch045/ex12-b7884da24ca6c.webp",
+      "sha256": "db68337327ca889afc520e579ba91942cd475800ed33812555862759c0a3b87d",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-7daacb477bf68",
+      "name": "덤벨 펄스 스쿼트",
+      "path": "media/rf174-batch045/ex12-7daacb477bf68.webp",
+      "sha256": "0222284cf6af0947607a929e83377320c9cd8bc42c6f6c5b3b106699a73f4a7b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-7c56bbec1f6d7",
+      "name": "덤벨 힙쓰러스트",
+      "path": "media/rf174-batch045/ex12-7c56bbec1f6d7.webp",
+      "sha256": "7d8f1e553a281a68924fc2e0e702ba35b28aa22d965b51a64a385c0c7a405d81",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f4b1a07bc0eb0",
+      "name": "덤벨 글루트 브리지",
+      "path": "media/rf174-batch045/ex12-f4b1a07bc0eb0.webp",
+      "sha256": "41ee523254f53f79824e9e15d82532371f7675f040c04a33aa8de3ab24b90408",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-960d0d2276f7d",
+      "name": "덤벨 박스 스쿼트",
+      "path": "media/rf174-batch045/ex12-960d0d2276f7d.webp",
+      "sha256": "b973536d303fb486d4952cfd47ea1e1fa7db19ff4955711a889da1c14a3f9b35",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-07face942e001",
+      "name": "덤벨 코사크 스쿼트",
+      "path": "media/rf174-batch045/ex12-07face942e001.webp",
+      "sha256": "de44a97fb3da4ba47a50321d02e68525023aadce7b11e727006d287f8ef2b8a2",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-86a2e7be33269",
+      "name": "케이블 리버스 런지",
+      "path": "media/rf174-batch045/ex12-86a2e7be33269.webp",
+      "sha256": "50fb8315d9de7a4c2b59ca4c2dc75f2f99d73a98a9685db5f6c6e76f37554ff0",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-10b627a40709c",
+      "name": "케이블 스쿼트",
+      "path": "media/rf174-batch045/ex12-10b627a40709c.webp",
+      "sha256": "9668960b3af6b8ffd20d1ca5ad6410f3a397abbe913a08d42051b88a1b5afe1c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-5474c048c736d",
+      "name": "케이블 프론트 스쿼트",
+      "path": "media/rf174-batch045/ex12-5474c048c736d.webp",
+      "sha256": "4fdaf88aac14471c05999b965c043cdd55ed4cba02be48825bb694640fac8219",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-80a1ace09b88d",
+      "name": "케이블 런지",
+      "path": "media/rf174-batch046/ex12-80a1ace09b88d.webp",
+      "sha256": "ce6258297df67dfc5ad4fb7a18eca8a5fd9e9934030493a29a180a9b19951288",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b5063af0c2868",
+      "name": "케이블 스텝백",
+      "path": "media/rf174-batch046/ex12-b5063af0c2868.webp",
+      "sha256": "334944bab1302b75a472c29be77159923b95fedcd5bbe10588b54102ae351493",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-42d10bde63db2",
+      "name": "케이블 힙 익스텐션",
+      "path": "media/rf174-batch046/ex12-42d10bde63db2.webp",
+      "sha256": "6a074dc65177437b3ce0c44322dcabebd7bb99b456d00619865d5d72871d4ba3",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e87b6495b82c2",
+      "name": "케이블 힙 플렉션",
+      "path": "media/rf174-batch046/ex12-e87b6495b82c2.webp",
+      "sha256": "50642dba770c2ef2505bfc6760fa23f2e49054469c28f551be8eff5920db2261",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-826de4c2596ad",
+      "name": "케이블 스탠딩 레그컬",
+      "path": "media/rf174-batch046/ex12-826de4c2596ad.webp",
+      "sha256": "86bef2276b80896441da18a25b7ca22c50531ebc5b87f17b03c5e186b69dd2a4",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-803f817e36463",
+      "name": "케이블 스플릿 스쿼트",
+      "path": "media/rf174-batch046/ex12-803f817e36463.webp",
+      "sha256": "5ecdb3a2fd8d571379b4d72f695e5640b0f53ea965506f0a62ac2bd90aa70d5f",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a1a1139775aab",
+      "name": "케이블 힙 힌지",
+      "path": "media/rf174-batch046/ex12-a1a1139775aab.webp",
+      "sha256": "f7f3244cf98f43ffe68016c3d1a14d036aa456850f6748f56b7a8ec5b87e18f6",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-6ccfabda7742c",
+      "name": "불가리안 스플릿 스쿼트 맨몸",
+      "path": "media/rf174-batch046/ex12-6ccfabda7742c.webp",
+      "sha256": "0087506057e6887c30356c966d1168f9a9690830f4197feb848609128136f572",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-d274094ff9bc9",
+      "name": "싱글레그 스쿼트 박스",
+      "path": "media/rf174-batch046/ex12-d274094ff9bc9.webp",
+      "sha256": "9108df6e8c04a21b0ca4277b0202d17e47e10c953ccc0eaa14ce5480cbbc8bc2",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-271e50352162e",
+      "name": "스텝다운",
+      "path": "media/rf174-batch046/ex12-271e50352162e.webp",
+      "sha256": "1026108e27b5275216b014a95934ae742dcc997c90a7fd1ae9dfc0b9200e80f0",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-49cbe0c58d13f",
+      "name": "스텝업 맨몸",
+      "path": "media/rf174-batch047/ex12-49cbe0c58d13f.webp",
+      "sha256": "c495428f9ea68c56294d68b6f96dd37afe1d76686451220ea712f01354552405",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-ff7473a142abd",
+      "name": "노르딕 햄스트링 컬",
+      "path": "media/rf174-batch047/ex12-ff7473a142abd.webp",
+      "sha256": "9547c727b27663369f87f277cab48a6b9749a38a9b5b8ccecc5a037d0f4d94a5",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e05e7b6cb7182",
+      "name": "슬라이딩 레그컬",
+      "path": "media/rf174-batch047/ex12-e05e7b6cb7182.webp",
+      "sha256": "e912b4f67aa00efae2b59ac4a14c1dbda0834a85654aad9c44c23f4fac7d6e98",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-cd592d8c868c0",
+      "name": "리버스 노르딕 컬",
+      "path": "media/rf174-batch047/ex12-cd592d8c868c0.webp",
+      "sha256": "d1e98f7e09774b12e73f03e81b087442a73bad326fb64c2b8d97c564712c4821",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-ca17ee5c40f78",
+      "name": "힙 에어플레인",
+      "path": "media/rf174-batch047/ex12-ca17ee5c40f78.webp",
+      "sha256": "f0a208e805b9bfda8f2d51b5247d5e6af56760db880bf7b6b15a411d9a06e660",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-283dca14b38a8",
+      "name": "스케이터 스쿼트",
+      "path": "media/rf174-batch047/ex12-283dca14b38a8.webp",
+      "sha256": "73051156b8aca0dc2a70a73fbe8d4a14421b821be211c58dcd7b1d466b3b8ae4",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-73bba4aa6a06b",
+      "name": "커트시 런지",
+      "path": "media/rf174-batch047/ex12-73bba4aa6a06b.webp",
+      "sha256": "81deb43849603acc7fe799ddbb6562246b8d17274861ae446619587eddd55106",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1849bbed5907d",
+      "name": "맨몸 템포 스쿼트",
+      "path": "media/rf174-batch047/ex12-1849bbed5907d.webp",
+      "sha256": "5321688f590aed613a5c5e5e63793559a786c36c774e71dc58cc2bad8acc3be7",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-d06ccc358b474",
+      "name": "정지 스쿼트",
+      "path": "media/rf174-batch047/ex12-d06ccc358b474.webp",
+      "sha256": "c307b52f1f6f3df348eeea163bd3797875d4a387b5c05a452dbf1192363a39c8",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e666f31c9fc3f",
+      "name": "스모 스쿼트 맨몸",
+      "path": "media/rf174-batch047/ex12-e666f31c9fc3f.webp",
+      "sha256": "6b5058770d5997d03e35c1df1b9276d1f9221abf80e006974fcc65062387b922",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-c20e695d4fbd8",
+      "name": "클램셸",
+      "path": "media/rf174-batch048/ex12-c20e695d4fbd8.webp",
+      "sha256": "870af4a3cd2c6bbd8dab6eda2b4c0cc04225976867ef6b30aa11ca7ea7b9f263",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0bbc358a3b13f",
+      "name": "사이드라잉 힙 어브덕션",
+      "path": "media/rf174-batch048/ex12-0bbc358a3b13f.webp",
+      "sha256": "1a91f236a29d4dd805950c735a0e452216290bd5a84c6dfce514821606666033",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-403c6e19954a1",
+      "name": "덩키킥",
+      "path": "media/rf174-batch048/ex12-403c6e19954a1.webp",
+      "sha256": "89c294f936e7fb0debbb998a787840bb5e823bf18e4f866a1db7a3b93edfd98d",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1d068de108a0b",
+      "name": "싱글레그 월싯",
+      "path": "media/rf174-batch048/ex12-1d068de108a0b.webp",
+      "sha256": "2903bb17a675c0cf42e55dfe76fb2e79ebabbccb331fe806dbc970071230a659",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-3d9e245bf0a08",
+      "name": "플레이트로드 벨트 스쿼트",
+      "path": "media/rf174-batch048/ex12-3d9e245bf0a08.webp",
+      "sha256": "7edc3a951df44fa0bf940c611a457ce166650ce7d057dc68c0ce9a7ddda2c7cd",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-59ab7a2d031e1",
+      "name": "덤벨 뉴트럴그립 숄더프레스",
+      "path": "media/rf174-batch048/ex12-59ab7a2d031e1.webp",
+      "sha256": "5685d640c843a9c585842be05033d72cd8359c8726265d37025dcb52a9c47327",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-5f71bbc3f0342",
+      "name": "덤벨 얼터네이팅 숄더프레스",
+      "path": "media/rf174-batch048/ex12-5f71bbc3f0342.webp",
+      "sha256": "d2f3a4cad6f93a4cb54ab38fba6e4b7b4f9535a36395414039677ba743dd976b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-5c9d1e27d1b93",
+      "name": "원암 덤벨 숄더프레스",
+      "path": "media/rf174-batch048/ex12-5c9d1e27d1b93.webp",
+      "sha256": "a75f4dc67dfcc5c3c68b023e42d03108db08d30982829fc97d1e3f9ff5c2ee9e",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-05b3da7483232",
+      "name": "덤벨 시티드 숄더프레스",
+      "path": "media/rf174-batch048/ex12-05b3da7483232.webp",
+      "sha256": "4b8b22f57ff411f663158d1a960b4bc462cc060074e8dd2d71dcbbfc91cd5b58",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0db173e6440e1",
+      "name": "덤벨 Z프레스",
+      "path": "media/rf174-batch048/ex12-0db173e6440e1.webp",
+      "sha256": "467a6580692304ac0636abfb89d7d78ea788cc3bb09a1092b8413eb7da749339",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e0087d285919f",
+      "name": "덤벨 인클라인 사이드 레터럴 레이즈",
+      "path": "media/rf174-batch049/ex12-e0087d285919f.webp",
+      "sha256": "bce02a0ab01bafa664606056a8501f09861d2db879266aead7c62a056c54594c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-9ca0c14c99795",
+      "name": "덤벨 린어웨이 레터럴 레이즈",
+      "path": "media/rf174-batch049/ex12-9ca0c14c99795.webp",
+      "sha256": "6025bef22c3ab48e0bf6fee21601d2ab3c3365ca351818b14cb3648555034803",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-ce08233bc1e52",
+      "name": "덤벨 21 레터럴 레이즈",
+      "path": "media/rf174-batch049/ex12-ce08233bc1e52.webp",
+      "sha256": "f8b743f93432f6e69c51f991fd099eeae579884beeb83277bf8871b7c1939e96",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-8063b4769a2be",
+      "name": "덤벨 프론트 레이즈 뉴트럴",
+      "path": "media/rf174-batch049/ex12-8063b4769a2be.webp",
+      "sha256": "4baa9069806fe6f9a41da2fab4e7f23f7fb7e5d02933a3e92988ec31ebe8c844",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f14f90af48aad",
+      "name": "덤벨 벤트오버 레터럴 레이즈",
+      "path": "media/rf174-batch049/ex12-f14f90af48aad.webp",
+      "sha256": "a5181e9c922160de5e93287fb5cfce781ca9f8e07a4e6dffc90025be259e5a1d",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e2679bd8f689a",
+      "name": "덤벨 와이 레이즈",
+      "path": "media/rf174-batch049/ex12-e2679bd8f689a.webp",
+      "sha256": "c38438fa60118624ebe9fbfa44c5b072b2bc1dcf12573b978a020470503a3fe9",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e9e986c71c3dc",
+      "name": "덤벨 루 레이즈",
+      "path": "media/rf174-batch049/ex12-e9e986c71c3dc.webp",
+      "sha256": "35907fdf8a7bd447576d57426f68520b4b23487c8cff05f7dde8f67e20c0c79d",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-42305fdeb69a1",
+      "name": "덤벨 업라이트 로우 와이드그립",
+      "path": "media/rf174-batch049/ex12-42305fdeb69a1.webp",
+      "sha256": "9fc45a6ea943ee94030b417092bf343f81398e30129ca8ae4f9f2cc9bab56c99",
+      "width": 1145,
+      "height": 1374,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-280640bf92943",
+      "name": "바벨 시티드 오버헤드프레스",
+      "path": "media/rf174-batch049/ex12-280640bf92943.webp",
+      "sha256": "5ab5e90df470d2be31f610ca1f7c27954b46b57218bf62914972cc460bd3a714",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-4febfa206b49a",
+      "name": "바벨 스내치그립 프레스",
+      "path": "media/rf174-batch049/ex12-4febfa206b49a.webp",
+      "sha256": "e34d227b1a2565a783b2860e5bb44e5738306337c9bde68b18401f617446708c",
+      "width": 1145,
+      "height": 1374,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-9e44eba783f38",
+      "name": "바벨 비하인드 백 슈러그",
+      "path": "media/rf174-batch050/ex12-9e44eba783f38.webp",
+      "sha256": "8f02f20e1d7a794f9949abbf83c36fbb5d2f79582f4e6ee5c9058e723d0c0d44",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-ec6883feff414",
+      "name": "원암 숄더프레스 머신",
+      "path": "media/rf174-batch050/ex12-ec6883feff414.webp",
+      "sha256": "e360e6b1e9a33f5250c2a12d184abb81836fc0dbde5113ef68019917ca669db7",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a096ba5f8aff8",
+      "name": "아이소래터럴 숄더프레스 머신",
+      "path": "media/rf174-batch050/ex12-a096ba5f8aff8.webp",
+      "sha256": "b419d5c68f48600a90d94312042275b14e48fa04e9f62b93567b4ca220ddacbd",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-50ff0cd6cef14",
+      "name": "플레이트로드 숄더프레스",
+      "path": "media/rf174-batch050/ex12-50ff0cd6cef14.webp",
+      "sha256": "c997892b15f4276a165f359b351bcd44279a9ff2cb419095ecba4e15ce50c4b3",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-70c49ee750c19",
+      "name": "프론트 레이즈 머신",
+      "path": "media/rf174-batch050/ex12-70c49ee750c19.webp",
+      "sha256": "803bd2efc6ec570213d01fc31bc7e47935ae8ca41d5af0f3b04bbb534ef9e6c5",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-8ed80f9776e4f",
+      "name": "리어델트 머신 한쪽팔",
+      "path": "media/rf174-batch050/ex12-8ed80f9776e4f.webp",
+      "sha256": "c2b1f0271e089f50c87d2e7bfec1cb871eb10106065cabfaaa43660d0271b0e1",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-53d3ca7fc8bf8",
+      "name": "뉴트럴그립 숄더프레스 머신",
+      "path": "media/rf174-batch050/ex12-53d3ca7fc8bf8.webp",
+      "sha256": "4c2f1da79cb81d44a1771da5d408ab00f902663869ad9e1b122324740389ae38",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-97ef25478af2c",
+      "name": "케이블 원암 숄더프레스",
+      "path": "media/rf174-batch050/ex12-97ef25478af2c.webp",
+      "sha256": "ae5a2f95a256e463638705c80a79559922a1a89e461ea6bdafc6f4490a792cef",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1962e197f7338",
+      "name": "케이블 크로스 레터럴 레이즈",
+      "path": "media/rf174-batch050/ex12-1962e197f7338.webp",
+      "sha256": "537559a8a2803db620e23681749c9e24c689f5129308e331edae9c841f23a088",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e0cfed0cb22b2",
+      "name": "케이블 린어웨이 레터럴 레이즈",
+      "path": "media/rf174-batch050/ex12-e0cfed0cb22b2.webp",
+      "sha256": "2354d09fd4a20bc2dba4fff70de045fb5d1594090067bfe58db6d9c212eb238a",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-da9c80b26751d",
+      "name": "케이블 비하인드백 레터럴 레이즈",
+      "path": "media/rf174-batch051/ex12-da9c80b26751d.webp",
+      "sha256": "7c2579215b0b3851884e27791d898ad87d895b0f63fd75ddb135540a718e7ae4",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-58380e54e3e3e",
+      "name": "케이블 원암 리어델트 플라이",
+      "path": "media/rf174-batch051/ex12-58380e54e3e3e.webp",
+      "sha256": "7cd4fc77c7c1012e504ec2ebdd44ea8647cd49af678bdd9fe9ee634088e76ff1",
+      "width": 1374,
+      "height": 1145,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a210464552c32",
+      "name": "케이블 와이 레이즈",
+      "path": "media/rf174-batch051/ex12-a210464552c32.webp",
+      "sha256": "eecb1ab505796d03aedc1782c6cfe1a9d15240f853779a0fa7fc7cae55c020ab",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-5ad0707254739",
+      "name": "케이블 스캡션 레이즈",
+      "path": "media/rf174-batch051/ex12-5ad0707254739.webp",
+      "sha256": "6a1ca896770cdd865eed0a23b60f34a6529752f2d9dcee0d22e9729ed2ecda34",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-df825873d6438",
+      "name": "케이블 로프 프론트 레이즈",
+      "path": "media/rf174-batch051/ex12-df825873d6438.webp",
+      "sha256": "375b39e2d886d3a78a3841d84dcb774cf166fafd2d47ef75075a99a86011f62e",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-6f7f47825e6a0",
+      "name": "케이블 원암 페이스풀",
+      "path": "media/rf174-batch051/ex12-6f7f47825e6a0.webp",
+      "sha256": "76cae6ca1f92daf9fbfed7c80a939cb3767a97c8220448fd6c92b52ee0a81335",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-2324cd1c950dd",
+      "name": "벽물구나무 밀기",
+      "path": "media/rf174-batch051/ex12-2324cd1c950dd.webp",
+      "sha256": "944e342818516fbc05550e452dbabdced2537b6e008256afb5c73702ccf901dd",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-ac8a8adceefd7",
+      "name": "파이크 푸시업 박스",
+      "path": "media/rf174-batch051/ex12-ac8a8adceefd7.webp",
+      "sha256": "f4fe42436d560272aab66ca8ccc5819de6e528d26d36d270108945eaaed79e8b",
+      "width": 1536,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-17d9a6382ed34",
+      "name": "스캡 푸시업",
+      "path": "media/rf174-batch051/ex12-17d9a6382ed34.webp",
+      "sha256": "17bd7a15035521856f0a6e02aa9b3dec63d79e5ea62570a792a27e35d5e1ebdd",
+      "width": 1536,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-ea251b130cfe7",
+      "name": "파이크 홀드",
+      "path": "media/rf174-batch051/ex12-ea251b130cfe7.webp",
+      "sha256": "a6d6ae24cf9b07df25fc75bd1e6a40ee4da1794622e8e2325266b72c942a2c4c",
+      "width": 1536,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-bc48fba70a0de",
+      "name": "월 슬라이드",
+      "path": "media/rf174-batch052/ex12-bc48fba70a0de.webp",
+      "sha256": "0101f3b14ff34cafcadd763fd7455ae19e1ea135cb6124ebb1f5756ea910f168",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e5888ed2f2245",
+      "name": "YTW 레이즈 맨몸",
+      "path": "media/rf174-batch052/ex12-e5888ed2f2245.webp",
+      "sha256": "9a7af2c8edfb21bf9392ad3ebe1c758e25e1f23f86319ae627aefc46eedeb8b6",
+      "width": 1536,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a5383c9601d66",
+      "name": "덤벨 바이셉스 컬",
+      "path": "media/rf174-batch052/ex12-a5383c9601d66.webp",
+      "sha256": "cd15dcc161a6fb3f92b1b91d15deece0e34f7321d5732c3952dfa78ef10afa2c",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-2b00f956a7e69",
+      "name": "덤벨 얼터네이팅 컬",
+      "path": "media/rf174-batch052/ex12-2b00f956a7e69.webp",
+      "sha256": "73655b2e1d6824677494f2d38c4181907e2f94765c5e9160087dfccf97454b7b",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-69ecae41ce8e5",
+      "name": "덤벨 리버스 컬",
+      "path": "media/rf174-batch052/ex12-69ecae41ce8e5.webp",
+      "sha256": "4c49ddd03e37c91472aed59c7cb3ef554962038dede6ec3e5caaf1e1fd521f11",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-72d2496f5c374",
+      "name": "덤벨 크로스바디 해머 컬",
+      "path": "media/rf174-batch052/ex12-72d2496f5c374.webp",
+      "sha256": "5edb057c2e8d771ec01e01a5720186dfa664221355e63f0abdf673749270be5d",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1734259e3e14b",
+      "name": "덤벨 조트맨 컬",
+      "path": "media/rf174-batch052/ex12-1734259e3e14b.webp",
+      "sha256": "dd24f435389484571fcec71321d13945f53bd2b1ba29cda7b4067beee2cd390e",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-dd924d54a6f25",
+      "name": "덤벨 드래그 컬",
+      "path": "media/rf174-batch052/ex12-dd924d54a6f25.webp",
+      "sha256": "2cbb67df4e45f78a621b14a69f2a8d0a7e7409f40a93de7a1aa9585f5be267cb",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-29c001e6c6e42",
+      "name": "덤벨 21 컬",
+      "path": "media/rf174-batch052/ex12-29c001e6c6e42.webp",
+      "sha256": "c6beaadeb74f3505653d6e9623f20b7c0c00424cd96116e4fb7018126ffb2971",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-61f43565259ec",
+      "name": "덤벨 스파이더 컬",
+      "path": "media/rf174-batch052/ex12-61f43565259ec.webp",
+      "sha256": "7c374a2b5797a14d82674d34e4f82d31dd34b00aebc2aac8cb0000a26245a231",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0c8064c60ae50",
+      "name": "덤벨 리닝 컬",
+      "path": "media/rf174-batch053/ex12-0c8064c60ae50.webp",
+      "sha256": "fe33626d7bca5a5f666a54d8e56eff6386781eb5d5757e10e640398d490cb52d",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-77ac5b679838e",
+      "name": "원암 덤벨 오버헤드 삼두 익스텐션",
+      "path": "media/rf174-batch053/ex12-77ac5b679838e.webp",
+      "sha256": "9deaf468688b139a8e6b74c39f0fee6734b0b1dac0670f7ef03cb1009efe573c",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a488d54d576d0",
+      "name": "덤벨 클로즈그립 프레스",
+      "path": "media/rf174-batch053/ex12-a488d54d576d0.webp",
+      "sha256": "eadc72301cf3eaa08d27c0a4589df170cc53192d092fe97a9e67661651aef397",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-3a612b7947a12",
+      "name": "덤벨 테이트 프레스",
+      "path": "media/rf174-batch053/ex12-3a612b7947a12.webp",
+      "sha256": "49d55a14ce8ca679cb4c3da8475ccb912fc522b8c5efa0501847ceabeb9f991a",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-d9ea3703a69fc",
+      "name": "덤벨 JM 프레스",
+      "path": "media/rf174-batch053/ex12-d9ea3703a69fc.webp",
+      "sha256": "3d3594941751145d078ca651b55e76e16f9f69c0ad8d55cc125ec0c699041881",
+      "width": 1536,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0b750af46f6bf",
+      "name": "덤벨 리버스 킥백",
+      "path": "media/rf174-batch053/ex12-0b750af46f6bf.webp",
+      "sha256": "bd60c3c0ba0909907200fbaac4dabfb5e08abf6ee951bab43de161f5e5725f7e",
+      "width": 1374,
+      "height": 1145,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a3c1dddd0b066",
+      "name": "덤벨 손목 컬",
+      "path": "media/rf174-batch053/ex12-a3c1dddd0b066.webp",
+      "sha256": "6befa5da6e49b9a2cb17c8c837a22de7d4504200db15dbfd1851a526a58a7c7c",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-7acd4e29242c3",
+      "name": "덤벨 리버스 손목 컬",
+      "path": "media/rf174-batch053/ex12-7acd4e29242c3.webp",
+      "sha256": "25d54f5fbdeaf32c9927ba97004d7a68ec14f4e781130921575531808305cb92",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-549dfcba63e5c",
+      "name": "덤벨 리스트 로테이션",
+      "path": "media/rf174-batch053/ex12-549dfcba63e5c.webp",
+      "sha256": "dedee5b06612011a86497684ee54d3b229b21a5267a842bbe8f404405aa7033d",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-cb05f336acce7",
+      "name": "바벨 드래그 컬",
+      "path": "media/rf174-batch053/ex12-cb05f336acce7.webp",
+      "sha256": "a95c3f6a9e28ecdc5449ef19930752b28aa978233497f778e5aabee41e1dad0d",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-6bada4390c770",
+      "name": "바벨 스파이더 컬",
+      "path": "media/rf174-batch054/ex12-6bada4390c770.webp",
+      "sha256": "2763260c048cb2dc60128fe9aa0a33d51728f37a7e4b55865621d2dc01f863b4",
+      "width": 1374,
+      "height": 1145,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1ddc3f047158b",
+      "name": "바벨 21 컬",
+      "path": "media/rf174-batch054/ex12-1ddc3f047158b.webp",
+      "sha256": "bb45d96a7e61e9109823738f84853096fbcd9bbd92f820f5b9720da3d19d6be6",
+      "width": 1145,
+      "height": 1374,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f248e2e3b163e",
+      "name": "바벨 프리처 컬",
+      "path": "media/rf174-batch054/ex12-f248e2e3b163e.webp",
+      "sha256": "7d4b915c8629c3a9a6b33f2f2b032bddf4d8796c36be9f69a2ee7da552256318",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-d5223bcbf4828",
+      "name": "바벨 오버헤드 삼두 익스텐션",
+      "path": "media/rf174-batch054/ex12-d5223bcbf4828.webp",
+      "sha256": "659695076315fb1d09b1b8ce23d7a67c3e568bd42195af5b6f36c46cf8c0e9b5",
+      "width": 1145,
+      "height": 1374,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-917fc6527a9f1",
+      "name": "바벨 JM 프레스",
+      "path": "media/rf174-batch054/ex12-917fc6527a9f1.webp",
+      "sha256": "3b514415bf1498525ed9a9d149bdf72962f5d820cefcac8a60c276e38b1ee060",
+      "width": 1536,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-54f796e3ce3c7",
+      "name": "바벨 손목 컬",
+      "path": "media/rf174-batch054/ex12-54f796e3ce3c7.webp",
+      "sha256": "64b6bec26866b1870df52bad1fcba9c5755a5f3e730967cacae5dec1ae7e2fa0",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b97a825eaa475",
+      "name": "바벨 리버스 손목 컬",
+      "path": "media/rf174-batch054/ex12-b97a825eaa475.webp",
+      "sha256": "cb8debf894599b56f026b7c47e9f0a92e9aaac92f5ea0abc55edc136a9f70dc7",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e3c472e2f09bf",
+      "name": "케이블 바이셉스 컬 와이드그립",
+      "path": "media/rf174-batch054/ex12-e3c472e2f09bf.webp",
+      "sha256": "73d8d709f6ca5bf5aac56acd0f08a987a3ad3eb16c369f8558be138f782880c9",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-d8636692a7883",
+      "name": "케이블 바이셉스 컬 클로즈그립",
+      "path": "media/rf174-batch054/ex12-d8636692a7883.webp",
+      "sha256": "bc521c0467b2479f8c11e157019b502dc2fb30e3a2697d6b3b326d3133fffb4f",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-3c38ee9916cfb",
+      "name": "케이블 베이지안 컬",
+      "path": "media/rf174-batch054/ex12-3c38ee9916cfb.webp",
+      "sha256": "7f78b0c1b493db2b604fa5602d7251e6a787facf013efa85c76147331662099e",
+      "width": 1374,
+      "height": 1145,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e0d49bd726ccc",
+      "name": "케이블 원암 컬",
+      "path": "media/rf174-batch055/ex12-e0d49bd726ccc.webp",
+      "sha256": "12af91078b8c174cccc951d63858ff3ca7bba17389064db796095541749ebd04",
+      "width": 1226,
+      "height": 1283,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-316b4840cca53",
+      "name": "케이블 컨센트레이션 컬",
+      "path": "media/rf174-batch055/ex12-316b4840cca53.webp",
+      "sha256": "9c8bfbe805c3bb82f79ca125566ef891447b81cf03dcb87050ac25c690fb0d78",
+      "width": 1536,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1f83dee044642",
+      "name": "케이블 리버스 컬",
+      "path": "media/rf174-batch055/ex12-1f83dee044642.webp",
+      "sha256": "a46120856ccf8a133fe32321715dbed96f5207c46d0a1cbeded36f419e8157d3",
+      "width": 1199,
+      "height": 1312,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-4c4c6f405c179",
+      "name": "케이블 드래그 컬",
+      "path": "media/rf174-batch055/ex12-4c4c6f405c179.webp",
+      "sha256": "d110e3d9762446729f6270a577491457da38148ef3cc8984d4d51234eae2437b",
+      "width": 1216,
+      "height": 1293,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1aafc298d9dae",
+      "name": "케이블 스파이더 컬",
+      "path": "media/rf174-batch055/ex12-1aafc298d9dae.webp",
+      "sha256": "5cc592083fd162257d44c96309f519119f454d23698e34dc8b4d2bcb6d4c1f6f",
+      "width": 1536,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-7493dfd2d0318",
+      "name": "케이블 삼두 푸시다운 스트레이트바",
+      "path": "media/rf174-batch055/ex12-7493dfd2d0318.webp",
+      "sha256": "2a573edc2234a4c9af7fdb4b535cf75640cb93686716d0055a62274065fe29f6",
+      "width": 1199,
+      "height": 1312,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f78acf5f0aded",
+      "name": "케이블 삼두 푸시다운 V바",
+      "path": "media/rf174-batch055/ex12-f78acf5f0aded.webp",
+      "sha256": "6da4e7ecaaa9b3f417180a512e9c04bb122691d1180f9d7151e7a073f04fae54",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-6fdc1b661a094",
+      "name": "케이블 리버스그립 푸시다운",
+      "path": "media/rf174-batch055/ex12-6fdc1b661a094.webp",
+      "sha256": "ce72b2e7895081f6ed5670143fbc04742eca8d65a1712b0b00f44c34a92f2384",
+      "width": 1199,
+      "height": 1312,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1209cbb3078b7",
+      "name": "케이블 원암 삼두 푸시다운",
+      "path": "media/rf174-batch055/ex12-1209cbb3078b7.webp",
+      "sha256": "d770892a4790cd3bbad0768ee5caaa109cfc2849aa127a26b063349675d01222",
+      "width": 1199,
+      "height": 1312,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-207bfdf3e4281",
+      "name": "케이블 싱글암 오버헤드 익스텐션",
+      "path": "media/rf174-batch055/ex12-207bfdf3e4281.webp",
+      "sha256": "09257672e14934d10a82ba3f3c4a0396557950afc9041f16c953a93c9845c554",
+      "width": 1216,
+      "height": 1293,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-61291791961c8",
+      "name": "케이블 라잉 트라이셉스 익스텐션",
+      "path": "media/rf174-batch056/ex12-61291791961c8.webp",
+      "sha256": "93569c877612c99dce18d8979f53d76b314a3900507c0e8862aeb5456685db2b",
+      "width": 1536,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-743fa8bac2413",
+      "name": "케이블 크로스바디 삼두 익스텐션",
+      "path": "media/rf174-batch056/ex12-743fa8bac2413.webp",
+      "sha256": "a8fba91e0e839a994dab14ba9e013e9e69862e6f0468115cbd2b56a1a0419543",
+      "width": 1199,
+      "height": 1312,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-d4751bfbbc970",
+      "name": "케이블 손목 컬",
+      "path": "media/rf174-batch056/ex12-d4751bfbbc970.webp",
+      "sha256": "5dd878b8a5a1aba56da995b5a356be636590f7b6767ec022c10ce65d1c9ec4c8",
+      "width": 1536,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-fb58ea3ebbbcc",
+      "name": "원암 프리처 컬 머신",
+      "path": "media/rf174-batch056/ex12-fb58ea3ebbbcc.webp",
+      "sha256": "8a539ee96efd57e6f1f1c5b5646dba2511f2d1ee5a0ec8e673e4abfe98f5d165",
+      "width": 1230,
+      "height": 1278,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-474c09e902886",
+      "name": "플레이트로드 바이셉스 컬",
+      "path": "media/rf174-batch056/ex12-474c09e902886.webp",
+      "sha256": "bd36528c0c5252a4885e49ae0971a034e2ace98f5f042d80a17fa0eeaa7657a0",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-2ae1827e9e377",
+      "name": "플레이트로드 삼두 익스텐션",
+      "path": "media/rf174-batch056/ex12-2ae1827e9e377.webp",
+      "sha256": "eefd1145ab3e7c10c46bdc89de361bceb0071ed49e11638d507ed25532ced6f1",
+      "width": 1221,
+      "height": 1289,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-25cd351cda9c2",
+      "name": "딥스 머신",
+      "path": "media/rf174-batch056/ex12-25cd351cda9c2.webp",
+      "sha256": "55508c2ae12bd14e514c37051b77bb51dbcc4dee2ade772409aa58e998b80327",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-23f74bdf978d9",
+      "name": "클로즈그립 딥스 머신",
+      "path": "media/rf174-batch056/ex12-23f74bdf978d9.webp",
+      "sha256": "9076d1bcb196861b2a55029bbd1f900bd019550bbaa939247ab191007fd93fdc",
+      "width": 1199,
+      "height": 1312,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-edf1d275a86e7",
+      "name": "시티드 트라이셉스 프레스 머신",
+      "path": "media/rf174-batch056/ex12-edf1d275a86e7.webp",
+      "sha256": "6cf10938ad54ec97e03379fc4b43da16d2dd48ea2af3b693909de950310b5a8f",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-98862e798fca9",
+      "name": "친업 네거티브",
+      "path": "media/rf174-batch056/ex12-98862e798fca9.webp",
+      "sha256": "f86d8cae0bd710bba573aee29010a1887d2df26445fe87b20e00d2a20eabdd7e",
+      "width": 1199,
+      "height": 1312,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1b3a4ad1e3c5b",
+      "name": "친업 홀드",
+      "path": "media/rf174-batch057/ex12-1b3a4ad1e3c5b.webp",
+      "sha256": "d7b36c27bd66508d6ffd3acc89df6345c6aa2b573c3b372ca234cae4618f6f93",
+      "width": 1199,
+      "height": 1312,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-5c1c11e9d9903",
+      "name": "타월 해머 친업",
+      "path": "media/rf174-batch057/ex12-5c1c11e9d9903.webp",
+      "sha256": "c4821d55897d0d58d8cfc121234390746afabc4e18cfb125ede1cc08981b218a",
+      "width": 1024,
+      "height": 1536,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-ae6c80dfb83fc",
+      "name": "바디웨이트 트라이셉스 익스텐션",
+      "path": "media/rf174-batch057/ex12-ae6c80dfb83fc.webp",
+      "sha256": "e20cdc3f541544b1cd3ffdf63a65fc073725371fb7e9956cc653cedfb853689c",
+      "width": 1536,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0f0cc3fa4bf58",
+      "name": "벤치 딥스 네거티브",
+      "path": "media/rf174-batch057/ex12-0f0cc3fa4bf58.webp",
+      "sha256": "24c4be88ffd0e400c02f46c89efa52752da52ea49c08a53e233f1139406af37a",
+      "width": 1536,
+      "height": 1024,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-88dd3be10fc61",
+      "name": "링 트라이셉스 익스텐션",
+      "path": "media/rf174-batch057/ex12-88dd3be10fc61.webp",
+      "sha256": "2160bf7c7dd5548a4593f5c7eb408c2770eff6f2a38f6593122610ee188fd63b",
+      "width": 1312,
+      "height": 1199,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a97e5367cf17c",
+      "name": "레그 로워링",
+      "path": "media/rf174-batch057/ex12-a97e5367cf17c.webp",
+      "sha256": "4e88516fadb925217fa1f156afcd9666ac04202f3e1a5d0593f9bd4485a0ffe8",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-9d5d9bab43dd9",
+      "name": "싱글레그 레이즈",
+      "path": "media/rf174-batch057/ex12-9d5d9bab43dd9.webp",
+      "sha256": "8cce18bc153402ed3db12523a04d7e9a6fa0307fdbe3e888b5ee70f2964f539e",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a69da71f6d9b1",
+      "name": "토터치 크런치",
+      "path": "media/rf174-batch057/ex12-a69da71f6d9b1.webp",
+      "sha256": "789b7471c30b432038245b966a3560d13ed6553a29bdce8bc70904f71fbdb79a",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-4cefe6a522f7e",
+      "name": "사이드 크런치",
+      "path": "media/rf174-batch057/ex12-4cefe6a522f7e.webp",
+      "sha256": "980e63b6a3f21bb28fb173ff7ad8250a2ae7a3525ee15342b6bb331c474a5636",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1225aaef1fa43",
+      "name": "크로스바디 마운틴 클라이머",
+      "path": "media/rf174-batch057/ex12-1225aaef1fa43.webp",
+      "sha256": "85c113b0e07bac96957be0ad6a3cc0225b9e894b183578960e6ffb97e301a05b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-534caf8aa214f",
+      "name": "데드버그 홀드",
+      "path": "media/rf174-batch058/ex12-534caf8aa214f.webp",
+      "sha256": "15189331a3f0368e1c1fbe6c4b84ad72f6d06379f51b2fd605464f7a37f2c8de",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b5c2fffcdb9a5",
+      "name": "베어 플랭크",
+      "path": "media/rf174-batch058/ex12-b5c2fffcdb9a5.webp",
+      "sha256": "f0532e51b8ef32781ce5d19cf89fca6a792c600645aa3d3901969b97799f7024",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-094a83b4dd7cd",
+      "name": "사이드 플랭크 힙리프트",
+      "path": "media/rf174-batch058/ex12-094a83b4dd7cd.webp",
+      "sha256": "db90a857a7d07f2674d29fc1569133df4783a4bee92a2381fbf0d876ca94b717",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-00a3ee31b5f5a",
+      "name": "사이드 플랭크 리치스루",
+      "path": "media/rf174-batch058/ex12-00a3ee31b5f5a.webp",
+      "sha256": "232689be501b2b40a0411ee2f093cdd4afd6d7a233348af9fe6f9e0665f85f6b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-aa87acb7982b3",
+      "name": "플랭크 업다운",
+      "path": "media/rf174-batch058/ex12-aa87acb7982b3.webp",
+      "sha256": "1e434799f6700217243bb074b4a9e2aac590065ed7b919b095f64b9efbc10002",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-7cddf49fb48d3",
+      "name": "플랭크 스파이더맨",
+      "path": "media/rf174-batch058/ex12-7cddf49fb48d3.webp",
+      "sha256": "ddaafda0fe1c3c4cc941c914383b94e2cd41ecfb9566717a3a72f3c97bbf5faf",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-8e528301e7f2c",
+      "name": "플랭크 레그리프트",
+      "path": "media/rf174-batch058/ex12-8e528301e7f2c.webp",
+      "sha256": "69c925f98d67521bdf018565671edef787cc7911294adbcc27510e3912c69d04",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-fa9f4b737af72",
+      "name": "플랭크 니드라이브",
+      "path": "media/rf174-batch058/ex12-fa9f4b737af72.webp",
+      "sha256": "f2d5aa779100be7eb41aeaa6b1258a8581578d3c933516bbe0acc4c5186fc5b5",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-45e58dab0fc07",
+      "name": "롱레버 플랭크",
+      "path": "media/rf174-batch058/ex12-45e58dab0fc07.webp",
+      "sha256": "efb87d0f820450531d06155b82c2ee4e1fe0a87450a13f45b9e4389dfc03d6da",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-2d27e8c272a0a",
+      "name": "L싯",
+      "path": "media/rf174-batch058/ex12-2d27e8c272a0a.webp",
+      "sha256": "5d9c2779f98369486c0c710fd0881e4dc47a189cd1ded192a0bd1000ef0af37c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-e2a7378332375",
+      "name": "V싯 홀드",
+      "path": "media/rf174-batch059/ex12-e2a7378332375.webp",
+      "sha256": "f472da7f7dac97604f460871441d26144257e8aff0a688f169c944f690d8b70f",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-2d01fa4b9e49f",
+      "name": "홀로우 락",
+      "path": "media/rf174-batch059/ex12-2d01fa4b9e49f.webp",
+      "sha256": "310c5b08ab654eeffdc5e43277db58137d7410f6ee7570db2f8917cdacd3c689",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-7286bdcbf18f5",
+      "name": "슈트케이스 홀드",
+      "path": "media/rf174-batch059/ex12-7286bdcbf18f5.webp",
+      "sha256": "24dffd51b68b5626898f3b000fdd1ba59d559a45a5edacbb11ee2a514dd6d1f9",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-c11bd6831ef95",
+      "name": "리버스 플랭크",
+      "path": "media/rf174-batch059/ex12-c11bd6831ef95.webp",
+      "sha256": "c541ef6cc5d567e0c39d5d4150232cc86d361197183bd43c6db2306fd9ad61bd",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0aabbca3e97bb",
+      "name": "행잉 토투바",
+      "path": "media/rf174-batch059/ex12-0aabbca3e97bb.webp",
+      "sha256": "26c743c778b7d4cf5a2110f611e030e89f640e7a62ed60353da006a273f04bad",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-c72a2cd6e0639",
+      "name": "행잉 윈드실드 와이퍼",
+      "path": "media/rf174-batch059/ex12-c72a2cd6e0639.webp",
+      "sha256": "d172cdb05fbb8cab52ba2a18af60afd6312a1c44aa283f6fffb8ceb0682a87ee",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-434b06dabb20c",
+      "name": "산악자세 버드독",
+      "path": "media/rf174-batch059/ex12-434b06dabb20c.webp",
+      "sha256": "e258b42b6e244dd2661d02f82128de54110332790e9389c4b7f8ed86d0a3967c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-220c589d33874",
+      "name": "케이블 원암 팔로프 프레스",
+      "path": "media/rf174-batch059/ex12-220c589d33874.webp",
+      "sha256": "baa0da0804c185021d694eb3a8c4a4f725794104b05f704c8f2304fdb1bfb296",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-974d1aa8e7e11",
+      "name": "케이블 하이투로우 우드촙",
+      "path": "media/rf174-batch059/ex12-974d1aa8e7e11.webp",
+      "sha256": "70660c1422c886e3b4f8ba851bb59b15a843f225e2f276369c24578d7f2abe8c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-da436202030ae",
+      "name": "케이블 로우투하이 우드촙",
+      "path": "media/rf174-batch059/ex12-da436202030ae.webp",
+      "sha256": "a7e501c539b30419cad7f2d6b5956c7b173281f929a3fca129208900de7b4d18",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0c0f043475172",
+      "name": "케이블 스탠딩 크런치",
+      "path": "media/rf174-batch060/ex12-0c0f043475172.webp",
+      "sha256": "274c8f98dd4321ae70a7331a489c364e4264f542525b5bb05ebb95ac20516400",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-28cff83c15b54",
+      "name": "케이블 사이드 벤드",
+      "path": "media/rf174-batch060/ex12-28cff83c15b54.webp",
+      "sha256": "6b56f263b914f29e6adf06183e67ddc6f8c3f46d757fec03f4e1b2256f8ca531",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-ed47aa4e93862",
+      "name": "케이블 안티로테이션 홀드",
+      "path": "media/rf174-batch060/ex12-ed47aa4e93862.webp",
+      "sha256": "22a7bd2d4e28a4b9031cf76abca9f5536fa38107e70f9e25a925ccb6d3ea6a50",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-d53f817ff7aa2",
+      "name": "덤벨 사이드 벤드",
+      "path": "media/rf174-batch060/ex12-d53f817ff7aa2.webp",
+      "sha256": "69dd39fff80a6e051ef13421a263e323b99ef74a3e2202ba2b94266d77eb2c54",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-6843d1e248e4d",
+      "name": "덤벨 데드버그",
+      "path": "media/rf174-batch060/ex12-6843d1e248e4d.webp",
+      "sha256": "862f9b3a53343a033dd7753eec0ae79b0defc9fb6ec0f93c15a891b61cce7d70",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-134b5fd9c01e9",
+      "name": "덤벨 러시안 트위스트",
+      "path": "media/rf174-batch060/ex12-134b5fd9c01e9.webp",
+      "sha256": "bce85d6b0d8e5d3f8226f0e9f190cf402898f3e136964fff4aa9e6b47b47790f",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-087dd23cc3c3e",
+      "name": "덤벨 오버헤드 홀드",
+      "path": "media/rf174-batch060/ex12-087dd23cc3c3e.webp",
+      "sha256": "43afb1f256e1482d7a3f900a819e54feaa8661d961e8f1715e675e860b8f2b9f",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0d6d6ef79fc56",
+      "name": "케틀벨 클린앤프레스",
+      "path": "media/rf174-batch060/ex12-0d6d6ef79fc56.webp",
+      "sha256": "527ee6779274319a381385e288a08b7c8e04fb38b9ae9df3b3148c63f97b43c9",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b88cc7755e58c",
+      "name": "케틀벨 데드클린",
+      "path": "media/rf174-batch060/ex12-b88cc7755e58c.webp",
+      "sha256": "d5a1a99596067eac43aab41e2b58ccf373c50e79e550bf2f9ee4a9cf8edc19ba",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-72a53a6171312",
+      "name": "케틀벨 쓰러스터",
+      "path": "media/rf174-batch060/ex12-72a53a6171312.webp",
+      "sha256": "d2b5eef1f365beab8b52b5d76ba8ee3cb3092000f4f9bc383c851b881be0d736",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-3a5f5cb1fe4dc",
+      "name": "케틀벨 롱사이클",
+      "path": "media/rf174-batch061/ex12-3a5f5cb1fe4dc.webp",
+      "sha256": "6e642b8e46bf99da8009a3ffffed6ba017175d8be48fab2d1be966891e0c0ba2",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-64da5956c6170",
+      "name": "케틀벨 싱글암 스윙",
+      "path": "media/rf174-batch061/ex12-64da5956c6170.webp",
+      "sha256": "7e0a150a90d15a86a095f5f5e4630149c416353dd859bfab105f4ef01ed3b31b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b77fccc9e54b6",
+      "name": "케틀벨 프론트랙 캐리",
+      "path": "media/rf174-batch061/ex12-b77fccc9e54b6.webp",
+      "sha256": "00d55097640d0d2d60a08f7cb60e8f2cbd0dd8953e25a2e23733d51218646d26",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-bb38ab6fb24c2",
+      "name": "케틀벨 수트케이스 캐리",
+      "path": "media/rf174-batch061/ex12-bb38ab6fb24c2.webp",
+      "sha256": "0f8010175a0e93c2ea4bc2ce5ca8a47e1adad042017458fd2ccd4b0867cc4eba",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-4167c3627ef25",
+      "name": "케틀벨 오버헤드 캐리",
+      "path": "media/rf174-batch061/ex12-4167c3627ef25.webp",
+      "sha256": "3a64bf032ae80fcc80e021ad774aff61787aeb3ff2304911a126d3895b747019",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-72d6dc2da7d12",
+      "name": "덤벨 클린앤프레스",
+      "path": "media/rf174-batch061/ex12-72d6dc2da7d12.webp",
+      "sha256": "f5b5c44e74c1e555f76e7f6a9df44cf1c5f83d68f6160e333b32b97e8e33e24b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-0137bec31f742",
+      "name": "덤벨 스내치",
+      "path": "media/rf174-batch061/ex12-0137bec31f742.webp",
+      "sha256": "041c1b0d78db98e29d360c0cdcd1d57de92509960d1f90b34d3e86ba7bd179e0",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-a2eea6e190692",
+      "name": "덤벨 데빌프레스",
+      "path": "media/rf174-batch061/ex12-a2eea6e190692.webp",
+      "sha256": "873819fb838212e03c729ea69400f2edb1ccfaeed1fac97a584a60f77cfeb62b",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1d807b0779007",
+      "name": "덤벨 버피 프레스",
+      "path": "media/rf174-batch061/ex12-1d807b0779007.webp",
+      "sha256": "08107b4bd87a2c30988e8e3b17f4d141993897c8120396a38ab9488c2dc3a244",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-375a75fd0abc7",
+      "name": "덤벨 수트케이스 캐리",
+      "path": "media/rf174-batch061/ex12-375a75fd0abc7.webp",
+      "sha256": "3ee13823721f25e8b7ff14d36e1939d2d0dc2021a7e824d2309a629e589ad66c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-893058b76b630",
+      "name": "덤벨 오버헤드 캐리",
+      "path": "media/rf174-batch062/ex12-893058b76b630.webp",
+      "sha256": "6252768bae40b476637a977d073a5470accf4f149b191396dc6b9d924abcf957",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-92ed79ad36412",
+      "name": "덤벨 매니메이커",
+      "path": "media/rf174-batch062/ex12-92ed79ad36412.webp",
+      "sha256": "9bd89c2230b7b7056de38795504e68b0d2f3c3c271b40e67f0657f49f95572ad",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-b1b1e7a488478",
+      "name": "바벨 클린",
+      "path": "media/rf174-batch062/ex12-b1b1e7a488478.webp",
+      "sha256": "248b6de8fa405e1849bb25e9b42280a0a146e9dcd5148823d2ff4679441d529a",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-de91d3846986a",
+      "name": "바벨 파워 클린",
+      "path": "media/rf174-batch062/ex12-de91d3846986a.webp",
+      "sha256": "a530240c5db859c132abc55e09d8ded2efcc5ed1fcfd3f76d5854c34bb7721de",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-cb1722366f8ee",
+      "name": "바벨 클린앤저크",
+      "path": "media/rf174-batch062/ex12-cb1722366f8ee.webp",
+      "sha256": "c4fb6b3c3ffb5911489df7372b210c5208bec0adb04683b9936e2c73426c5ded",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-bef3c061685b5",
+      "name": "바벨 스내치",
+      "path": "media/rf174-batch062/ex12-bef3c061685b5.webp",
+      "sha256": "37b2815bb9c16020697d979b6fce19abab0b2b3dfe6eaf5a2b63912ee094b9a1",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-2f6f7440c4170",
+      "name": "바벨 행 파워 클린",
+      "path": "media/rf174-batch062/ex12-2f6f7440c4170.webp",
+      "sha256": "f481d7b2f2081cff4f7537af95b586cefd12a3ea2ba61cc6a4f0db06fd0cf927",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-2e768c1bf55ae",
+      "name": "바벨 쓰러스터",
+      "path": "media/rf174-batch062/ex12-2e768c1bf55ae.webp",
+      "sha256": "4f791afb0ba1a841c338c7550ca92bc4898fc212edc8e16f3ce8aae52fdfe3ef",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-263d34974088b",
+      "name": "바벨 데드리프트 투 로우",
+      "path": "media/rf174-batch062/ex12-263d34974088b.webp",
+      "sha256": "30accdbf99afa2ffce8f39d432855828e0b96e3209da22597600324af7d98024",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-98762e2347cad",
+      "name": "샌드백 캐리",
+      "path": "media/rf174-batch062/ex12-98762e2347cad.webp",
+      "sha256": "661d8e5f3f87ba10cc285489ee888000dfc1e984cc99f6f2f80077b08fdeccd7",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-871b1e3a5558f",
+      "name": "샌드백 숄더링",
+      "path": "media/rf174-batch063/ex12-871b1e3a5558f.webp",
+      "sha256": "1991dbd25fbc7f6722f3f0782ca9468e5d49db85e9185bfc3734aa7495e0f112",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-16eebd0d3f71f",
+      "name": "파머스 캐리 시간 기록",
+      "path": "media/rf174-batch063/ex12-16eebd0d3f71f.webp",
+      "sha256": "cbf221e8017930067679e9c3d0dedcc86499ec284da9b9fa3e48628dd4959ea0",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1b85bc10d102c",
+      "name": "배틀로프 더블웨이브",
+      "path": "media/rf174-batch063/ex12-1b85bc10d102c.webp",
+      "sha256": "5fa4c2b84d357f921b62952b9b5d16686537eedd6c301372ed98076ae7eff221",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-8cc7f1b72a0d6",
+      "name": "곡선형 트레드밀",
+      "path": "media/rf174-batch063/ex12-8cc7f1b72a0d6.webp",
+      "sha256": "b879bc65a6ecd1233db7ea716fabf47a97d6755f038f0be16c37f8078c7e4365",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-15151d73d8211",
+      "name": "인클라인 트레드밀 걷기",
+      "path": "media/rf174-batch063/ex12-15151d73d8211.webp",
+      "sha256": "297c1535d7879cb3cd24b0592485bd0387469365fe676cc1bd72bf7ad5165be7",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-770869f01f1ce",
+      "name": "러닝머신 인터벌",
+      "path": "media/rf174-batch063/ex12-770869f01f1ce.webp",
+      "sha256": "854dfc2872f5cf623ea3e340de9c940eaf7a5d29d7a48a010366d7a0af10e763",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-24cb27c23457f",
+      "name": "워터 로잉머신",
+      "path": "media/rf174-batch063/ex12-24cb27c23457f.webp",
+      "sha256": "fc6977d7a0eaf055a4c990538570819b48be56f017fd598805d51aba9ba5b81c",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-4309274bf167b",
+      "name": "에어 로잉머신",
+      "path": "media/rf174-batch063/ex12-4309274bf167b.webp",
+      "sha256": "48c84bb834e9747be9ae2b6f531ce1207a0f48bdd23704c8bb333bfbb0ec85fe",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-5064c18f28fc8",
+      "name": "어썰트 러너",
+      "path": "media/rf174-batch063/ex12-5064c18f28fc8.webp",
+      "sha256": "922c2ee7bf18469a9618e683e9ad729ec90d8ac2d350685d41ca2e4171fa6643",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f73f61e7b6c27",
+      "name": "바이크에르그",
+      "path": "media/rf174-batch063/ex12-f73f61e7b6c27.webp",
+      "sha256": "35748f9e11df23ee574b4b0e4ae80e7b16e6400343634692a7105aa9aec709ab",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-9ab3e5410a601",
+      "name": "핸드 사이클",
+      "path": "media/rf174-batch064/ex12-9ab3e5410a601.webp",
+      "sha256": "306d4a76ab8d214bfc20ab5352d050997875fd8fad89620fc2cc57df12328158",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-38fbfe6a919e6",
+      "name": "암 에르고미터",
+      "path": "media/rf174-batch064/ex12-38fbfe6a919e6.webp",
+      "sha256": "2a4e4e6bf967559d94ac6865e032e3735c6ab36ac7e2d84dc1a21436d7db5b2e",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-1c45acfef6e4e",
+      "name": "크로스트레이너",
+      "path": "media/rf174-batch064/ex12-1c45acfef6e4e.webp",
+      "sha256": "931565d08afed34f8eb36412379f7f056083e6723a3c85b67354e2a6b908b8e5",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f20da53ad3a4b",
+      "name": "제자리 달리기 시간 기록",
+      "path": "media/rf174-batch064/ex12-f20da53ad3a4b.webp",
+      "sha256": "b04267f595dfb1b523892177d75104525146e313094bab552ee59584adbe4735",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-59532dc545ba3",
+      "name": "고강도 버피 인터벌",
+      "path": "media/rf174-batch064/ex12-59532dc545ba3.webp",
+      "sha256": "02afb64884341e8f692262eba8afce2ac9532fdc360e8cf020fb4ec5aa159898",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-3ef2f00bb5867",
+      "name": "섀도 복싱",
+      "path": "media/rf174-batch064/ex12-3ef2f00bb5867.webp",
+      "sha256": "829300f637c95e888e6db0ddab7b6a1b9e98a33a221569f695a55fb3760a289d",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-c406462394114",
+      "name": "사이드 스텝 인터벌",
+      "path": "media/rf174-batch064/ex12-c406462394114.webp",
+      "sha256": "bebc705e7991b964c4ff39d20dc469bd58d7267887b353c3c681da3feb69c9c5",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-f3058e420c6e6",
+      "name": "하이니 드릴",
+      "path": "media/rf174-batch064/ex12-f3058e420c6e6.webp",
+      "sha256": "0064eea1c96ef7cfcd292e10b84377024f0a4a59dbe71bf65c166dac833279ef",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-6216038273b35",
+      "name": "점핑잭 인터벌",
+      "path": "media/rf174-batch064/ex12-6216038273b35.webp",
+      "sha256": "95337c94f71c9be1d71f13c62a992c1d389a08897d5c90a7cfa890de076d3531",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-fca76b14688ff",
+      "name": "인치웜 반복 시간",
+      "path": "media/rf174-batch064/ex12-fca76b14688ff.webp",
+      "sha256": "2db061ae0e67baae8409ae18048b6cabb3436035b9132a1e4f20085780e55074",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "ex12-6c643ccd2308c",
+      "name": "베어 크롤 시간 기록",
+      "path": "media/rf174-batch065/ex12-6c643ccd2308c.webp",
+      "sha256": "7c52a773c0b380322a9682264d7c452292e9bbecc7dad194525dc92fe9fbaeec",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "fitflex-cable-crunch-standing",
+      "name": "스탠딩 케이블 크런치",
+      "path": "media/rf174-batch065/fitflex-cable-crunch-standing.webp",
+      "sha256": "4a2dc72dfb3b8b834db9a8622b68973140109ca33137a232c95139b40eea20ba",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "fitflex-cable-crunch-kneeling",
+      "name": "무릎 꿇고 케이블 크런치",
+      "path": "media/rf174-batch065/fitflex-cable-crunch-kneeling.webp",
+      "sha256": "a1a8cb5d81369c214c3a970533ec7f422d0cd71a36cd44a36383ed35b780d381",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    },
+    {
+      "id": "fitflex-lateral-raise-seated",
+      "name": "시티드 덤벨 레터럴 레이즈",
+      "path": "media/rf174-batch065/fitflex-lateral-raise-seated.webp",
+      "sha256": "2549a024c327ec43e69e6f52047c0520071c5784dbc780250438bed25f5678d1",
+      "width": 1254,
+      "height": 1254,
+      "review": "EXISTING_VERIFIED"
+    }
+  ]
+}

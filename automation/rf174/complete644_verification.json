@@ -1,0 +1,47 @@
+{
+  "status": "READY_FOR_SIGNED_BUILD_NOT_SUBMITTED",
+  "base_commit": "be95241ce05420fad415202ca66772c20794c8d9",
+  "official_count": 644,
+  "verified_count": 644,
+  "remaining": 0,
+  "runtime_routes_checked": 644,
+  "all_verified_images_in_offline_cache": true,
+  "sha256_and_native_resolution_checked": true,
+  "no_exact_byte_duplicates": true,
+  "existing_317_routes_preserved": true,
+  "base_html_unchanged_except_image_mapping": false,
+  "user_data_key": "routinefit_v1_store",
+  "inline_and_sw_syntax": "PASS",
+  "signed_apk_built": false,
+  "store_submitted": false,
+  "missing": [],
+  "catalog_label_correction": {
+    "id": "ex12-e7a63bd979e32",
+    "old": "스캡션 푸시업",
+    "new": "스캐풀라 푸시업",
+    "same_id": true,
+    "old_search_alias": true
+  },
+  "perceptual_screen": {
+    "threshold": 1,
+    "candidate_pairs": 1,
+    "review": "PASS: tempo and reverse-grip bench images share scene but show distinct pronated/supinated grips"
+  },
+  "record_regression": {
+    "source": "/workspace/scratch/cf20d580973b/coverage_repo/index.html",
+    "version": "1.7.4.4",
+    "catalog": 644,
+    "existing_records": "PASS",
+    "native_json_backup_roundtrip": "PASS",
+    "active_workout_and_routines": "PASS",
+    "custom_exercises_and_overrides": "PASS",
+    "save_revision_and_snapshot": "PASS",
+    "missing_or_corrupt_primary_snapshot_recovery": "PASS",
+    "scope": "Actual persistence and backup functions in Node VM; Android device and browser UI not tested."
+  },
+  "limitations": [
+    "No physical Android device test performed",
+    "Signed release not built; GitHub integration write returns 403",
+    "OneStore not submitted"
+  ]
+}
