@@ -40,5 +40,5 @@ assert.equal(saved.sessions[0].id,'old-session');assert.equal(saved.active.id,'a
 assert.equal(JSON.parse(b.data.get('routinefit_v13_snapshot')).revision,31);
 for(const current of [undefined,'{damaged']){const recovered=boot(current,raw);assert.equal(recovered.t.getState().sessions[0].id,'old-session');}
 assert.equal(b.t.EXERCISES.find(e=>e.id===id).id,id);
-if(b.t.VERSION==='1.7.4.5'){assert.equal(b.t.EXERCISES.find(e=>e.id===id).name,'스캐풀라 푸시업');assert.ok(b.t.EXERCISES.find(e=>e.id===id).aliases.includes('스캡션 푸시업'));}
+if(b.t.VERSION==='1.7.4.6'){assert.equal(b.t.EXERCISES.find(e=>e.id===id).name,'스캐풀라 푸시업');assert.ok(b.t.EXERCISES.find(e=>e.id===id).aliases.includes('스캡션 푸시업'));}
 console.log(JSON.stringify({source,version:b.t.VERSION,catalog:644,existing_records:'PASS',native_json_backup_roundtrip:'PASS',active_workout_and_routines:'PASS',custom_exercises_and_overrides:'PASS',save_revision_and_snapshot:'PASS',missing_or_corrupt_primary_snapshot_recovery:'PASS',scope:'Actual persistence and backup functions in Node VM; Android device and browser UI not tested.'}));

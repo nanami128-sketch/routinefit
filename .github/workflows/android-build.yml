@@ -122,7 +122,7 @@ jobs:
           info=subprocess.check_output([os.environ['ANDROID_HOME']+'/build-tools/36.0.0/aapt','dump','badging','android/app/build/outputs/apk/release/app-release.apk'],text=True)
           line=info.splitlines()[0]
           assert "name='com.nanami128sketch.routinefit'" in line
-          assert "versionCode='178'" in line and "versionName='1.7.4.5'" in line
+          assert "versionCode='179'" in line and "versionName='1.7.4.6'" in line
           print(line)
           PY
       - name: Upload signed APK
