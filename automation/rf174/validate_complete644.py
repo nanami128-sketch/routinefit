@@ -8,12 +8,12 @@ p.add_argument('--apk')
 a=p.parse_args()
 root=Path(a.root)
 manifest=json.loads((root/'automation/rf174/complete644_manifest.json').read_text())
-assert manifest['count']==644 and manifest['version']=='1.7.4.4'
+assert manifest['count']==644 and manifest['version']=='1.7.4.5'
 rows=manifest['images']
 assert len(rows)==644 and len({e['id'] for e in rows})==644
 def check(read):
     html=read('index.html').decode()
-    assert "VERSION='1.7.4.4'" in html and "STORE_KEY='routinefit_v1_store'" in html
+    assert "VERSION='1.7.4.5'" in html and "STORE_KEY='routinefit_v1_store'" in html
     mapping={}
     for line in html.splitlines():
         if line.startswith(('const RF_V174_EXACT_BY_ID=','Object.assign(RF_V174_EXACT_BY_ID,')):
@@ -21,7 +21,7 @@ def check(read):
     assert len(mapping)==644
     sw=read('sw.js').decode()
     core=json.loads(re.search(r'const CORE\s*=\s*(\[[^;]+\]);',sw).group(1))
-    assert 'routinefit-complete644-1.7.4.4-' in sw
+    assert 'routinefit-complete644-1.7.4.5-' in sw
     hashes=set()
     for e in rows:
         assert mapping[e['id']]==e['path']
@@ -36,11 +36,11 @@ def check(read):
 expected=check(lambda f:(root/f).read_bytes())
 gradle=(root/'android/app/build.gradle').read_text()
 assert "applicationId 'com.nanami128sketch.routinefit'" in gradle
-assert 'versionCode 177' in gradle and "versionName '1.7.4.4'" in gradle
+assert 'versionCode 178' in gradle and "versionName '1.7.4.5'" in gradle
 if a.apk:
     with zipfile.ZipFile(a.apk) as z:
         assert z.testzip() is None
         assert check(lambda f:z.read('assets/'+f))==expected
     print('PASS: release APK contains all 644 reviewed images and exact validated app HTML')
 else:
-    print('PASS: 644 unique image routes, SHA256, native-size metadata, offline cache, app ID and version 177')
+    print('PASS: 644 unique image routes, SHA256, native-size metadata, offline cache, app ID and version 178')

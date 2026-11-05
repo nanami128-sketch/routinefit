@@ -43,22 +43,34 @@ public final class MainActivity extends Activity {
                 .build();
 
         webView = new WebView(this);
-        // Android 15+ enforces edge-to-edge; keep the web content clear of
-        // the status bar and navigation bar on Samsung/other devices.
+        // Keep visible status/cutout and keyboard areas outside the web viewport.
+        // Reserve navigation-bar height even during its transient swipe reveal.
+        // This prevents the fixed web menu from being covered or jumping.
         webView.setOnApplyWindowInsetsListener((view, insets) -> {
             if (android.os.Build.VERSION.SDK_INT >= 30) {
                 android.graphics.Insets safe = insets.getInsets(
-                        android.view.WindowInsets.Type.systemBars() |
+                        android.view.WindowInsets.Type.statusBars() |
                         android.view.WindowInsets.Type.displayCutout());
-                view.setPadding(safe.left, safe.top, safe.right, safe.bottom);
+                android.graphics.Insets nav = insets.getInsetsIgnoringVisibility(
+                        android.view.WindowInsets.Type.navigationBars());
+                android.graphics.Insets ime = insets.getInsets(
+                        android.view.WindowInsets.Type.ime());
+                view.setPadding(Math.max(safe.left, nav.left), safe.top,
+                        Math.max(safe.right, nav.right), Math.max(nav.bottom, ime.bottom));
             } else {
-                view.setPadding(insets.getSystemWindowInsetLeft(), insets.getSystemWindowInsetTop(),
-                        insets.getSystemWindowInsetRight(), insets.getSystemWindowInsetBottom());
+                view.setPadding(Math.max(insets.getSystemWindowInsetLeft(), insets.getStableInsetLeft()),
+                        Math.max(insets.getSystemWindowInsetTop(), insets.getStableInsetTop()),
+                        Math.max(insets.getSystemWindowInsetRight(), insets.getStableInsetRight()),
+                        Math.max(insets.getSystemWindowInsetBottom(), insets.getStableInsetBottom()));
             }
-            return insets;
+            return android.os.Build.VERSION.SDK_INT >= 30
+                    ? android.view.WindowInsets.CONSUMED
+                    : insets.consumeSystemWindowInsets().consumeStableInsets();
         });
         webView.setBackgroundColor(0xff09131b);
         setContentView(webView);
+        configureNavigationBars();
+        webView.requestApplyInsets();
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
@@ -111,6 +123,33 @@ public final class MainActivity extends Activity {
             }
         });
         webView.loadUrl(ROOT + "index.html");
+    }
+
+    private void configureNavigationBars() {
+        if (android.os.Build.VERSION.SDK_INT >= 30) {
+            getWindow().setDecorFitsSystemWindows(false);
+            android.view.WindowInsetsController controller = getWindow().getInsetsController();
+            if (controller != null) {
+                controller.setSystemBarsBehavior(
+                        android.view.WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
+                controller.hide(android.view.WindowInsets.Type.navigationBars());
+            }
+        } else {
+            getWindow().getDecorView().setSystemUiVisibility(
+                    android.view.View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
+                    android.view.View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
+                    android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
+                    android.view.View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                    android.view.View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        }
+    }
+
+    @Override public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            configureNavigationBars();
+            if (webView != null) webView.requestApplyInsets();
+        }
     }
 
     private void openExternal(Uri url) {
@@ -177,3 +216,4 @@ public final class MainActivity extends Activity {
         super.onDestroy();
     }
 }
+
