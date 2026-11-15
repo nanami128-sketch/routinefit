@@ -15,6 +15,7 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import androidx.webkit.WebViewAssetLoader;
@@ -43,12 +44,17 @@ public final class MainActivity extends Activity {
                 .build();
 
         webView = new WebView(this);
-        // Keep visible status/cutout and keyboard areas outside the web viewport.
-        // Reserve navigation-bar height even during its transient swipe reveal.
-        // This prevents the fixed web menu from being covered or jumping.
-        webView.setOnApplyWindowInsetsListener((view, insets) -> {
+        if (android.os.Build.VERSION.SDK_INT >= 30) {
+            getWindow().setDecorFitsSystemWindows(false);
+        }
+        FrameLayout content = new FrameLayout(this);
+        content.setBackgroundColor(0xff09131b);
+        content.addView(webView, new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT));
+        // Size the WebView inside the safe area so fixed web controls also clear the bars.
+        content.setOnApplyWindowInsetsListener((view, insets) -> {
             if (android.os.Build.VERSION.SDK_INT >= 30) {
-                android.graphics.Insets safe = insets.getInsets(
+                android.graphics.Insets safe = insets.getInsetsIgnoringVisibility(
                         android.view.WindowInsets.Type.statusBars() |
                         android.view.WindowInsets.Type.displayCutout());
                 android.graphics.Insets nav = insets.getInsetsIgnoringVisibility(
@@ -68,9 +74,9 @@ public final class MainActivity extends Activity {
                     : insets.consumeSystemWindowInsets().consumeStableInsets();
         });
         webView.setBackgroundColor(0xff09131b);
-        setContentView(webView);
+        setContentView(content);
         configureNavigationBars();
-        webView.requestApplyInsets();
+        content.requestApplyInsets();
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
@@ -127,7 +133,6 @@ public final class MainActivity extends Activity {
 
     private void configureNavigationBars() {
         if (android.os.Build.VERSION.SDK_INT >= 30) {
-            getWindow().setDecorFitsSystemWindows(false);
             android.view.WindowInsetsController controller = getWindow().getInsetsController();
             if (controller != null) {
                 controller.setSystemBarsBehavior(
@@ -148,7 +153,7 @@ public final class MainActivity extends Activity {
         super.onWindowFocusChanged(hasFocus);
         if (hasFocus) {
             configureNavigationBars();
-            if (webView != null) webView.requestApplyInsets();
+            getWindow().getDecorView().requestApplyInsets();
         }
     }
 
