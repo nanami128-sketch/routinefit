@@ -371,7 +371,7 @@ window.ROUTINEFIT_ASSETS={"assisted-pull-up":"data:image/svg+xml;base64,PHN2ZyB4
 /* RoutineFit v1.5.1 - offline-first exercise journal, exercise catalog expanded from independently authored sources. */
 (() => {
 'use strict';
-const VERSION='1.7.4.7', STORE_KEY='routinefit_v1_store', SNAP_KEY='routinefit_v13_snapshot', HISTORY_KEY='routinefit_v13_history';
+const VERSION='1.7.5', STORE_KEY='routinefit_v1_store', SNAP_KEY='routinefit_v13_snapshot', HISTORY_KEY='routinefit_v13_history';
 const FOOD_LIBRARY=[{"id":"rice","name":"흰쌀밥","kcal100":130,"cat":"곡류"},{"id":"brown","name":"현미밥","kcal100":140,"cat":"곡류"},{"id":"oat","name":"오트밀 건조","kcal100":380,"cat":"곡류"},{"id":"bread","name":"식빵","kcal100":260,"cat":"곡류"},{"id":"sweetpotato","name":"고구마 찐 것","kcal100":130,"cat":"곡류"},{"id":"potato","name":"감자 찐 것","kcal100":80,"cat":"곡류"},{"id":"egg","name":"달걀 삶은 것","kcal100":150,"cat":"단백질"},{"id":"chicken","name":"닭가슴살 조리","kcal100":165,"cat":"단백질"},{"id":"beef","name":"소고기 살코기 조리","kcal100":215,"cat":"단백질"},{"id":"pork","name":"돼지고기 등심 조리","kcal100":210,"cat":"단백질"},{"id":"tofu","name":"두부","kcal100":85,"cat":"단백질"},{"id":"salmon","name":"연어","kcal100":205,"cat":"단백질"},{"id":"tuna","name":"참치 수분","kcal100":120,"cat":"단백질"},{"id":"shrimp","name":"새우","kcal100":100,"cat":"단백질"},{"id":"milk","name":"우유 일반","kcal100":60,"cat":"유제품"},{"id":"soy","name":"무가당 두유","kcal100":45,"cat":"음료"},{"id":"yogurt","name":"플레인 요거트","kcal100":75,"cat":"유제품"},{"id":"cheese","name":"슬라이스 치즈","kcal100":320,"cat":"유제품"},{"id":"banana","name":"바나나","kcal100":89,"cat":"과일"},{"id":"apple","name":"사과","kcal100":52,"cat":"과일"},{"id":"orange","name":"오렌지","kcal100":47,"cat":"과일"},{"id":"strawberry","name":"딸기","kcal100":33,"cat":"과일"},{"id":"avocado","name":"아보카도","kcal100":160,"cat":"과일"},{"id":"tomato","name":"토마토","kcal100":18,"cat":"채소"},{"id":"broccoli","name":"브로콜리","kcal100":35,"cat":"채소"},{"id":"cucumber","name":"오이","kcal100":15,"cat":"채소"},{"id":"almond","name":"아몬드","kcal100":580,"cat":"견과"},{"id":"walnut","name":"호두","kcal100":650,"cat":"견과"},{"id":"peanutbutter","name":"땅콩버터","kcal100":590,"cat":"견과"},{"id":"oliveoil","name":"올리브유","kcal100":884,"cat":"기타"},{"id":"kimchi","name":"배추김치","kcal100":25,"cat":"반찬"},{"id":"kimchirice","name":"김치볶음밥","kcal100":170,"cat":"한식"},{"id":"bibimbap","name":"비빔밥","kcal100":150,"cat":"한식"},{"id":"bulgogi","name":"불고기","kcal100":190,"cat":"한식"},{"id":"doenjang","name":"된장찌개","kcal100":65,"cat":"한식"},{"id":"kimchistew","name":"김치찌개","kcal100":80,"cat":"한식"},{"id":"seolleongtang","name":"설렁탕","kcal100":75,"cat":"한식"},{"id":"samgyetang","name":"삼계탕","kcal100":95,"cat":"한식"},{"id":"gimbap","name":"김밥","kcal100":175,"cat":"한식"},{"id":"tteokbokki","name":"떡볶이","kcal100":180,"cat":"간식"},{"id":"ramyeon","name":"라면 조리 후 100g (국물 포함 추정)","kcal100":110,"cat":"면류"},{"id":"udon","name":"우동 조리","kcal100":85,"cat":"면류"},{"id":"spaghetti","name":"파스타 조리","kcal100":155,"cat":"면류"},{"id":"pizza","name":"피자","kcal100":260,"cat":"패스트푸드"},{"id":"hamburger","name":"햄버거","kcal100":250,"cat":"패스트푸드"},{"id":"friedchicken","name":"치킨 튀김","kcal100":270,"cat":"패스트푸드"},{"id":"fries","name":"감자튀김","kcal100":300,"cat":"패스트푸드"},{"id":"icedamericano","name":"아메리카노 무가당","kcal100":2,"cat":"음료"},{"id":"latte","name":"카페라떼 무가당","kcal100":45,"cat":"음료"},{"id":"cola","name":"콜라","kcal100":42,"cat":"음료"},{"id":"juice","name":"오렌지 주스","kcal100":45,"cat":"음료"},{"id":"protein","name":"프로틴 파우더","kcal100":390,"cat":"보충식"},{"id":"granola","name":"그래놀라","kcal100":460,"cat":"간식"},{"id":"ricecake","name":"백설기 떡","kcal100":230,"cat":"간식"},{"id":"chocolate","name":"밀크 초콜릿","kcal100":535,"cat":"간식"},{"id":"icecream","name":"아이스크림","kcal100":210,"cat":"간식"},{"id":"nongshim-shin-bag","name":"농심 신라면 봉지 1개 (120g)","kcal100":416.67,"cat":"봉지라면","portionG":120,"portionKcal":500,"portionLabel":"1봉","source":"농심 공식 제품정보"},{"id":"nongshim-shin-gold","name":"농심 신라면 골드 봉지 1개 (125g)","kcal100":432,"cat":"봉지라면","portionG":125,"portionKcal":540,"portionLabel":"1봉","source":"농심 공식 제품정보"},{"id":"ottogi-jin-spicy","name":"오뚜기 진라면 매운맛 봉지 1개 (120g)","kcal100":425,"cat":"봉지라면","portionG":120,"portionKcal":510,"portionLabel":"1봉","source":"오뚜기 공식 직영 상품 설명"},{"id":"nongshim-neoguri-spicy","name":"농심 얼큰한 너구리 봉지 1개 (120g)","kcal100":408.33,"cat":"봉지라면","portionG":120,"portionKcal":490,"portionLabel":"1봉","source":"농심 공식 제품정보"},{"id":"nongshim-shin-rose","name":"농심 신라면 로제 봉지 1개 (134g)","kcal100":421.64,"cat":"봉지라면","portionG":134,"portionKcal":565,"portionLabel":"1봉","source":"농심 공식 제품정보"}];
 /* Independently authored variations of exercise families discussed in FITFLEX clips.
    These are independent descriptions; only source-confirmed generic movements are tagged. */
@@ -1177,7 +1177,7 @@ function home(){const recent=state.sessions[0], today=localISO(), w=state.weight
  ${recent?`<div class="surface insight"><div class="insight-icon">${I('fire',24)}</div><div><strong>${esc(datetime(recent.startedAt))} 운동 완료</strong><p>${sessionMetrics(recent).exercises}종목 · ${sessionMetrics(recent).sets}세트 · 총 운동량 ${fmt(sessionMetrics(recent).tonnage)}kg</p></div></div>`:`<div class="surface empty-small">아직 완료한 운동이 없습니다. 첫 운동을 기록해 보세요. ${I('dumbbell',18)}</div>`}
  `}
 function dayPicker(action){return `<div class="days-grid">${DAYS.map((x,i)=>`<button class="day-pill ${selectedDay===i?'selected':''} ${routinesFor(i).length?'populated':''}" data-action="${action}" data-day="${i}"><span>${x}</span><span class="day-dot"></span></button>`).join('')}</div>`}
-function routine(){const routine=routinesFor(selectedDay);return `<section class="page-title"><span class="overline">WEEKLY PLAN</span><h1>요일별 운동 루틴</h1><p>기구별·부위별 운동을 검색하고 직접 종목을 추가·수정할 수 있습니다.</p></section>
+function routine(){const routine=routinesFor(selectedDay);return `<section class="page-title"><span class="overline">WEEKLY PLAN</span><h1>요일별 운동 루틴</h1><button class="secondary-btn" data-action="tab" data-tab="recommend">AI 루틴 추천</button><p>기구별·부위별 운동을 검색하고 직접 종목을 추가·수정할 수 있습니다.</p></section>
  ${dayPicker('select-day')}
  <div class="section-heading rf-routine-heading"><div><h2>${DAYS[selectedDay]}요일 운동 <span class="title-accent">${routine.length}종목</span></h2><div class="helper-text">총 목표 ${routine.reduce((a,x)=>a+x.targetSets,0)}세트</div></div><div class="rf-routine-actions"><button class="rf-copy-entry" data-action="open-routine-copy">${I('copy',16)} 요일 복제</button><button class="small-add" data-action="open-catalog">${I('plus',17)} 종목 추가</button></div></div>
  ${routine.length?`<div class="routine-list">${routine.map((r,i)=>{const e=byId(r.exerciseId);if(!e)return'';return `<div class="routine-card">${rfVideoOverlay(e,'rf-routine-video')}<div class="routine-content"><div class="routine-top"><div class="routine-name">${esc(e.name)}</div><span class="muscle-pill">${esc(e.muscle)}</span></div><div class="routine-desc">${esc(EQUIP_LABEL[e.equipment]||'기타')} · ${esc(e.description)}</div></div><div class="routine-controls"><div class="stepper"><button data-action="set-count" data-i="${i}" data-dir="-1" aria-label="세트 줄이기">−</button><span>${r.targetSets}세트</span><button data-action="set-count" data-i="${i}" data-dir="1" aria-label="세트 늘리기">+</button></div><label class="rest-edit">${I('timer',15)} <input aria-label="휴식 시간 초" inputmode="numeric" type="number" min="0" max="3600" step="1" value="${r.restSec}" data-field="routine-rest" data-i="${i}"/>초</label></div><div class="reorder"><button aria-label="위로" data-action="reorder" data-i="${i}" data-dir="-1" ${i===0?'disabled':''}>${I('up',16)}</button><button aria-label="아래로" data-action="reorder" data-i="${i}" data-dir="1" ${i===routine.length-1?'disabled':''}>${I('down',16)}</button><button aria-label="삭제" class="delete-btn" data-action="remove-routine" data-i="${i}">${I('trash',16)}</button></div></div>`}).join('')}</div>`:`<div class="empty-state">${I('calendar',38)}<strong>아직 운동이 없어요</strong><p>${DAYS[selectedDay]}요일에 할 운동을 선택해 보세요.</p><button class="primary-btn" data-action="open-catalog">${I('plus',16)} 종목 추가</button></div>`}
@@ -1251,8 +1251,9 @@ function rfLatestSameExerciseSet(id){
 function ensureDraft(id){
  if(!drafts[id]){
   const ex=byId(id),last=rfLatestSameExerciseSet(id);
+  const planned=state.active?.routineSnapshot?.find(r=>r.exerciseId===id);
   const numeric=(value,fallback)=>value!==undefined&&value!==null&&value!==''&&Number.isFinite(Number(value))?Number(value):fallback;
-  drafts[id]={weight:numeric(last?.weight,ex?.type==='weight'?20:0),reps:numeric(last?.reps,10),seconds:numeric(last?.seconds,60)};
+  drafts[id]={weight:numeric(last?.weight,ex?.type==='weight'?20:0),reps:numeric(planned?.targetReps,numeric(last?.reps,10)),seconds:numeric(planned?.targetSeconds,numeric(last?.seconds,60))};
  }
  return drafts[id];
 }
@@ -1487,6 +1488,66 @@ function restoreExerciseSwitcher(previous){
  if(card.left<left)switcher.scrollLeft+=card.left-left;
  else if(card.right>right)switcher.scrollLeft+=card.right-right;
 }
+
+// Offline personalized routine suggestions use the registered exercise IDs.
+let recommendation = [], recommendOptions = {goal:'균형 운동',minutes:40,equipment:'gym',level:'입문',day:getDow()};
+const recommendPools = {
+ gym:[['leg-press','bodyweight-squat'],['chest-press','push-up'],['lat-pulldown','seated-row'],['shoulder-press','lateral-raise'],['dead-bug','plank'],['stationary-bike','treadmill']],
+ dumbbell:[['goblet-squat','dumbbell-lunge'],['incline-dumbbell-press','push-up'],['dumbbell-row'],['lateral-raise','hammer-curl'],['dead-bug','plank']],
+ body:[['bodyweight-squat'],['push-up'],['dead-bug'],['plank']]
+};
+function recommendReadOptions(){
+ for(const key of ['goal','equipment','level'])recommendOptions[key]=el('recommend-'+key).value;
+ recommendOptions.minutes=Number(el('recommend-minutes').value);
+ recommendOptions.day=Number(el('recommend-day').value);
+}
+function buildRecommendation(){
+ const options=recommendOptions;
+ const recent=new Set(state.sessions.filter(s=>Date.now()-new Date(s.startedAt).getTime()<48*3600000).flatMap(s=>(s.entries||[]).filter(e=>e.sets?.length).map(e=>e.exerciseId)));
+ const pools=recommendPools[options.equipment];
+ const ordered=pools.map(ids=>ids.filter(id=>byId(id))).filter(ids=>ids.length);
+ const count=Math.min(ordered.length,options.minutes===20?3:options.minutes===40?4:6);
+ return ordered.slice(0,count).map(ids=>{
+  const id=ids.find(id=>!recent.has(id))||ids[0];
+  const ex=byId(id);
+  const sets=options.minutes===20||options.level==='입문'?2:3;
+  return {...newRoutine(id,sets,options.goal==='근력 향상'?120:75),targetReps:options.goal==='근력 향상'?8:12,targetSeconds:30};
+ });
+}
+function recommendSelect(key,label,values){
+ return `<label class="catalog-form-label">${label}<select id="recommend-${key}">${values.map(([value,text])=>`<option value="${value}" ${String(recommendOptions[key])===String(value)?'selected':''}>${text}</option>`).join('')}</select></label>`;
+}
+function recommend(){
+ return `<section class="page-title"><h1>AI 루틴 추천</h1><p>목표와 최근 운동 기록을 활용하는 오프라인 맞춤 추천입니다.</p></section>
+ <div class="surface pad"><div class="catalog-form-grid">
+ ${recommendSelect('goal','운동 목표',[['균형 운동','균형 운동'],['근력 향상','근력 향상']])}
+ ${recommendSelect('minutes','운동 시간',[[20,'20분'],[40,'40분'],[60,'60분']])}
+ ${recommendSelect('equipment','사용할 기구',[['gym','헬스장'],['dumbbell','덤벨과 벤치'],['body','맨몸']])}
+ ${recommendSelect('level','운동 경험',[['입문','입문'],['경험 있음','경험 있음']])}
+ ${recommendSelect('day','저장할 요일',DAYS.map((day,i)=>[i,day+'요일']))}
+ </div><button class="primary-btn full" data-action="recommend-generate">루틴 추천받기</button></div>
+ ${recommendation.length?`<div class="surface pad" style="margin-top:16px"><h2>추천 루틴 ${recommendation.length}종목</h2><p class="setting-note">총 ${recommendation.reduce((sum,r)=>sum+r.targetSets,0)}세트 · 준비와 이동에 따라 실제 시간은 달라집니다. 최근 이틀간 수행한 종목은 가능한 대체 종목을 우선합니다.</p>
+ ${recommendation.map((r,i)=>{const ex=byId(r.exerciseId),last=lastEntry(ex.id)?.entry.sets?.slice(-1)[0];return `<div class="setting-group"><strong>${esc(ex.name)}</strong><p class="setting-note">${r.targetSets}세트 · ${ex.type==='time'?r.targetSeconds+'초':r.targetReps+'회'} · 휴식 ${r.restSec}초${last?' · 직전 '+esc(setLabel(ex,last)):''}</p><label class="catalog-form-label">종목 변경<select data-recommend-index="${i}">${recommendPools[recommendOptions.equipment].flat().filter(id=>byId(id)&&(!recommendation.some(x=>x.exerciseId===id)||id===r.exerciseId)).map(id=>`<option value="${id}" ${id===r.exerciseId?'selected':''}>${esc(byId(id).name)}</option>`).join('')}</select></label></div>`}).join('')}
+ <button class="primary-btn full" data-action="recommend-start">이 루틴으로 바로 시작</button><button class="secondary-btn full" data-action="recommend-save">선택한 요일에 저장</button></div>`:''}
+ <p class="setting-note">중량은 직전 기록을 참고해 직접 조절하세요. 처음 하는 종목은 가벼운 강도로 동작을 확인하세요.</p>`;
+}
+function applyRecommendation(start){
+ if(!recommendation.length)return;
+ if(start&&state.active){notify('진행 중인 운동을 완료하거나 취소한 후 시작하세요.');return;}
+ recommendReadOptions();
+ const planned=recommendation.map(r=>({...r}));
+ if(start){
+  state.active={id:makeId(),day:recommendOptions.day,startedAt:new Date().toISOString(),routineSnapshot:planned,currentExerciseIndex:0,entries:planned.map(r=>({exerciseId:r.exerciseId,sets:[]}))};
+  drafts={};
+  for(const r of planned){const draft=ensureDraft(r.exerciseId);draft.reps=r.targetReps;draft.seconds=r.targetSeconds;}
+  tab='workout';unlockWorkoutAudio();syncScreenWakeLock();
+ }else{
+  if(routinesFor(recommendOptions.day).length&&!confirm(`${DAYS[recommendOptions.day]}요일 루틴을 추천 루틴으로 바꿀까요?`))return;
+  state.routines[recommendOptions.day]=planned;selectedDay=recommendOptions.day;tab='routine';
+ }
+ save();render();notify(start?'추천 루틴 운동을 시작했습니다.':'추천 루틴을 저장했습니다.');
+}
+
 function render(){
  if(state.timer?.running&&Date.now()>=state.timer.endAt)expireTimer(false);
  const switcher=document.querySelector('.exercise-switcher');
@@ -1495,11 +1556,11 @@ function render(){
   scrollLeft:switcher.scrollLeft,
   selection:switcher.querySelector('.exercise-step.selected')?.dataset
  };
- const views={home,routine,workout,history,weight,nutrition};
+ const views={home,routine,workout,history,weight,nutrition,recommend};
  el('app').innerHTML=`<div class="app-shell">${top()}<main id="main-content">${tab==='home'?installCard():''}${(views[tab]||home)()}</main>${nav()}</div>${catalog()}${settings()}${routineCopyPreview()}${timer()}<div class="toast" id="toast" role="status"></div>`;
  restoreExerciseSwitcher(previousSwitcher);
  if(toastMessage){const t=el('toast');t.textContent=toastMessage;}
- document.title=`루틴핏 | ${({home:'홈',routine:'루틴',workout:'운동',history:'운동 기록',weight:'체중',nutrition:'식사'}[tab])||'홈'}`;
+ document.title=`루틴핏 | ${({home:'홈',routine:'루틴',workout:'운동',history:'운동 기록',weight:'체중',nutrition:'식사',recommend:'AI 루틴 추천'}[tab])||'홈'}`;
  updateTimerVisual();
 }
 function setTab(next){tab=next;if(next==='history')selectedReportId=null;workoutPickerMode=null;catalogOpen=false;settingsOpen=false;copyRoutineOpen=false;window.scrollTo(0,0);render()}
@@ -1562,6 +1623,9 @@ function cleanBackup(v){
 function importBackup(file){if(!file)return;if(file.size>10000000){notify('10MB 이하의 백업 파일을 선택해 주세요.');return}file.text().then(txt=>{const raw=JSON.parse(txt);const v=raw.data||raw;if(!v||!Array.isArray(v.sessions)||!Array.isArray(v.weights)||!v.routines||typeof v.routines!=='object')throw Error('형식이 맞지 않습니다.');const imported=cleanBackup(v);if(!confirm('현재 데이터를 백업 파일의 내용으로 교체할까요?'))return;try{localStorage.setItem(SNAP_KEY,JSON.stringify(state))}catch(e){}state=imported;drafts={};save();settingsOpen=false;tab='home';render();notify('백업을 불러왔습니다.');}).catch(err=>{console.error(err);notify('올바른 루틴핏 백업 파일인지 확인해 주세요.')})}
 
 function handleClick(ev){const b=ev.target.closest('[data-action]');if(!b)return;if(b.dataset.action==='close-catalog'||b.dataset.action==='close-settings'){if(ev.target.closest('[data-stop-close]')&&!ev.target.closest('button'))return}const act=b.dataset.action,id=b.dataset.ex,i=Number(b.dataset.i);switch(act){
+ case'recommend-generate':recommendReadOptions();recommendation=buildRecommendation();render();break;
+ case'recommend-start':applyRecommendation(true);break;
+ case'recommend-save':applyRecommendation(false);break;
  case'tab':setTab(b.dataset.tab);break;
  case'ad-prev':showHomeAd(homeAdIndex-1,true);break;
  case'ad-next':showHomeAd(homeAdIndex+1,true);break;
@@ -1629,7 +1693,10 @@ function handleClick(ev){const b=ev.target.closest('[data-action]');if(!b)return
  case'clear-data':if(confirm('모든 운동·체중·음식 기록과 루틴을 초기화합니다. 되돌릴 수 없습니다. 사전에 백업하셨나요? 정말 초기화할까요?')){state=freshState();drafts={};save();settingsOpen=false;tab='home';render();notify('모든 데이터를 초기화했습니다.')}break;
  }
 }
-function handleChange(ev){const t=ev.target,f=t.dataset.field;if(f==='routine-rest'){const item=routinesFor(selectedDay)[Number(t.dataset.i)];if(!item)return;const n=Number(t.value);item.restSec=Number.isInteger(n)?Math.max(0,Math.min(3600,n)):90;save();render()}if(f==='active-rest'){const item=state.active?.routineSnapshot.find(x=>x.exerciseId===t.dataset.ex);if(!item)return;let n=Number(t.value);item.restSec=Number.isInteger(n)?Math.max(0,Math.min(3600,n)):90;save();render()}if(t.id==='workout-duration'&&state.active){state.active.durationMin=Math.max(1,Math.min(1440,Number(t.value)||1));save()}if(t.id==='workout-met'&&state.active){state.active.met=Number(t.value);save()}if(f==='food-day'){foodDate=t.value||localISO();foodSearch='';render()}if(f==='sound'||f==='vibration'||f==='countdown'||f==='keepAwake'){state.settings[f]=t.checked;if(f==='sound'&&t.checked)unlockWorkoutAudio();if(f==='keepAwake')syncScreenWakeLock();save();if(f==='keepAwake')render()}if(t.id==='import-file')importBackup(t.files?.[0])}
+function handleChange(ev){
+ if(ev.target.dataset.recommendIndex!==undefined){const item=recommendation[Number(ev.target.dataset.recommendIndex)];if(item&&byId(ev.target.value)){recommendReadOptions();item.exerciseId=ev.target.value;render();}return;}
+ if(ev.target.id?.startsWith('recommend-')){recommendReadOptions();if(ev.target.id!=='recommend-day'){recommendation=[];render();}return;}
+const t=ev.target,f=t.dataset.field;if(f==='routine-rest'){const item=routinesFor(selectedDay)[Number(t.dataset.i)];if(!item)return;const n=Number(t.value);item.restSec=Number.isInteger(n)?Math.max(0,Math.min(3600,n)):90;save();render()}if(f==='active-rest'){const item=state.active?.routineSnapshot.find(x=>x.exerciseId===t.dataset.ex);if(!item)return;let n=Number(t.value);item.restSec=Number.isInteger(n)?Math.max(0,Math.min(3600,n)):90;save();render()}if(t.id==='workout-duration'&&state.active){state.active.durationMin=Math.max(1,Math.min(1440,Number(t.value)||1));save()}if(t.id==='workout-met'&&state.active){state.active.met=Number(t.value);save()}if(f==='food-day'){foodDate=t.value||localISO();foodSearch='';render()}if(f==='sound'||f==='vibration'||f==='countdown'||f==='keepAwake'){state.settings[f]=t.checked;if(f==='sound'&&t.checked)unlockWorkoutAudio();if(f==='keepAwake')syncScreenWakeLock();save();if(f==='keepAwake')render()}if(t.id==='import-file')importBackup(t.files?.[0])}
 function handleInput(ev){const t=ev.target,f=t.dataset.field;if(f&&f.startsWith('draft-')){const d=ensureDraft(t.dataset.ex);d[f.slice(6)]=t.value;}if(t.id==='food-search'){foodSearch=t.value;const list=el('food-search-list');if(list)list.innerHTML=foodItems()}if(t.id==='food-grams'){const f=FOOD_LIBRARY.find(x=>x.id===selectedFood);const kcal=el('food-kcal');if(f&&kcal&&t.value)kcal.value=f.portionG&&Number(t.value)===f.portionG?f.portionKcal:Math.round(Number(t.value)*f.kcal100/100)}if(t.id==='catalog-search'){catalogSearch=t.value;const matched=allExercises().filter(x=>(catalogFilter==='전체'||x.muscle===catalogFilter)&&(catalogEquip==='전체'||x.equipment===catalogEquip)&&(`${x.name} ${(x.aliases||[]).join(' ')} ${x.hwangReference?'황철순':''} ${x.muscle} ${EQUIP_LABEL[x.equipment]||''} ${x.description||''}`).toLocaleLowerCase().includes(catalogSearch.toLocaleLowerCase()));const list=el('catalog-list');if(list)list.innerHTML=renderCatalogItems(matched)}}
 
 document.addEventListener('click',handleClick);document.addEventListener('change',handleChange);document.addEventListener('input',handleInput);
